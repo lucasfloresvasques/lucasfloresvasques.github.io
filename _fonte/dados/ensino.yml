@@ -40,6 +40,131 @@ cursos:
     titulo: {pt: "Sociologia do Amor", en: "Sociology of Love"}
     detalhe: {pt: "Curso de curta duração (4 h), ministrado em colaboração.", en: "Short course (4 h), co-taught."}
 
+# Ementas de cursos que posso oferecer. Cada uma vira uma página (teaching/<id>.html) e entra na
+# página Ensino só com "publicar: true". Na bibliografia valem *itálico* e [texto](endereço).
+ementas:
+  - id: acm
+    publicar: false
+    titulo: {pt: "ACM e construção do espaço social", en: "Multiple correspondence analysis and the construction of social space"}
+    carga: 12
+    objetivo:
+      pt: "Construir uma especificação de ACM e justificar as escolhas de população, variáveis e modalidades antes de interpretar o plano fatorial."
+      en: "To build an MCA specification and justify the choices of population, variables and categories before interpreting the factorial plane."
+    publico:
+      pt: "Pós-graduandos e pesquisadores com noções de análise de dados que trabalham com variáveis categóricas."
+      en: "Graduate students and researchers with a basic grounding in data analysis who work with categorical variables."
+    ementa:
+      pt: "Espaço social e análise geométrica de dados. Unidade de análise, população e fontes. Dicionário de variáveis e codificação das modalidades. Variáveis ativas e suplementares; modalidades passivas e ACM específica. Nuvem das modalidades e nuvem dos indivíduos. Autovalores e taxas modificadas, contribuições e qualidade de representação. Variáveis suplementares e desvios entre categorias. Documentação da análise."
+      en: "Social space and geometric data analysis. Unit of analysis, population and sources. Codebook and coding of categories. Active and supplementary variables; passive categories and specific MCA. The cloud of categories and the cloud of individuals. Eigenvalues and modified rates, contributions and quality of representation. Supplementary variables and deviations between categories. Documenting the analysis."
+    programa:
+      - titulo: {pt: "Construção do problema e da base", en: "Building the problem and the dataset"}
+        conteudo:
+          pt: "Unidade de análise, população, documentação das fontes e dicionário de variáveis."
+          en: "Unit of analysis, population, documentation of sources and the codebook."
+      - titulo: {pt: "Codificação e modalidades", en: "Coding and categories"}
+        conteudo:
+          pt: "Variáveis ativas e suplementares, não respostas, modalidades de baixa frequência e modalidades passivas na ACM específica."
+          en: "Active and supplementary variables, non-responses, low-frequency categories and passive categories in specific MCA."
+      - titulo: {pt: "Geometria e leitura dos resultados", en: "Geometry and reading the results"}
+        conteudo:
+          pt: "Autovalores e taxas modificadas, contribuições e qualidade de representação; leitura conjunta dos planos e das tabelas."
+          en: "Eigenvalues and modified rates, contributions and quality of representation; reading the planes and the tables together."
+      - titulo: {pt: "Documentação de uma análise", en: "Documenting an analysis"}
+        conteudo:
+          pt: "Comparação entre especificações, redação da nota metodológica e registro das versões."
+          en: "Comparing specifications, writing the methodological note and keeping a record of versions."
+    atividade:
+      pt: "Auditar uma base sintética, formular duas especificações justificadas e redigir uma nota de interpretação que distinga os resultados das escolhas do analista."
+      en: "Audit a synthetic dataset, formulate two justified specifications and write an interpretive note that keeps the results apart from the analyst's choices."
+    bibliografia:
+      - pt: "Bourdieu, Pierre (2007). *A distinção: crítica social do julgamento*. São Paulo: Edusp; Porto Alegre: Zouk."
+        en: "Bourdieu, Pierre (1984). *Distinction: A Social Critique of the Judgement of Taste*. Cambridge, MA: Harvard University Press."
+      - "Le Roux, Brigitte; Rouanet, Henry (2004). *Geometric Data Analysis: From Correspondence Analysis to Structured Data Analysis*. Dordrecht: Kluwer."
+      - "Le Roux, Brigitte; Rouanet, Henry (2010). *Multiple Correspondence Analysis*. Thousand Oaks: Sage."
+      - pt: "Lebaron, Frédéric; Le Roux, Brigitte (dir.) (2015). *La méthodologie de Pierre Bourdieu en action: espace culturel, espace social et analyse des données*. Paris: Dunod."
+        en: "Lebaron, Frédéric; Le Roux, Brigitte (eds.) (2015). *La méthodologie de Pierre Bourdieu en action: espace culturel, espace social et analyse des données*. Paris: Dunod."
+      - pt: "Robette, Nicolas. *GDAtools*, pacote para R: [documentação de speMCA()](https://gdatools-51a3de.frama.io/reference/speMCA.html)."
+        en: "Robette, Nicolas. *GDAtools*, R package: [speMCA() documentation](https://gdatools-51a3de.frama.io/reference/speMCA.html)."
+      - pt: "Le Roux, Brigitte. [Programas e dados de exemplo](https://brigitte-le-roux.com/en/logiciels)."
+        en: "Le Roux, Brigitte. [Software and example data](https://brigitte-le-roux.com/en/logiciels)."
+  - id: csa
+    publicar: false
+    titulo: {pt: "Comparar subnuvens: CSA em R e SPAD", en: "Comparing subclouds: class specific analysis in R and SPAD"}
+    carga: 8
+    objetivo:
+      pt: "Distinguir a posição de um grupo no espaço de referência das direções de variação próprias desse grupo."
+      en: "To distinguish a group's position in the reference space from the directions of variation specific to that group."
+    publico:
+      pt: "Pesquisadores que já leem resultados de ACM e distinguem coordenadas, contribuições e qualidade de representação."
+      en: "Researchers who already read MCA output and can tell coordinates, contributions and quality of representation apart."
+    ementa:
+      pt: "Subnuvens e espaço de referência. Definição do grupo e codificação comum. Análise específica de classe (CSA) e ACM específica. Ponto médio, dispersão e orientação dos eixos. Ângulos entre os eixos da CSA e os da ACM de referência. Conferência dos resultados entre R (GDAtools) e SPAD."
+      en: "Subclouds and the reference space. Defining the group and common coding. Class specific analysis (CSA) and specific MCA. Mean point, dispersion and orientation of the axes. Angles between the CSA axes and those of the reference MCA. Checking results between R (GDAtools) and SPAD."
+    programa:
+      - titulo: {pt: "Referência e subnuvem", en: "Reference cloud and subcloud"}
+        conteudo:
+          pt: "Definição do grupo, população de referência, codificação comum e pesos."
+          en: "Defining the group, the reference population, common coding and weights."
+      - titulo: {pt: "Especificação em GDAtools", en: "Specification in GDAtools"}
+        conteudo:
+          pt: "As funções speMCA() e csMCA(); estimação sobre a mesma base e registro das opções."
+          en: "The speMCA() and csMCA() functions; estimation on the same dataset and a record of the options."
+      - titulo: {pt: "Leitura comparada", en: "Comparative reading"}
+        conteudo:
+          pt: "Ponto médio, dispersão e orientação dos eixos; separar a localização do grupo de sua diferenciação interna."
+          en: "Mean point, dispersion and orientation of the axes; telling where the group sits apart from how it is internally differentiated."
+      - titulo: {pt: "R, SPAD e documentação", en: "R, SPAD and documentation"}
+        conteudo:
+          pt: "Conferência das tabelas e da métrica antes da comparação gráfica; adaptação dos mapas para o SPAD."
+          en: "Checking the tables and the metric before comparing maps; adapting the maps for SPAD."
+    atividade:
+      pt: "Definir uma subnuvem numa base sintética e redigir uma comparação que não confunda o baricentro do grupo com sua estrutura interna. A parte em SPAD depende de licença do programa."
+      en: "Define a subcloud in a synthetic dataset and write a comparison that does not confuse the group's mean point with its internal structure. The SPAD part requires a licensed copy of the program."
+    bibliografia:
+      - "Le Roux, Brigitte; Rouanet, Henry (2010). *Multiple Correspondence Analysis*. Thousand Oaks: Sage."
+      - pt: "Robette, Nicolas. *GDAtools*, pacote para R: [documentação de csMCA()](https://gdatools-51a3de.frama.io/reference/csMCA.html)."
+        en: "Robette, Nicolas. *GDAtools*, R package: [csMCA() documentation](https://gdatools-51a3de.frama.io/reference/csMCA.html)."
+  - id: textual
+    publicar: false
+    titulo: {pt: "Análise textual com IRaMuTeQ e R", en: "Text analysis with IRaMuTeQ and R"}
+    carga: 12
+    objetivo:
+      pt: "Preparar um corpus documentado e relacionar os resultados lexicais à leitura dos textos e ao problema de pesquisa."
+      en: "To prepare a documented corpus and relate lexical results to the reading of the texts and to the research problem."
+    publico:
+      pt: "Pesquisadores que trabalham com entrevistas, documentos ou publicações digitais. A parte com quanteda pede noções básicas de R."
+      en: "Researchers who work with interviews, documents or social media posts. The quanteda part requires basic R."
+    ementa:
+      pt: "Construção do corpus: fontes, recorte e unidade textual. Metadados e preparação para o IRaMuTeQ. Concordâncias e tabela lexical. Análise fatorial de correspondências (AFC) de uma tabela lexical. Classificação hierárquica descendente (método Reinert) e análise de similitude. Retorno aos textos e limites da interpretação."
+      en: "Building the corpus: sources, scope and textual unit. Metadata and preparation for IRaMuTeQ. Concordances and the lexical table. Correspondence analysis (CA) of a lexical table. Descending hierarchical classification (Reinert method) and similarity analysis. Returning to the texts and the limits of interpretation."
+    programa:
+      - titulo: {pt: "Construção do corpus", en: "Building the corpus"}
+        conteudo:
+          pt: "Fontes, recorte, unidade textual, metadados, duplicações e condições de circulação dos textos."
+          en: "Sources, scope, textual unit, metadata, duplicates and the conditions under which the texts circulate."
+      - titulo: {pt: "Preparação para o IRaMuTeQ", en: "Preparing for IRaMuTeQ"}
+        conteudo:
+          pt: "Codificação UTF-8, cabeçalhos, conferência da importação e registro das decisões de preparação."
+          en: "UTF-8 encoding, text headers, checking the import and recording preparation decisions."
+      - titulo: {pt: "Concordâncias e tabela lexical", en: "Concordances and the lexical table"}
+        conteudo:
+          pt: "Exploração em quanteda: formas no contexto, seleção do vocabulário e matriz de contagens."
+          en: "Exploration in quanteda: words in context, selecting the vocabulary and the count matrix."
+      - titulo: {pt: "AFC e interpretação", en: "CA and interpretation"}
+        conteudo:
+          pt: "Planos, contribuições e retorno aos textos. Diferenças entre a AFC, a classificação de Reinert e a análise de similitude."
+          en: "Planes, contributions and returning to the texts. How CA differs from the Reinert classification and from similarity analysis."
+    atividade:
+      pt: "Preparar textos sintéticos para importação e comparar uma leitura por concordâncias com uma exploração da tabela lexical. Entrega: o corpus, o mapa de códigos e uma nota sobre os limites da análise."
+      en: "Prepare synthetic texts for import and compare a concordance-based reading with an exploration of the lexical table. To hand in: the corpus, the code map and a note on the limits of the analysis."
+    bibliografia:
+      - "Benoit, Kenneth et al. (2018). quanteda: An R package for the quantitative analysis of textual data. *Journal of Open Source Software*, 3(30), 774."
+      - "Camargo, Brigido Vizeu; Justo, Ana Maria (2013). IRAMUTEQ: um software gratuito para análise de dados textuais. *Temas em Psicologia*, 21(2), 513–518."
+      - "Lebart, Ludovic; Salem, André (1994). *Statistique textuelle*. Paris: Dunod."
+      - "Ratinaud, Pierre. *IRaMuTeQ: Interface de R pour les Analyses Multidimensionnelles de Textes et de Questionnaires*. [iramuteq.org](http://www.iramuteq.org)."
+      - "Reinert, Max (1983). Une méthode de classification descendante hiérarchique: application à l'analyse lexicale par contexte. *Les Cahiers de l'Analyse des Données*, 8(2), 187–198."
+      - "Watanabe, Kohei; Müller, Stefan. [Quanteda tutorials](https://tutorials.quanteda.io/)."
+
 outras:
   - ano: "2021–2022"
     titulo: {pt: "Consultoria de pesquisa em programas de análise qualitativa", en: "Research consultancy on qualitative analysis software"}

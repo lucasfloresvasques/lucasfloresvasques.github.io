@@ -5,8 +5,11 @@ Uso, na raiz do repositório:
     python _fonte/construir.py --pdf        também gera cv.pdf e pt/cv.pdf (precisa do Edge ou do Chrome)
     python _fonte/construir.py --verificar  confere se as páginas publicadas correspondem aos dados
                                             e se os links internos apontam para arquivos e âncoras que existem
+    python _fonte/construir.py --links-externos  confere os links para fora do site (roda todo mês no GitHub)
 
 As páginas em inglês ficam na raiz e as em português em pt/, como o GitHub Pages as serve.
+Além das páginas fixas de site.yml, cada artigo com "id" ganha sua página em publications/ e
+cada ementa com "publicar: true" ganha a sua em teaching/.
 """
 from __future__ import annotations
 
@@ -39,6 +42,9 @@ MODELOS = {
     "cv": "cv.html",
 }
 CV_PDF = {"en": "cv.pdf", "pt": "pt/cv.pdf"}
+# Páginas que saem das listas dos dados: uma por artigo com "id" e uma por ementa com "publicar: true".
+PAGINA_PUBLICACAO = {"en": "publications/{}.html", "pt": "pt/publications/{}.html"}
+PAGINA_EMENTA = {"en": "teaching/{}.html", "pt": "pt/teaching/{}.html"}
 
 MESES = {
     "pt": ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho",
@@ -135,6 +141,30 @@ def json_ld(objeto) -> Markup:
     return Markup(texto.replace("</", "<\\/"))
 
 
+def licenca_url(rotulo: str) -> str:
+    """'CC BY-NC-ND 4.0' vira https://creativecommons.org/licenses/by-nc-nd/4.0/."""
+    tipo, versao = rotulo.removeprefix("CC ").rsplit(" ", 1)
+    return f"https://creativecommons.org/licenses/{tipo.lower()}/{versao}/"
+
+
+def tamanho_arquivo(arquivo: str, idioma: str) -> str:
+    kb = (RAIZ / arquivo).stat().st_size / 1024
+    texto = f"{kb:.0f} KB" if kb < 1000 else f"{kb / 1024:.1f} MB"
+    return texto.replace(".", ",") if idioma == "pt" else texto
+
+
+def resumir(texto: str, limite: int = 155) -> str:
+    """Começo do texto para a meta description: a frase inteira se couber, senão até uma palavra inteira."""
+    texto = " ".join((texto or "").split())
+    if len(texto) <= limite:
+        return texto
+    corte = texto[: limite + 1]
+    fim_da_frase = corte.rfind(". ")
+    if fim_da_frase >= 80:
+        return corte[: fim_da_frase + 1]
+    return corte[:limite].rsplit(" ", 1)[0].rstrip(",;:.") + "…"
+
+
 # ---------------------------------------------------------------- páginas
 
 @pass_context
@@ -160,6 +190,21 @@ def _autores(ctx, lista):
     return formatar_autores(lista or [], ctx["idioma"], ctx["perfil"]["nome"])
 
 
+@pass_context
+def _pagina_publicacao(ctx, p):
+    return PAGINA_PUBLICACAO[ctx["idioma"]].format(p["id"])
+
+
+@pass_context
+def _pagina_ementa(ctx, e):
+    return PAGINA_EMENTA[ctx["idioma"]].format(e["id"])
+
+
+@pass_context
+def _tamanho(ctx, arquivo):
+    return tamanho_arquivo(arquivo, ctx["idioma"])
+
+
 def criar_ambiente() -> Environment:
     env = Environment(
         loader=FileSystemLoader(FONTE / "modelos"),
@@ -169,7 +214,8 @@ def criar_ambiente() -> Environment:
         keep_trailing_newline=True,
     )
     env.filters.update(t=_t, inline=inline, autores=_autores)
-    env.globals.update(rel=_rel, grafico=_grafico)
+    env.globals.update(rel=_rel, grafico=_grafico, pagina_publicacao=_pagina_publicacao,
+                       pagina_ementa=_pagina_ementa, tamanho=_tamanho, licenca_url=licenca_url)
     return env
 
 
@@ -195,27 +241,72 @@ def pessoa_json_ld(dados, idioma) -> dict:
     }
 
 
-def publicacoes_json_ld(dados, idioma) -> dict:
+def publicacao_ld(dados, p, idioma) -> dict:
     site, perfil, pubs = dados["site"], dados["perfil"], dados["publicacoes"]
-    partes = []
-    for p in pubs["artigos"] + pubs["capitulos"]:
-        item = {
-            "@type": "ScholarlyArticle" if p in pubs["artigos"] else "Chapter",
-            "name": p["titulo"],
-            "inLanguage": p.get("lingua", "pt"),
-            "datePublished": str(p["ano"]),
-            "author": [{"@type": "Person", "name": a} | ({"@id": f"{site['url']}/#pessoa"} if a == perfil["nome"] else {})
-                       for a in p["autores"]],
-        }
-        if p in pubs["artigos"]:
-            item["isPartOf"] = {"@type": "Periodical", "name": traduzir(p["veiculo"], idioma)}
-        if p.get("doi"):
-            item["sameAs"] = f"https://doi.org/{p['doi']}"
-        if p.get("url") or p.get("doi"):
-            item["url"] = p.get("url") or f"https://doi.org/{p['doi']}"
-        partes.append(item)
+    item = {
+        "@type": "ScholarlyArticle" if p in pubs["artigos"] else "Chapter",
+        "name": p["titulo"],
+        "inLanguage": p.get("lingua", "pt"),
+        "datePublished": str(p["ano"]),
+        "author": [{"@type": "Person", "name": a} | ({"@id": f"{site['url']}/#pessoa"} if a == perfil["nome"] else {})
+                   for a in p["autores"]],
+    }
+    if p in pubs["artigos"]:
+        item["isPartOf"] = {"@type": "Periodical", "name": traduzir(p["veiculo"], idioma)}
+    if p.get("doi"):
+        item["sameAs"] = f"https://doi.org/{p['doi']}"
+    if p.get("id"):
+        item["url"] = f"{site['url']}/{PAGINA_PUBLICACAO[idioma].format(p['id'])}"
+    elif p.get("url") or p.get("doi"):
+        item["url"] = p.get("url") or f"https://doi.org/{p['doi']}"
+    return item
+
+
+def publicacoes_json_ld(dados, idioma) -> dict:
+    site, pubs = dados["site"], dados["publicacoes"]
     return {"@context": "https://schema.org", "@type": "CollectionPage",
-            "name": traduzir(site["paginas"]["publicacoes"]["titulo"], idioma), "hasPart": partes}
+            "name": traduzir(site["paginas"]["publicacoes"]["titulo"], idioma),
+            "hasPart": [publicacao_ld(dados, p, idioma) for p in pubs["artigos"] + pubs["capitulos"]]}
+
+
+def artigo_json_ld(dados, p, idioma) -> dict:
+    extra = dados["resumos"].get(p["id"], {})
+    item = {"@context": "https://schema.org"} | publicacao_ld(dados, p, idioma)
+    if p.get("titulo_en"):
+        item["alternativeHeadline"] = p["titulo_en"]
+    if extra.get("resumo"):
+        item["abstract"] = traduzir(extra["resumo"], p.get("lingua", "pt"))
+    if extra.get("palavras_chave"):
+        item["keywords"] = traduzir(extra["palavras_chave"], p.get("lingua", "pt"))
+    if p.get("pdf"):
+        item["license"] = licenca_url(p["licenca"])
+        item["encoding"] = {"@type": "MediaObject", "encodingFormat": "application/pdf",
+                            "contentUrl": f"{dados['site']['url']}/{p['pdf']}"}
+    return item
+
+
+def metadados_citacao(dados, p) -> list[tuple[str, str]]:
+    """Meta tags no formato que o Google Acadêmico lê (Highwire Press), na página de cada artigo."""
+    tags = [("citation_title", p["titulo"])] + [("citation_author", a) for a in p["autores"]]
+    tags += [("citation_publication_date", str(p["ano"])), ("citation_journal_title", traduzir(p["veiculo"], "pt"))]
+    volume = re.fullmatch(r"(\d+)(?:\((\d+)\))?", str(p.get("volume", "")))
+    if volume:
+        tags.append(("citation_volume", volume.group(1)))
+        if volume.group(2):
+            tags.append(("citation_issue", volume.group(2)))
+    if p.get("paginas"):
+        inicio, _, fim = p["paginas"].partition("–")
+        tags.append(("citation_firstpage", inicio))
+        if fim:
+            tags.append(("citation_lastpage", fim))
+    if p.get("doi"):
+        tags.append(("citation_doi", p["doi"]))
+    tags.append(("citation_language", p.get("lingua", "pt")))
+    chaves = dados["resumos"].get(p["id"], {}).get("palavras_chave")
+    tags += [("citation_keywords", k) for k in traduzir(chaves, p.get("lingua", "pt")) or []]
+    if p.get("pdf"):
+        tags.append(("citation_pdf_url", f"{dados['site']['url']}/{p['pdf']}"))
+    return tags
 
 
 def contexto(dados, chave, idioma, arquivo, alternativas_arquivos) -> dict:
@@ -257,22 +348,71 @@ def contexto(dados, chave, idioma, arquivo, alternativas_arquivos) -> dict:
         curriculo=dados["curriculo"],
         eleicoes=dados["eleicoes"],
         destaques=[p for p in artigos if p.get("destaque")],
+        ementas=ementas_publicadas(dados),
+        og_tipo="profile" if chave == "inicio" else "website",
+        citacao=[],
         json_ld=(json_ld(pessoa_json_ld(dados, idioma)) if chave == "inicio"
                  else json_ld(publicacoes_json_ld(dados, idioma)) if chave == "publicacoes" else None),
     )
 
 
+def ementas_publicadas(dados) -> list:
+    return [e for e in dados["ensino"].get("ementas", []) if e.get("publicar")]
+
+
+def contexto_publicacao(dados, p, idioma, arquivos) -> dict:
+    extra = dados["resumos"].get(p["id"], {})
+    ctx = contexto(dados, "publicacoes", idioma, arquivos[idioma], arquivos)
+    ctx.update(
+        pagina="publicacao",
+        p=p,
+        resumo=extra.get("resumo") or {},
+        palavras_chave=extra.get("palavras_chave"),
+        titulo_pagina=p["titulo"],
+        titulo_documento=f"{p['titulo']} · {dados['perfil']['nome']}",
+        descricao=resumir(traduzir(extra.get("resumo"), idioma)),
+        og_tipo="article",
+        citacao=metadados_citacao(dados, p),
+        json_ld=json_ld(artigo_json_ld(dados, p, idioma)),
+    )
+    return ctx
+
+
+def contexto_ementa(dados, e, idioma, arquivos) -> dict:
+    ctx = contexto(dados, "ensino", idioma, arquivos[idioma], arquivos)
+    titulo = traduzir(e["titulo"], idioma)
+    ctx.update(
+        pagina="ementa",
+        e=e,
+        titulo_pagina=titulo,
+        titulo_documento=f"{titulo} · {dados['perfil']['nome']}",
+        descricao=resumir(traduzir(e["ementa"], idioma)),
+    )
+    return ctx
+
+
+def paginas_geradas(dados):
+    """(modelo, arquivos por idioma, função de contexto, item) de cada página que sai de uma lista dos dados."""
+    for p in dados["publicacoes"]["artigos"]:
+        if p.get("id"):
+            yield "publicacao.html", {i: PAGINA_PUBLICACAO[i].format(p["id"]) for i in IDIOMAS}, contexto_publicacao, p
+    for e in ementas_publicadas(dados):
+        yield "ementa.html", {i: PAGINA_EMENTA[i].format(e["id"]) for i in IDIOMAS}, contexto_ementa, e
+
+
 def sitemap(dados) -> str:
     site = dados["site"]
     absoluta = lambda a: f"{site['url']}/{caminho_publico(a)}"
+    todas = [pagina["arquivo"] for pagina in site["paginas"].values()]
+    todas += [arquivos for _, arquivos, _, _ in paginas_geradas(dados)]
     linhas = ['<?xml version="1.0" encoding="UTF-8"?>',
               '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
-    for pagina in site["paginas"].values():
+    for arquivos in todas:
         for idioma in IDIOMAS:
             linhas.append("  <url>")
-            linhas.append(f"    <loc>{absoluta(pagina['arquivo'][idioma])}</loc>")
+            linhas.append(f"    <loc>{absoluta(arquivos[idioma])}</loc>")
             for alt, hreflang in (("en", "en"), ("pt", "pt-BR"), ("en", "x-default")):
-                linhas.append(f'    <xhtml:link rel="alternate" hreflang="{hreflang}" href="{absoluta(pagina["arquivo"][alt])}"/>')
+                linhas.append(f'    <xhtml:link rel="alternate" hreflang="{hreflang}" href="{absoluta(arquivos[alt])}"/>')
             linhas.append(f"    <lastmod>{site['atualizado']}</lastmod>")
             linhas.append("  </url>")
     linhas.append("</urlset>")
@@ -289,6 +429,9 @@ def gerar(dados) -> dict[str, str]:
             arquivo = pagina["arquivo"][idioma]
             ctx = contexto(dados, chave, idioma, arquivo, pagina["arquivo"])
             saida[arquivo] = env.get_template(MODELOS[chave]).render(**ctx)
+    for modelo, arquivos, montar_contexto, item in paginas_geradas(dados):
+        for idioma in IDIOMAS:
+            saida[arquivos[idioma]] = env.get_template(modelo).render(**montar_contexto(dados, item, idioma, arquivos))
     for movida in site["redirecionamentos"]:
         for idioma in IDIOMAS:
             arquivo = movida["de"][idioma]
@@ -435,12 +578,56 @@ def verificar(dados) -> int:
     return 1 if problemas else 0
 
 
+# Sites que barram robôs: o link existe, mas a resposta automática não prova nada.
+NAO_VERIFICAVEIS = ("linkedin.com", "scholar.google.com", "lattes.cnpq.br", "scopus.com", "webofscience.com")
+
+
+def verificar_links_externos(dados) -> int:
+    """Confere os links externos das páginas (DOIs, revistas, perfis). Roda uma vez por mês no GitHub."""
+    import urllib.error
+    import urllib.request
+
+    links = set()
+    for caminho, conteudo in gerar(dados).items():
+        if caminho.endswith(".html"):
+            coletor = _Coletor()
+            coletor.feed(conteudo)
+            links |= {l for l in coletor.links if l.startswith(("http://", "https://"))}
+    quebrados, avisos = [], []
+    cabecalhos = {"User-Agent": "Mozilla/5.0 (verificacao de links; lucasfloresvasques.github.io)"}
+    for url in sorted(links):
+        if any(dominio in url for dominio in NAO_VERIFICAVEIS):
+            continue
+        situacao = None
+        for metodo in ("HEAD", "GET"):
+            try:
+                with urllib.request.urlopen(urllib.request.Request(url, method=metodo, headers=cabecalhos), timeout=30) as r:
+                    situacao = r.status
+                    break
+            except urllib.error.HTTPError as erro:
+                situacao = erro.code
+            except Exception as erro:  # DNS, tempo esgotado, certificado
+                situacao = type(erro).__name__
+        if isinstance(situacao, int) and situacao < 400:
+            continue
+        (avisos if situacao in (401, 403, 429) else quebrados).append(f"{situacao}  {url}")
+    for linha in avisos:
+        print(f"não verificável  {linha}")
+    for linha in quebrados:
+        print(f"quebrado  {linha}")
+    print(f"{len(links)} links externos; {len(quebrados)} quebrado(s), {len(avisos)} não verificável(is).")
+    return 1 if quebrados else 0
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--pdf", action="store_true", help="gera também os PDFs do currículo")
     parser.add_argument("--verificar", action="store_true", help="só confere, sem gravar nada")
+    parser.add_argument("--links-externos", action="store_true", help="confere os links para fora do site")
     args = parser.parse_args()
     dados = carregar_dados()
+    if args.links_externos:
+        sys.exit(verificar_links_externos(dados))
     if args.verificar:
         sys.exit(verificar(dados))
     saida = gerar(dados)

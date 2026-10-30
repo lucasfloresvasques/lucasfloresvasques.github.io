@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% from "_macros.html" import lang_de with context %}
+{% block conteudo %}
+{% set resumo_no_idioma = resumo[idioma] if resumo[idioma] else none %}
+<p class="voltar"><a href="{{ rel(paginas.publicacoes.arquivo[idioma]) }}">{{ paginas.publicacoes.titulo | t }}</a></p>
+<h1 class="publicacao"{{ lang_de(p.lingua) }}>{{ p.titulo }}</h1>
+{% if idioma != p.lingua and p.titulo_en %}
+<p class="titulo-traduzido">{{ p.titulo_en }}</p>
+{% endif %}
+<p class="ficha">{{ p.autores | autores }}. <i>{{ p.veiculo | t }}</i>{% if p.volume %} {{ p.volume }}{% endif %}{% if p.paginas %}, {{ p.paginas }}{% endif %}, {{ p.ano }}.{% if p.nota %} {{ p.nota | t }}{% endif %}</p>
+<p class="acesso">
+{%- if p.pdf %}<a href="{{ rel(p.pdf) }}">PDF</a> <span class="nota">({{ tamanho(p.pdf) }})</span>{% endif %}
+{%- if p.doi %}{% if p.pdf %} · {% endif %}<a href="https://doi.org/{{ p.doi }}">https://doi.org/{{ p.doi }}</a>
+{%- elif p.url %}{% if p.pdf %} · {% endif %}<a href="{{ p.url }}">{{ r.na_revista | t }}</a>{% endif %}
+</p>
+{% if resumo %}
+
+<h2 id="resumo">{{ (r.resumo if resumo_no_idioma else r.resumo_pt) | t }}</h2>
+<p{% if not resumo_no_idioma %}{{ lang_de(p.lingua) }}{% endif %}>{{ resumo_no_idioma or resumo[p.lingua] }}</p>
+{% if palavras_chave %}
+<p class="nota"><i>{{ r.palavras_chave | t }}:</i> {{ palavras_chave | t | join('; ') }}.</p>
+{% endif %}
+{% endif %}
+{% if p.pdf %}
+
+<p class="nota licenca">{{ r.pdf_publicado | t }} {{ r.licenca | t }}: <a href="{{ licenca_url(p.licenca) }}">{{ p.licenca }}</a>.</p>
+{% endif %}
+{% endblock %}

@@ -49,20 +49,20 @@
 <h3>{{ r.aceitas | t }}</h3>
 <ol class="lista">
 {% for p in publicacoes.aceitas %}
-{{ referencia(p, completa=true) }}
+{{ referencia(p, completa=true, pagina=false) }}
 {% endfor %}
 </ol>
 {% endif %}
 <h3>{{ r.artigos | t }}</h3>
 <ol class="lista">
 {% for p in publicacoes.artigos %}
-{{ referencia(p, completa=true) }}
+{{ referencia(p, completa=true, pagina=false) }}
 {% endfor %}
 </ol>
 <h3>{{ r.capitulos_livro | t }}</h3>
 <ol class="lista">
 {% for p in publicacoes.capitulos %}
-{{ referencia(p, capitulo=true, completa=true) }}
+{{ referencia(p, capitulo=true, completa=true, pagina=false) }}
 {% endfor %}
 </ol>
 

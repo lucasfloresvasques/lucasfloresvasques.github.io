@@ -1,0 +1,262 @@
+# Resumos e palavras-chave das publicações, como saíram nas revistas (página do artigo, PDF ou Crossref).
+# A chave é o "id" da publicação em publicacoes.yml. Sem resumo em inglês, a página em inglês mostra o
+# resumo em português.
+
+ilusio-liberdade-afetiva:
+  resumo:
+    pt: >-
+      Este artigo analisa como feminilidades e masculinidades são produzidas, hierarquizadas e
+      reclassificadas em discursos de adeptos do poliamor. Com base em pesquisa qualitativa realizada em
+      ambientes digitais e presenciais (aplicativo Feeld, grupos de Facebook, observação participante,
+      etnografia digital, questionário e entrevistas semiestruturadas), o texto examina a tensão entre a
+      crítica poliamorista ao amor romântico e a permanência de disposições generificadas na organização
+      do desejo, do ciúme, da responsabilidade afetiva e do reconhecimento. O referencial teórico articula
+      a sociologia relacional de Pierre Bourdieu, especialmente as noções de doxa, habitus, illusio,
+      capital simbólico, violência simbólica e dominação masculina, com contribuições dos estudos de
+      gênero e da sociologia da intimidade. Argumenta-se que o poliamor desloca a moral da fidelidade
+      sexual para uma moral da comunicação, da negociação e da transparência, mas não elimina
+      automaticamente as classificações androcêntricas que autorizam de modo desigual o desejo múltiplo
+      masculino e feminino. A contribuição do artigo consiste em propor a noção de classificações afetivas
+      de gênero para compreender os esquemas que definem quem pode desejar, quem deve cuidar, quem precisa
+      justificar sua liberdade e quem é reconhecido como sujeito amoroso legítimo.
+    en: >-
+      This article analyzes how femininities and masculinities are produced, hierarchized, and
+      reclassified within the discourses of polyamory practitioners. Based on qualitative research
+      conducted in both digital and face-to-face environments (the Feeld application, Facebook groups,
+      participant observation, digital ethnography, questionnaires, and semi-structured interviews), the
+      text examines the tension between the polyamorous critique of romantic love and the persistence of
+      gendered dispositions in the organization of desire, jealousy, affective responsibility, and
+      recognition. The theoretical framework articulates Pierre Bourdieu’s relational sociology,
+      specifically the notions of doxa, habitus, illusio, symbolic capital, symbolic violence, and
+      masculine domination, with contributions from gender studies and the sociology of intimacy. It is
+      argued that polyamory shifts the ethics of sexual fidelity toward an ethics of communication,
+      negotiation, and transparency; however, it does not automatically eliminate the androcentric
+      classifications that unevenly authorize male and female multiple desires. The contribution of this
+      article lies in proposing the concept of affective gender classifications to understand the schemes
+      that define who is allowed to desire, who must provide care, who needs to justify their freedom, and
+      who is recognized as a legitimate loving subject.
+  palavras_chave:
+    pt: [poliamor, gênero, amor romântico, masculinidades, Pierre Bourdieu]
+    en: [polyamory, gender, romantic love, masculinities, Pierre Bourdieu]
+
+governar-pelo-afeto:
+  resumo:
+    pt: >-
+      Este artigo analisa a emergência das emoções no universo empresarial brasileiro, tomando como objeto
+      empírico 148 edições da Revista Exame (1990–2007). Fundamentado na sociologia relacional de Pierre
+      Bourdieu e na sociologia configuracional de Norbert Elias. O estudo analisa como as emoções, para
+      além da subjetividade, são orientadas como formas legítimas de distinção e consagração simbólica. A
+      Exame é analisada como instância de consagração social que, ao prescrever estilos emocionais
+      desejáveis, como empatia, autocontrole e entusiasmo, institui uma “etiqueta emocional corporativa”.
+      Para isso, mobilizamos a análise de conteúdo, com uso do software MAXQDA, construindo um dicionário
+      de termos e uma codificação do material compilado. A pesquisa evidencia que a gestão emocional se
+      converte em gramática moral, estruturando as hierarquias no universo empresarial.
+
+direito-ciencias-plantas:
+  resumo:
+    pt: >-
+      O estudo aborda a relação entre a legislação sobre cannabis e os debates na área de Ciências Sociais
+      e Sociologia, destacando como o tema caminha para uma interdisciplinaridade. Objetiva-se analisar
+      como a discussão científica sobre a cannabis se correlaciona com os aspectos legais, elucidando as
+      dinâmicas que moldam a compreensão social da planta e compreender como a literatura científica
+      reflete e contribui para o debate sobre a sua regulamentação no Brasil. Utilizou-se a análise
+      bibliométrica para examinar o corpus sociológico sobre a cannabis, coletando dados de publicações
+      nacionais e internacionais. A metodologia incluiu a identificação das linhas disciplinares
+      predominantes e a comparação entre as abordagens brasileira e estrangeira. Os achados revelam uma
+      predominância de estudos focados em saúde pública no Brasil, contrastando com uma diversidade
+      temática em pesquisas estrangeiras que incluem aspectos legais e socioculturais.
+    en: >-
+      The study explores the intricate relationship between cannabis legislation, debates in Social
+      Sciences and Sociology, emphasizing the move towards interdisciplinarity. It aims to analyze how
+      scientific discussion on cannabis correlates with legal aspects and elucidate the dynamics shaping
+      social understanding of the plant. This research seeks to understand how scientific literature
+      reflects on and contributes to the debate on cannabis regulation in the Brazilian context.
+      Bibliometric analysis was used to examine the sociological corpus on cannabis, gathering data from
+      national and international publications. The methodology included identifying predominant
+      disciplinary lines and comparing Brazilian and foreign approaches. Findings indicate a dominance of
+      public health-focused studies in Brazil, in contrast to the thematic diversity in foreign research,
+      which includes legal and sociocultural aspects.
+  palavras_chave:
+    pt: [sociologia do conhecimento, cannabis, usos sociais, saúde pública, análise bibliométrica]
+    en: [sociology of knowledge, cannabis, social uses, public health, bibliometric analysis]
+
+fotografia-na-sociologia:
+  resumo:
+    pt: >-
+      Este artigo realiza uma cartografia da produção sociológica sobre fotografia no Brasil e no cenário
+      internacional, com base em análises bibliométricas e lexicais realizadas por meio dos softwares
+      IRaMuTeQ e VOSviewer. A partir de um corpus de artigos indexados nas bases SciELO e Web of Science,
+      investigam-se os repertórios conceituais, os eixos temáticos e que estruturam o uso da fotografia
+      como objeto e instrumento de pesquisa nas ciências sociais. Os resultados evidenciam que a produção
+      brasileira está fortemente ancorada no referencial bourdieusiano, com ênfase em abordagens teóricas
+      e simbólicas, enquanto a produção internacional se destaca pelo uso metodológico e aplicado da
+      imagem, especialmente em pesquisas sobre saúde, juventude, gênero e consumo digital. A fotografia
+      revela-se, assim, uma arena de disputas epistemológicas, refletindo distintos modos de fazer
+      científicos e formas de consagração nos campos acadêmicos analisados. O artigo conclui pela
+      necessidade de articular criticamente densidade teórica e metodologia, promovendo uma sociologia
+      visual ou da imagem que seja, ao mesmo tempo, reflexiva, situada e sensível às transformações
+      contemporâneas da cultura visual.
+
+intimidade-e-mercado-no-instagram:
+  resumo:
+    pt: >-
+      Este artigo explica como intimidade e mercado se encontram na rede social, sem que uma esfera
+      contamine a outra. Para isso, desenvolvemos uma etnografia virtual, quando estudamos as postagens de
+      cinco influenciadores que monetarizam a intimidade no aplicativo de imagens Instagram. Tendo como
+      inspiração teórica conceitos de Viviana Zelizer, sobretudo a teoria das esferas separadas, dos
+      mundos hostis e o trabalho relacional, argumentamos que a monetarização da intimidade pelos
+      influencers no Instagram, só é possível porque é feita de forma eufemizada, ou seja, existe um sério
+      trabalho relacional dos influenciadores para dissimular o econômico, com o objetivo de passar a
+      ideia de espontâneo e despretensioso, a algo meticulosamente planejado, o que seria possível por
+      meio da Denegação do econômico. Manter as fronteiras simbólicas entre a esfera da intimidade e do
+      mercado seria uma estratégia para aceitação do mercado construído no Instagram.
+    en: >-
+      The aim of the article is to elucidate the intersection of intimacy and the market on the social
+      network, ensuring that neither sphere contaminates the other. To achieve this, virtual ethnography
+      was conducted, analyzing the posts of five influencers who monetize intimacy on the image-sharing
+      platform, Instagram. Drawing on theoretical inspiration from Viviana Zelizer’s concepts, notably the
+      theory of separate spheres, hostile worlds, and relational work, we contend that the monetization of
+      intimacy by Instagram influencers is only possible due to its euphemized nature. In essence,
+      influencers engage in significant relational work to mask the economic dimension, presenting their
+      content as spontaneous and unpretentious, despite meticulous planning, a process made viable through
+      Economic Denial. Maintaining symbolic boundaries between the spheres of intimacy and the market
+      serves as a strategy for embracing the Instagram-driven market construction.
+  palavras_chave:
+    pt: [intimidade, mercado, Instagram, trabalho relacional, Viviana Zelizer]
+    en: [intimacy, market, Instagram, relational work, Viviana Zelizer]
+
+corpo-bourdieu-foucault:
+  resumo:
+    pt: >-
+      O artigo busca aproximar as abordagens de Michel Foucault (1975; 1993; 1988; 1985; 2006) e Pierre
+      Bourdieu (1983; 2007; 2012; 2013) sobre o corpo. Para isso, utilizamos pesquisa bibliográfica que
+      mobilizou especialmente os conceitos de disciplina e vigilância de Michel Foucault, bem como doxa e
+      violência simbólica em Pierre Bourdieu. Essa pesquisa busca colaborar com a elaboração de pesquisas
+      sobre o corpo que enfatizem as abordagens desses autores de forma conjunta e complementar.
+  palavras_chave:
+    pt: [corpo, Bourdieu, Foucault, disciplina, doxa]
+    en: [body, Bourdieu, Foucault, discipline, doxa]
+
+gosto-plantas-ornamentais:
+  resumo:
+    pt: >-
+      As plantas ornamentais raramente são alvo de estudo em Ciências Sociais, para enfrentar esse
+      problema, foi proposto, além da consideração como um mercado, as categorias de gosto e consumo como
+      centrais para construção dessa agenda de pesquisa. Para isso, mobilizou-se uma revisão bibliográfica
+      sobre os temas do consumo e do gosto, além da consulta sobre a temática das plantas ornamentais na
+      base de dados do SciELO e no Banco de Teses & Dissertações da capes. Sobre o gosto, foi considerado
+      que as plantas ornamentais representariam determinados estilos de vida e sociabilidades. Assim,
+      mensurar o consumo de plantas ornamentais poderia também verificar em que medida existiria uma
+      relação entre economia, estilos de vida e plantas específicas. A partir da mobilização dessas duas
+      categorias, gosto e consumo, demonstrou-se a possibilidade de construir uma agenda de pesquisa que
+      considere as plantas ornamentais como um fenômeno social relevante.
+
+telenovela-pantanal:
+  resumo:
+    pt: >-
+      O artigo tem por objetivo demonstrar em que medida a telenovela brasileira porta uma gramática
+      moral-afetiva que estimula processos de subjetivação dos brasileiros e brasileiras que a assistem.
+      Para isso, realizamos uma pesquisa empírica com construção de dados via questionário google forms,
+      divulgado nas redes sociais durante a veiculação do último capítulo de Pantanal, escrita por Bruno
+      Luperi e exibida em 2022 pela TV Globo, remake da original de 1990. Aplicamos 253 questionários, com
+      20 perguntas, enfatizando as relações emocionais, afetivas e morais com a telenovela. Os dados
+      obtidos se relacionam com a intimidade, moralidade e afetividade dos telespectadores, que são
+      acionadas pelos personagens e suas histórias, promovendo uma espécie de identificação entre
+      telespectador-obra, telespectador-personagem.
+
+cancoes-de-amor-e-sofrimento:
+  resumo:
+    pt: >-
+      Considerando a centralidade da experiência amorosa na vivência do indivíduo moderno (Martuccelli,
+      2016), buscamos identificar as crenças sobre o amor no contexto da música sertaneja universitária,
+      vertente que agrega grandes cifras no mercado fonográfico brasileiro. A partir da sociologia
+      econômica e da vertente que tem reivindicado a centralidade das emoções para explicar o
+      funcionamento de um mercado, buscamos cruzar a economia e a emoção, especialmente a do amor. A
+      partir da seleção de 20 músicas do gênero, realizamos uma lexicografia das letras de músicas e
+      demonstramos o “amor” como categoria central a ser produzida e consumida nesse mercado. Conclui-se
+      que a crença do amor gere o mercado do sertanejo universitário. A análise em três eixos temáticos
+      (conquista, traição e término) nos levaram a crenças duais em relação ao amor, sobretudo o eixo da
+      traição, nos forneceu crenças divididas entre sagradas e profanas – na qual, pelo antagonismo
+      expresso nas crenças, tratam-se de experiências inconciliáveis.
+    en: >-
+      Considering the centrality of the love experience in the experience of the modern individual
+      (Martuccelli, 2016), we seek to identify beliefs about love in the context of university sertaneja
+      music, a strand that adds great numbers to the Brazilian phonographic market. Starting from economic
+      sociology and the branch that has claimed the centrality of emotions to explain the functioning of a
+      market, we seek to cross the economy and emotion, especially that of love. From the selection of 20
+      songs of the genre, we performed a lexicography of the lyrics and demonstrated “love” as a central
+      category to be produced and consumed in this market. It is concluded that the belief in love
+      generates the university sertanejo market. The analysis in three thematic axes (conquest, betrayal
+      and termination) led us to dual beliefs in relation to love, especially the axis of betrayal,
+      provided us with beliefs divided between sacred and profane - in which, due to the antagonism
+      expressed in the beliefs, they are of irreconcilable experiences.
+  palavras_chave:
+    pt: [sertanejo universitário, mercado, sociologia das emoções, amor]
+    en: [sertanejo universitário, market, sociology of emotions, love]
+
+emocoes-e-sociologia-economica:
+  resumo:
+    pt: >-
+      Nossa proposta neste artigo é responder à convocação de Mabel Berezin (2005), em seu capítulo
+      Emotions and Economy, na obra The Handbook of economic sociology, em que convida os/as sociólogos/as
+      da economia a mensurarem o impacto das emoções na vida social, bem como nos fenômenos econômicos.
+      Para isso, realizamos uma revisão da literatura produzida pela chamada atual geração da Sociologia
+      Econômica, para verificarmos como as emoções podem ser objetivadas por meio de duas abordagens,
+      sendo elas, a noção de prática, presente nos estudos de Pierre Bourdieu (1979; 1983; 1989; 2013;
+      2019), e da noção de trabalho relacional, de Viviana Zelizer (2009; 2011). Assim, devemos fornecer
+      um aparato teórico e metodológico para que sociólogos/as da economia possam mensurar empiricamente o
+      impacto das emoções na vida econômica e social.
+    en: >-
+      Our proposal in this article is to respond to the call of Mabel Berezin (2005), in her chapter
+      Emotions and Economy, in The Handbook of economic sociology, in which she invites economic
+      sociologists to measure the impact of emotions on social life, as well as in economic phenomena. For
+      this, we carried out a literature review produced by the so-called current generation of Economic
+      Sociology to verify how emotions can be objectified between two approaches. First, through the
+      notion of practice within the studies of Pierre Bourdieu (1979; 1983; 1989; 2013; 2019). Second,
+      through Viviana Zelizer's (2009; 2011) notion of relational work. Thus, we must provide a
+      theoretical and methodological apparatus so that sociologists of economics can empirically measure
+      the impact of emotions on economic and social life.
+  palavras_chave:
+    pt: [emoções, prática, trabalho relacional, sociologia econômica]
+    en: [emotions, practice, relational work, economic sociology]
+
+liberalismo-brasil-seculo-xix:
+  resumo:
+    pt: >-
+      O “lugar” do liberalismo no Brasil do século XIX é alvo de grandes debates na filosofia política
+      (RICUPERO, 2007). Assim, temos como objetivo mapear esse debate e fornecer uma síntese dessas
+      posições. Para isso, faremos, primeiro, um retorno ao contexto de surgimento do liberalismo na
+      Inglaterra e, posteriormente, avançaremos para seus princípios filosóficos em John Locke. Em
+      seguida, demonstraremos como esses princípios filosóficos foram interpretados no Brasil em três
+      posições: primeiro como “ideia fora do lugar” (SCHWARZ, 2000; NOGUEIRA, 1976), segundo como “uma
+      ideia tende a encontrar seu lugar” (COUTINHO, 2000) e terceiro como uma “ideia que está em seu
+      devido lugar” (FRANCO, 1976; BOSI, 2010).
+
+genero-e-sociologia-economica:
+  resumo:
+    pt: >-
+      A sociologia econômica, após a década de 1990, tem se aberto para novas frentes de investigação,
+      sendo uma delas o gênero. Apesar dessa abertura, Richard Swedberg afirmou, em artigo de 2004, que
+      havia uma ‘lacuna’ histórica no tratamento dos temas de gênero em sociologia econômica. Essa tese
+      foi corroborada na ocasião por Viviana Zelizer, para quem a Sociologia dos fenômenos econômicos tem
+      centrado seu escopo de análise em temas institucionais, excluindo qualquer análise de gênero. Em
+      diálogo com essas teses, o artigo busca um primeiro mapeamento sobre os estudos recentes feitos por
+      sociólogos da economia no Brasil, os quais tocam na questão de gênero. A metodologia aplicada foi o
+      levantamento lexicográfico na base de dados da SciELO entre 1997-2019, por meio do termo “sociologia
+      econômica”. Os resultados indicam a centralidade de Zelizer nesta agenda de pesquisa e um avanço
+      considerável no tema; contudo, quando relacionado com os temas de pesquisa mais mainstream, a
+      temática gênero continua como um tema não convencional.
+    en: >-
+      After the 1990s, Economic Sociology has opened up to new fronts of research, one of them being
+      gender. Despite this openness, Richard Swedberg stated in a 2004 article that there was a historical
+      ‘gap’ in the treatment of gender issues in Economic Sociology. This thesis was corroborated at the
+      time by Viviana Zelizer, for whom the Sociology of economic phenomena has focused its scope of
+      analysis on institutional issues, excluding any analysis of gender. In dialogue with these theses,
+      the article seeks a primary mapping of the recent studies by economic sociologists in Brazil, which
+      touch on the gender issue. The methodology applied was the lexicographic survey in the SciELO
+      database between 1997-2019, through the term "economic sociology". The results indicate the
+      centrality of Zelizer in this research agenda and a considerable advance in the theme; however, when
+      related to the mainstream research themes, the gender theme remains a non-conventional topic.
+  palavras_chave:
+    pt: [gênero, sociologia econômica, Viviana Zelizer, mercado]
+    en: [gender, economic sociology, Viviana Zelizer, market]

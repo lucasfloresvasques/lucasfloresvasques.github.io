@@ -1,6 +1,7 @@
 # Licenças
 
 - Textos, fotografia e currículo: © 2026 Lucas Flôres Vasques. Todos os direitos reservados.
+- PDFs dos artigos em `publications/`: versões publicadas pelas revistas, redistribuídas sob a licença Creative Commons indicada na página de cada artigo. Os direitos seguem com os autores e as revistas.
 - Materiais didáticos em `resources/`: Creative Commons Atribuição 4.0 Internacional (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/deed.pt-br.
 - Código do gerador em `_fonte/` e estilo em `assets/styles.css`: licença MIT, abaixo.
 - Fonte Source Serif 4 (`assets/fonts/`): SIL Open Font License 1.1, texto em `assets/fonts/OFL.txt`.

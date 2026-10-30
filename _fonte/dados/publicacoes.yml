@@ -1,7 +1,9 @@
 # Publicações, da mais recente para a mais antiga.
 # Campos: ano, titulo, titulo_en (título oficial em inglês, se houver), lingua (pt ou en),
 # autores, veiculo, volume, paginas, doi, url, nota, destaque (true leva o item à página inicial; use no máximo 3).
-# Se houver DOI, o título aponta para ele; sem DOI, aponta para "url".
+# id: nome da página própria do artigo (publications/<id>.html), com resumo e palavras-chave de resumos.yml.
+# pdf: cópia do PDF publicado, só quando a licença da revista permite redistribuir; licenca: essa licença.
+# Na lista, o título aponta para a página própria; sem id, para o DOI ou, sem DOI, para "url".
 
 aceitas:
   - ano: 2026
@@ -12,8 +14,10 @@ aceitas:
     veiculo: {pt: "Enciclopédia de métodos do ENCIPS (verbete)", en: "ENCIPS methods encyclopedia (entry)"}
 
 artigos:
-  - ano: 2026
+  - id: ilusio-liberdade-afetiva
+    ano: 2026
     titulo: "A ilusio da liberdade afetiva: poliamor, amor romântico e classificações relacionais de gênero"
+    titulo_en: "The illusion of affective freedom: polyamory, romantic love, and relational gender classifications"
     lingua: pt
     autores: [Pedro Araujo, Lucas Flôres Vasques]
     veiculo: Novos Olhares Sociais
@@ -21,7 +25,10 @@ artigos:
     paginas: "113–137"
     doi: 10.66983/nos.v7i1.5951
     url: https://periodicos.ufrb.edu.br/index.php/novos-olhares-sociais/article/view/5951
-  - ano: 2025
+    pdf: publications/ilusio-liberdade-afetiva.pdf
+    licenca: CC BY 3.0
+  - id: governar-pelo-afeto
+    ano: 2025
     titulo: "Governar pelo afeto: emoções e poder simbólico no discurso empresarial da revista Exame"
     lingua: pt
     autores: [Lucas Flôres Vasques]
@@ -31,8 +38,10 @@ artigos:
     doi: 10.52780/res.v30i3.20433
     url: https://periodicos.fclar.unesp.br/estudos/article/view/20433
     destaque: true
-  - ano: 2025
+  - id: direito-ciencias-plantas
+    ano: 2025
     titulo: "O Direito, as Ciências e as Plantas: uma análise bibliométrica dos estudos sobre a cannabis"
+    titulo_en: "Law, Sciences, and Plants: a bibliometric analysis of studies on cannabis"
     lingua: pt
     autores: [Pablo Emanuel Romero Almada, Lucas Flôres Vasques, Danielle Barreto Lima, Júlia Araújo Carvalho]
     veiculo: Equatorial
@@ -40,15 +49,22 @@ artigos:
     paginas: "1–29"
     doi: 10.21680/2446-5674.2025v12n22ID36330
     url: https://periodicos.ufrn.br/equatorial/article/view/36330
-  - ano: 2025
+    pdf: publications/direito-ciencias-plantas.pdf
+    licenca: CC BY-NC-SA 4.0
+  - id: fotografia-na-sociologia
+    ano: 2025
     titulo: "A fotografia na Sociologia: cartografia da produção científica brasileira e internacional"
+    titulo_en: "Photography in Sociology: cartography of Brazilian and international scientific production"
     lingua: pt
     autores: [Lucas Flôres Vasques, Thaís Cristina Caetano de Souza, Luana Estela Di Pires]
     veiculo: Novos Rumos Sociológicos
     volume: "13(23)"
     paginas: "5–30"
     doi: 10.15210/norus.v13i23.30297
-  - ano: 2024
+    pdf: publications/fotografia-na-sociologia.pdf
+    licenca: CC BY-NC-ND 4.0
+  - id: intimidade-e-mercado-no-instagram
+    ano: 2024
     titulo: "Intimidade e mercado no Instagram: trabalho relacional como estratégia de denegação do econômico"
     titulo_en: "Intimacy and market on Instagram: relational work as a strategy of economic denial"
     lingua: pt
@@ -58,9 +74,13 @@ artigos:
     paginas: "e230068"
     doi: 10.1590/2238-38752024v1425
     url: https://www.scielo.br/j/sant/a/nc4tKY6jszqyZd9GXDB48dp/
+    pdf: publications/intimidade-e-mercado-no-instagram.pdf
+    licenca: CC BY 4.0
     destaque: true
-  - ano: 2023
+  - id: corpo-bourdieu-foucault
+    ano: 2023
     titulo: "Considerações sobre o corpo em Pierre Bourdieu e Michel Foucault"
+    titulo_en: "Considerations about the body in Pierre Bourdieu and Michel Foucault"
     lingua: pt
     autores: [Lucas Flôres Vasques, Thaís Caetano de Souza]
     veiculo: Novos Rumos Sociológicos
@@ -68,7 +88,8 @@ artigos:
     paginas: "29–44"
     doi: 10.15210/norus.v11i20.26234
     nota: {pt: "Edição datada de 2023; publicação eletrônica em 2024.", en: "Issue dated 2023; published online in 2024."}
-  - ano: 2023
+  - id: gosto-plantas-ornamentais
+    ano: 2023
     titulo: "Possibilidades teóricas e metodológicas para interpretação do gosto e do consumo no mercado de plantas ornamentais"
     lingua: pt
     autores: [Lucas Flôres Vasques, Thaís Caetano de Souza]
@@ -77,7 +98,8 @@ artigos:
     paginas: "e023012"
     doi: 10.29373/sas.v12i00.18098
     url: https://periodicos.fclar.unesp.br/semaspas/article/view/18098
-  - ano: 2023
+  - id: telenovela-pantanal
+    ano: 2023
     titulo: "A telenovela brasileira em foco: uma análise sobre intimidade, emoção e processos de subjetivação em Pantanal"
     lingua: pt
     autores: [Thaís Caetano de Souza, Lucas Flôres Vasques]
@@ -86,8 +108,10 @@ artigos:
     paginas: "111–130"
     doi: 10.26694/rer.v6i1.14084
     url: https://periodicos.ufpi.br/index.php/entrerios/article/view/5146
-  - ano: 2022
+  - id: cancoes-de-amor-e-sofrimento
+    ano: 2022
     titulo: "Canções de amor e sofrimento: o amor romântico como crença na construção do mercado do sertanejo universitário"
+    titulo_en: "Songs of love and suffering: romantic love as a belief in the construction of the university sertanejo market"
     lingua: pt
     autores: [Gabriela Lanza Porcionato, Lucas Flôres Vasques, Thaís Caetano de Souza]
     veiculo: Política & Sociedade
@@ -95,9 +119,13 @@ artigos:
     paginas: "158–191"
     doi: 10.5007/2175-7984.2022.e91472
     url: https://periodicos.ufsc.br/index.php/politica/article/view/91472
+    pdf: publications/cancoes-de-amor-e-sofrimento.pdf
+    licenca: CC BY 4.0
     nota: {pt: "Edição datada de 2022; publicação eletrônica em 2023.", en: "Issue dated 2022; published online in 2023."}
-  - ano: 2021
+  - id: emocoes-e-sociologia-economica
+    ano: 2021
     titulo: "Emoções e Sociologia Econômica"
+    titulo_en: "Emotions and Economic Sociology"
     lingua: pt
     autores: [Lucas Flôres Vasques, Maria Chaves Jardim]
     veiculo: Ensaios
@@ -105,8 +133,11 @@ artigos:
     paginas: "142–164"
     doi: 10.22409/ensaios.v18.50973
     url: https://periodicos.uff.br/ensaios/article/view/50973
+    pdf: publications/emocoes-e-sociologia-economica.pdf
+    licenca: CC BY-NC-ND 4.0
     destaque: true
-  - ano: 2021
+  - id: liberalismo-brasil-seculo-xix
+    ano: 2021
     titulo: "O “lugar” do liberalismo no Brasil do século XIX"
     lingua: pt
     autores: [Lucas Flôres Vasques]
@@ -115,14 +146,18 @@ artigos:
     paginas: "e021010"
     doi: 10.29373/sas.v10i00.15186
     url: https://periodicos.fclar.unesp.br/semaspas/article/view/15186
-  - ano: 2019
+  - id: genero-e-sociologia-economica
+    ano: 2019
     titulo: "A “boa combinação” entre gênero e Sociologia Econômica: uma (re)leitura dos mercados inspirada em Viviana Zelizer"
+    titulo_en: "The “good match” between gender and economic sociology: a (re)reading of the markets inspired by Viviana Zelizer"
     lingua: pt
     autores: [Maria Chaves Jardim, Lucas Flôres Vasques]
     veiculo: Novos Olhares Sociais
     volume: "2(2)"
     paginas: "122–149"
     url: https://periodicos.ufrb.edu.br/index.php/novos-olhares-sociais/article/view/4521
+    pdf: publications/genero-e-sociologia-economica.pdf
+    licenca: CC BY 3.0
   - ano: 2019
     titulo: "Grande performatividade e economia comportamental"
     lingua: pt

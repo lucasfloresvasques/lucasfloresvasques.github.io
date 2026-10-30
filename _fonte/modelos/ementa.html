@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<p class="voltar"><a href="{{ rel(paginas.ensino.arquivo[idioma]) }}">{{ paginas.ensino.titulo | t }}</a></p>
+<h1>{{ titulo_pagina }}</h1>
+<p class="ficha">{{ r.proposta_curso | t }}, {{ e.carga }} {{ r.horas | t }}.</p>
+<p>{{ e.objetivo | t }}</p>
+<p class="nota"><i>{{ r.publico | t }}:</i> {{ e.publico | t }}</p>
+
+<h2 id="ementa">{{ r.ementa | t }}</h2>
+<p>{{ e.ementa | t }}</p>
+
+<h2 id="programa">{{ r.programa | t }}</h2>
+<ol class="programa">
+{% for unidade in e.programa %}
+  <li><span class="titulo">{{ unidade.titulo | t }}</span> {{ unidade.conteudo | t }}</li>
+{% endfor %}
+</ol>
+
+<h2 id="atividade">{{ r.atividade | t }}</h2>
+<p>{{ e.atividade | t }}</p>
+
+<h2 id="bibliografia">{{ r.bibliografia | t }}</h2>
+<ul class="bibliografia">
+{% for referencia in e.bibliografia %}
+  <li>{{ referencia | t | inline }}</li>
+{% endfor %}
+</ul>
+{% endblock %}

@@ -11,7 +11,7 @@
 <link rel="alternate" hreflang="en" href="{{ alternativas.en }}">
 <link rel="alternate" hreflang="pt-BR" href="{{ alternativas.pt }}">
 <link rel="alternate" hreflang="x-default" href="{{ alternativas.en }}">
-<meta property="og:type" content="{{ 'profile' if pagina == 'inicio' else 'website' }}">
+<meta property="og:type" content="{{ og_tipo }}">
 <meta property="og:site_name" content="{{ perfil.nome }}">
 <meta property="og:title" content="{{ titulo_documento }}">
 <meta property="og:description" content="{{ descricao }}">
@@ -24,6 +24,9 @@
 <meta property="og:locale:alternate" content="{{ 'en_US' if idioma == 'pt' else 'pt_BR' }}">
 <meta name="twitter:card" content="summary_large_image">
 {% endblock %}
+{% for nome, valor in citacao %}
+<meta name="{{ nome }}" content="{{ valor }}">
+{% endfor %}
 {% if pagina == 'inicio' %}
 <meta name="google-site-verification" content="{{ site.verificacao_google }}">
 {% endif %}

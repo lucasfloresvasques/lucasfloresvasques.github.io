@@ -138,6 +138,19 @@ details p { font-size: .95rem; margin-top: .6rem; }
 .capitulos li { margin-bottom: .35rem; }
 .financiamento { margin-top: 2.5rem; }
 
+/* Página de cada publicação e de cada ementa */
+.voltar { font-size: .95rem; margin: 0 0 1.1rem; }
+.voltar a { color: var(--suave); }
+.voltar a:hover { color: var(--destaque); }
+h1.publicacao { font-size: 1.7rem; line-height: 1.25; margin-bottom: .7rem; }
+.titulo-traduzido { font-size: 1.08rem; font-style: italic; color: var(--suave); margin: -.2rem 0 1rem; }
+.acesso { overflow-wrap: anywhere; }
+.licenca { margin-top: 2.2rem; }
+.programa { margin: 0 0 1rem; padding-left: 1.4rem; }
+.programa li { margin-bottom: .7rem; padding-left: .2rem; }
+.bibliografia { list-style: none; margin: 0; padding: 0; }
+.bibliografia li { margin-bottom: .55rem; padding-left: 1.5rem; text-indent: -1.5rem; }
+
 /* Currículo */
 .cv-cabecalho h1 { margin-bottom: .4rem; }
 .cv-cabecalho p { margin: 0 0 .3rem; }
@@ -157,6 +170,7 @@ details p { font-size: .95rem; margin-top: .6rem; }
   .topo { padding-block: 1.8rem 1.6rem; }
   .nome { width: 100%; }
   h1 { font-size: 1.65rem; }
+  h1.publicacao { font-size: 1.45rem; }
   h2 { margin-top: 2.25rem; }
   .retrato { width: 8.5rem; margin-left: 1rem; }
   .lista li { grid-template-columns: 3.4rem minmax(0, 1fr); column-gap: .75rem; }

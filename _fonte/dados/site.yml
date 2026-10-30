@@ -86,7 +86,10 @@ rotulos:
   resumo_projeto: {en: "Project abstract (in Portuguese)", pt: "Resumo do projeto"}
   metodo: {en: Method, pt: Método}
   resumo: {en: Abstract, pt: Resumo}
+  resumo_pt: {en: "Abstract (in Portuguese)", pt: Resumo}
   palavras_chave: {en: Keywords, pt: Palavras-chave}
+  pdf_publicado: {en: "The PDF is the version published by the journal.", pt: "O PDF é a versão publicada pela revista."}
+  na_revista: {en: Journal page, pt: Página na revista}
   capitulos: {en: "Chapters (in Portuguese)", pt: Capítulos}
   pesquisa_anterior: {en: Previous research, pt: Pesquisa anterior}
   dissertacao: {en: "MA dissertation", pt: "Dissertação de mestrado"}
@@ -105,6 +108,14 @@ rotulos:
     aceito: {en: Accepted, pt: Aceito}
   disciplinas: {en: Teaching, pt: Docência}
   cursos: {en: Short courses and talks, pt: Minicursos e palestras}
+  ementas: {en: Courses I can teach, pt: Cursos que posso oferecer}
+  proposta_curso: {en: Course proposal, pt: Proposta de curso}
+  horas: {en: hours, pt: horas}
+  publico: {en: Audience, pt: Público}
+  ementa: {en: Outline, pt: Ementa}
+  programa: {en: Programme, pt: Programa}
+  atividade: {en: Assignment, pt: Atividade}
+  bibliografia: {en: Readings, pt: Bibliografia}
   outras_atividades: {en: Consultancy and committees, pt: Consultoria e bancas}
   materiais: {en: Teaching materials, pt: Materiais didáticos}
   dados_codigo: {en: Data and code, pt: Dados e código}

@@ -1,0 +1,19 @@
+# Confere, no dia 1º de cada mês, os links externos do site (DOIs, revistas, perfis).
+# Se algum quebrar, a execução falha e o GitHub avisa por e-mail. Também roda pelo botão "Run workflow".
+name: Links externos
+
+on:
+  schedule:
+    - cron: "0 9 1 * *"
+  workflow_dispatch:
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+      - run: pip install -r _fonte/requisitos.txt
+      - run: python _fonte/construir.py --links-externos

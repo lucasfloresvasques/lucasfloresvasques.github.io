@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% from "_macros.html" import item with context %}
 {% block conteudo %}
-{% set ids = {'disciplinas': 'docencia', 'cursos': 'minicursos', 'outras': 'consultoria-e-bancas', 'materiais': 'materiais', 'dados': 'dados-e-codigo'} if idioma == 'pt' else {'disciplinas': 'teaching', 'cursos': 'short-courses', 'outras': 'consultancy-and-committees', 'materiais': 'materials', 'dados': 'data-and-code'} %}
+{% set ids = {'disciplinas': 'docencia', 'cursos': 'minicursos', 'ementas': 'ementas', 'outras': 'consultoria-e-bancas', 'materiais': 'materiais', 'dados': 'dados-e-codigo'} if idioma == 'pt' else {'disciplinas': 'teaching', 'cursos': 'short-courses', 'ementas': 'syllabi', 'outras': 'consultancy-and-committees', 'materiais': 'materials', 'dados': 'data-and-code'} %}
 <h1>{{ titulo_pagina }}</h1>
 <p>{{ ensino.declaracao | t }}</p>
 
@@ -19,6 +19,15 @@
 {{ item(c.ano, c.titulo | t, detalhe) }}
 {% endfor %}
 </ol>
+{% if ementas %}
+
+<h2 id="{{ ids.ementas }}">{{ r.ementas | t }}</h2>
+<ul class="lista sem-ano">
+{% for e in ementas %}
+{{ item(none, e.titulo | t, e.carga ~ ' ' ~ (r.horas | t) ~ '. ' ~ (e.objetivo | t), rel(pagina_ementa(e))) }}
+{% endfor %}
+</ul>
+{% endif %}
 
 <h2 id="{{ ids.outras }}">{{ r.outras_atividades | t }}</h2>
 <ol class="lista periodos">
