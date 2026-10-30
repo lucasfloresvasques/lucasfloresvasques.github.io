@@ -3,6 +3,8 @@
 - Textos, fotografia e currículo: © 2026 Lucas Flôres Vasques. Todos os direitos reservados.
 - Materiais didáticos em `resources/`: Creative Commons Atribuição 4.0 Internacional (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/deed.pt-br.
 - Código do gerador em `_fonte/` e estilo em `assets/styles.css`: licença MIT, abaixo.
+- Fonte Source Serif 4 (`assets/fonts/`): SIL Open Font License 1.1, texto em `assets/fonts/OFL.txt`.
+- Foto do Marché aux Fleurs (`assets/marche-aux-fleurs-paris-2025-*.webp`): © 2025 Lucas Flôres Vasques.
 
 ## MIT License
 
