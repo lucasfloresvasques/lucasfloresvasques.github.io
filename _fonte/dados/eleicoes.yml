@@ -16,9 +16,11 @@ intro:
 video:
   arquivo: assets/eleicoes-2026/video-2022-2026.mp4
   capa: assets/eleicoes-2026/video-capa.webp
+  # Legendas sincronizadas com a narração (marcas de tempo de cada palavra); a transcrição da página sai delas.
+  legendas: {pt: assets/eleicoes-2026/legendas-pt.vtt, en: assets/eleicoes-2026/legendas-en.vtt}
   legenda:
-    pt: 2022 × 2026, com os números da noite, em pouco mais de dois minutos. Vídeo vertical do painel independente Data Lucas, com narração em voz sintética.
-    en: 2022 × 2026, with the numbers from the night, in just over two minutes. Vertical video from the independent Data Lucas panel, with synthetic voice narration in Portuguese.
+    pt: 2022 × 2026, com os números da noite, em pouco mais de dois minutos. Vídeo vertical do painel independente Data Lucas, com narração em voz sintética e legendas.
+    en: 2022 × 2026, with the numbers from the night, in just over two minutes. Vertical video from the independent Data Lucas panel, narrated in Portuguese by a synthetic voice, with English subtitles.
 
 noite:
   id: {pt: a-noite, en: election-night}

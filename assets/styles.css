@@ -122,6 +122,7 @@ main { padding-bottom: 3rem; }
 .titulo { display: block; color: var(--tinta); }
 a.titulo { color: var(--destaque); text-decoration: none; }
 a.titulo:hover { text-decoration: underline; }
+.traducao { display: block; font-size: .95rem; font-style: italic; color: var(--suave); }
 .detalhe { display: block; font-size: .95rem; color: var(--suave); }
 .detalhe i { color: var(--suave); }
 .compacta li { margin-bottom: .55rem; }
@@ -194,5 +195,5 @@ h1.publicacao { font-size: 1.7rem; line-height: 1.25; margin-bottom: .7rem; }
   .lista li { break-inside: avoid; margin-bottom: 2mm; }
   .cv .lista li { grid-template-columns: 24mm minmax(0, 1fr); column-gap: 4mm; }
   .cv .lista.sem-ano li { grid-template-columns: minmax(0, 1fr); }
-  .ano, .detalhe, .nota { font-size: 9pt; }
+  .ano, .traducao, .detalhe, .nota { font-size: 9pt; }
 }

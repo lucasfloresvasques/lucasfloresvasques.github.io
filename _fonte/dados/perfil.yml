@@ -2,7 +2,8 @@
 # Nos textos, *assim* vira itálico e [texto](endereço) vira link.
 
 nome: Lucas Flôres Vasques
-outros_nomes: [Lucas Flores Vasques, Lucas F. Vasques, L. F. Vasques, Lucas Vasques]
+# Sem a forma abreviada "L. F. Vasques", que coincide com a de Larissa Flôres Vasques, também autora.
+outros_nomes: [Lucas Flores Vasques, Lucas F. Vasques, Lucas Vasques]
 email: lucas.vasques@unesp.br
 instituicao: Universidade Estadual Paulista (UNESP)
 foto: assets/lucas-vasques-retrato.webp

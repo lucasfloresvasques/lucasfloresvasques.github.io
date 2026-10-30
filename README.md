@@ -20,7 +20,7 @@ As páginas são geradas a partir de arquivos de dados. Não edite os `.html` à
    | `apresentacoes.yml` | apresentações em eventos |
    | `ensino.yml` | docência, minicursos, ementas de cursos (só aparecem com `publicar: true`), materiais didáticos, dados e código |
    | `curriculo.yml` | formação, bolsas, atuação acadêmica, prêmios e formação complementar |
-   | `eleicoes.yml` | página Eleições 2026: textos, vídeo, tabela e arquivos de dados; os gráficos saem de `_fonte/eleicoes/graficos.py` |
+   | `eleicoes.yml` | página Eleições 2026: textos, vídeo, tabela e arquivos de dados; os gráficos saem de `_fonte/eleicoes/graficos.py`; as legendas do vídeo ficam em `assets/eleicoes-2026/legendas-*.vtt`, e a transcrição da página sai delas |
    | `site.yml` | data de atualização, menu e textos fixos da interface |
 
    Cada texto tem uma versão `pt` e outra `en`. Nos textos, `*assim*` vira itálico e `[texto](endereço)` vira link.
@@ -32,7 +32,7 @@ As páginas são geradas a partir de arquivos de dados. Não edite os `.html` à
    python _fonte/construir.py --pdf
    ```
 
-4. Confira os links internos e se as páginas correspondem aos dados:
+4. Confira os links internos, se as páginas correspondem aos dados e se os PDFs do currículo correspondem ao currículo atual:
 
    ```
    python _fonte/construir.py --verificar

@@ -93,10 +93,6 @@ premios:
 complementar:
   - periodo: "2025"
     texto: {pt: "Geometric Data Analysis Workshop (IDHE.S, ENS Paris-Saclay), com Brigitte Le Roux e equipe.", en: "Geometric Data Analysis Workshop (IDHE.S, ENS Paris-Saclay), with Brigitte Le Roux and team."}
-  - periodo: "2025"
-    texto: {pt: "Computational Social Science (University of California, Davis, via Coursera, 55 h); Academic English: Writing (University of California, Irvine, via Coursera, 87 h); Survey Data Collection and Analytics (University of Michigan, 96 h).", en: "Computational Social Science (University of California, Davis, via Coursera, 55 h); Academic English: Writing (University of California, Irvine, via Coursera, 87 h); Survey Data Collection and Analytics (University of Michigan, 96 h)."}
-  - periodo: "2025"
-    texto: {pt: "Data Analytics with Excel and R (IBM, 127 h); Power BI Data Analyst (Microsoft, 192 h).", en: "Data Analytics with Excel and R (IBM, 127 h); Power BI Data Analyst (Microsoft, 192 h)."}
   - periodo: "2023"
     texto: {pt: "“Pesquisando o espaço social: questões metodológicas”, com Frédéric Lebaron (UNESP, 25 h).", en: "“Pesquisando o espaço social: questões metodológicas”, with Frédéric Lebaron (UNESP, 25 h)."}
   - periodo: "2023"

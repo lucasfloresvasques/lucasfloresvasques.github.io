@@ -14,6 +14,7 @@ cada ementa com "publicar: true" ganha a sua em teaching/.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -153,6 +154,32 @@ def tamanho_arquivo(arquivo: str, idioma: str) -> str:
     return texto.replace(".", ",") if idioma == "pt" else texto
 
 
+def transcricao(arquivo: str) -> list[str]:
+    """Texto de uma legenda WebVTT em parágrafos: uma pausa de mais de 1,5 s entre trechos abre parágrafo novo."""
+    blocos = (RAIZ / arquivo).read_text(encoding="utf-8").replace("\r\n", "\n").split("\n\n")[1:]
+    paragrafos, fim_anterior = [], None
+    for bloco in blocos:
+        linhas = [l for l in bloco.strip().split("\n") if l]
+        tempos = next((l for l in linhas if "-->" in l), None)
+        if not tempos:
+            continue
+        antes, depois = tempos.split("-->")
+        inicio, fim = segundos(antes.strip()), segundos(depois.split()[0])
+        texto = " ".join(linhas[linhas.index(tempos) + 1:])
+        if fim_anterior is None or inicio - fim_anterior > 1.5:
+            paragrafos.append(texto)
+        else:
+            paragrafos[-1] += " " + texto
+        fim_anterior = fim
+    return paragrafos
+
+
+def segundos(marca: str) -> float:
+    """'00:01:04.250' ou '01:04.250' em segundos."""
+    partes = [float(p) for p in marca.split(":")]
+    return sum(valor * 60 ** i for i, valor in enumerate(reversed(partes)))
+
+
 def resumir(texto: str, limite: int = 155) -> str:
     """Começo do texto para a meta description: a frase inteira se couber, senão até uma palavra inteira."""
     texto = " ".join((texto or "").split())
@@ -215,7 +242,8 @@ def criar_ambiente() -> Environment:
     )
     env.filters.update(t=_t, inline=inline, autores=_autores)
     env.globals.update(rel=_rel, grafico=_grafico, pagina_publicacao=_pagina_publicacao,
-                       pagina_ementa=_pagina_ementa, tamanho=_tamanho, licenca_url=licenca_url)
+                       pagina_ementa=_pagina_ementa, tamanho=_tamanho, licenca_url=licenca_url,
+                       transcricao=transcricao)
     return env
 
 
@@ -482,6 +510,14 @@ def _aguardar_arquivo(caminho: Path, limite: float = 60) -> None:
     sys.exit(f"O navegador não terminou de gravar {caminho.name}.")
 
 
+def marca_do_cv(html: str) -> str:
+    """Impressão digital do HTML do currículo. Vai gravada no PDF, e a verificação compara as duas."""
+    return hashlib.sha256(html.replace("\r\n", "\n").encode("utf-8")).hexdigest()[:16]
+
+
+MARCA_NO_PDF = re.compile(rb"cv\.html ([0-9a-f]{16})")
+
+
 def gerar_pdfs(dados) -> None:
     import fitz  # PyMuPDF; só é preciso aqui, porque o GitHub não gera os PDFs
 
@@ -507,7 +543,7 @@ def gerar_pdfs(dados) -> None:
             "author": perfil["nome"],
             "subject": traduzir(perfil["cargo"], idioma),
             "keywords": "; ".join(traduzir(linha, idioma) for linha in perfil["linhas"]),
-            "creator": "_fonte/construir.py",
+            "creator": f"_fonte/construir.py; cv.html {marca_do_cv(html.read_text(encoding='utf-8'))}",
             "producer": documento.metadata.get("producer", ""),
         })
         documento.set_language("pt-BR" if idioma == "pt" else "en")
@@ -544,6 +580,15 @@ def verificar(dados) -> int:
             problemas.append(f"{caminho}: não existe; rode python _fonte/construir.py")
         elif atual.read_text(encoding="utf-8").replace("\r\n", "\n") != conteudo:
             problemas.append(f"{caminho}: desatualizado em relação aos dados; rode python _fonte/construir.py")
+    for idioma, pdf in CV_PDF.items():
+        arquivo = RAIZ / pdf
+        marca = MARCA_NO_PDF.search(arquivo.read_bytes()) if arquivo.exists() else None
+        esperada = marca_do_cv(saida[dados["site"]["paginas"]["cv"]["arquivo"][idioma]])
+        if not marca or marca.group(1).decode() != esperada:
+            problemas.append(f"{pdf}: não corresponde ao currículo atual; rode python _fonte/construir.py --pdf")
+    for p in dados["publicacoes"]["artigos"]:
+        if p.get("pdf") and not (RAIZ / p["pdf"]).exists():
+            problemas.append(f"{p['pdf']}: o PDF indicado em publicacoes.yml não existe")
 
     paginas_html = {c: v for c, v in saida.items() if c.endswith(".html")}
     ids = {}
@@ -620,6 +665,7 @@ def verificar_links_externos(dados) -> int:
 
 
 def main() -> None:
+    sys.stdout.reconfigure(encoding="utf-8")  # mensagens com acento também em terminais do Windows
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--pdf", action="store_true", help="gera também os PDFs do currículo")
     parser.add_argument("--verificar", action="store_true", help="só confere, sem gravar nada")

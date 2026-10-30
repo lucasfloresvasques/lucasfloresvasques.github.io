@@ -9,9 +9,17 @@
 <figure class="video">
   <video controls preload="none" playsinline poster="{{ rel(e.video.capa) }}" width="720" height="1280">
     <source src="{{ rel(e.video.arquivo) }}" type="video/mp4">
+    <track kind="captions" src="{{ rel(e.video.legendas.pt) }}" srclang="pt-BR" label="Português"{% if idioma == 'pt' %} default{% endif %}>
+    <track kind="subtitles" src="{{ rel(e.video.legendas.en) }}" srclang="en" label="English"{% if idioma == 'en' %} default{% endif %}>
   </video>
   <figcaption>{{ e.video.legenda | t }}</figcaption>
 </figure>
+<details class="transcricao">
+  <summary>{{ r.transcricao | t }}</summary>
+{% for paragrafo in transcricao(e.video.legendas[idioma]) %}
+  <p>{{ paragrafo }}</p>
+{% endfor %}
+</details>
 
 <h2 id="{{ e.noite.id | t }}">{{ e.noite.titulo | t }}</h2>
 <p>{{ e.noite.texto | t | inline }}</p>

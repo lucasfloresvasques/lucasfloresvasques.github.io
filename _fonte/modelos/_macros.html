@@ -4,9 +4,9 @@
 
 {% macro destino(p) %}{{ ('https://doi.org/' ~ p.doi) if p.doi else (p.url or '') }}{% endmacro %}
 
-{# Uma entrada de lista: ano à esquerda, título e uma linha de detalhe. #}
-{% macro item(ano, titulo, detalhe='', link='', lingua=none) %}
-<li>{% if ano %}<span class="ano">{{ ano }}</span>{% endif %}<p>{% if link %}<a class="titulo" href="{{ link }}"{{ lang_de(lingua) }}>{{ titulo }}</a>{% else %}<span class="titulo"{{ lang_de(lingua) }}>{{ titulo }}</span>{% endif %}{% if detalhe %}<span class="detalhe">{{ detalhe }}</span>{% endif %}</p></li>
+{# Uma entrada de lista: ano à esquerda, título, sua tradução (quando o título está em outra língua) e uma linha de detalhe. #}
+{% macro item(ano, titulo, detalhe='', link='', lingua=none, traducao=none) %}
+<li>{% if ano %}<span class="ano">{{ ano }}</span>{% endif %}<p>{% if link %}<a class="titulo" href="{{ link }}"{{ lang_de(lingua) }}>{{ titulo }}</a>{% else %}<span class="titulo"{{ lang_de(lingua) }}>{{ titulo }}</span>{% endif %}{% if traducao %}<span class="traducao">{{ traducao }}</span>{% endif %}{% if detalhe %}<span class="detalhe">{{ detalhe }}</span>{% endif %}</p></li>
 {% endmacro %}
 
 {# Coautores, sem o próprio nome: "Com Maria Chaves Jardim." #}
@@ -16,12 +16,12 @@
    O título leva à página própria do artigo (se houver); no currículo (pagina=false), ao DOI. #}
 {% macro referencia(p, capitulo=false, completa=false, pagina=true) %}
 {% set detalhe %}{% if completa or p.autores | length > 1 %}{{ p.autores | autores }}. {% endif %}{% if capitulo %}{{ p.veiculo | t | inline }}{% else %}<i>{{ p.veiculo | t }}</i>{% endif %}{% if p.volume %} {{ p.volume }}{% endif %}{% if p.paginas %}, {{ p.paginas }}{% endif %}.{% if p.tipo == 'verbete' %} <i>{{ r.situacao.aceito | t }}.</i>{% endif %}{% if p.nota %} {{ p.nota | t }}{% endif %}{% endset %}
-{{ item(p.ano, p.titulo, detalhe, rel(pagina_publicacao(p)) if (pagina and p.id) else destino(p), p.lingua) }}
+{{ item(p.ano, p.titulo, detalhe, rel(pagina_publicacao(p)) if (pagina and p.id) else destino(p), p.lingua, p.titulo_en if idioma == 'en' and p.lingua != 'en' else none) }}
 {% endmacro %}
 
 {% macro manuscrito(m) %}
 {% set detalhe %}{{ coautores(m.autores) }}<i>{{ r.situacao[m.situacao] | t }}.</i>{% endset %}
-{{ item(none, m.titulo, detalhe, '', m.lingua) }}
+{{ item(none, m.titulo, detalhe, '', m.lingua, m.traducao if m.lingua != idioma else none) }}
 {% endmacro %}
 
 {% macro apresentacao(a) %}
