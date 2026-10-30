@@ -1,0 +1,530 @@
+<svg role="img" aria-label="variação de Lula, 2022 → 2026 (pontos percentuais)" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 486.028359 466.066391" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="estados-figure_1">
+  <g id="estados-patch_1">
+   <path d="M 0 466.066391 
+L 486.028359 466.066391 
+L 486.028359 0 
+L 0 0 
+L 0 466.066391 
+z
+" style="fill: none"/>
+  </g>
+  <g id="estados-axes_1">
+   <g id="estados-patch_2">
+    <path d="M 118.828359 420.336 
+L 475.948359 420.336 
+L 475.948359 10.08 
+L 118.828359 10.08 
+L 118.828359 420.336 
+z
+" style="fill: none"/>
+   </g>
+   <g id="estados-matplotlib.axis_1">
+    <g id="estados-xtick_1">
+     <g id="estados-line2d_1">
+      <path d="M 135.061087 420.336 
+L 135.061087 10.08 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--fio); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="estados-line2d_2">
+      <defs>
+       <path id="estados-m5b2433104f" d="M 0 0 
+L 0 3.5 
+" style="stroke: var(--suave); stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#estados-m5b2433104f" x="135.061087" y="420.336" style="fill: var(--suave); stroke: var(--suave); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="estados-text_1">
+      <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: middle; fill: var(--suave)" x="135.061087" y="436.586" transform="rotate(-0 135.061087 436.586)">-3</text>
+     </g>
+    </g>
+    <g id="estados-xtick_2">
+     <g id="estados-line2d_3">
+      <path d="M 175.642905 420.336 
+L 175.642905 10.08 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--fio); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="estados-line2d_4">
+      <g>
+       <use xlink:href="#estados-m5b2433104f" x="175.642905" y="420.336" style="fill: var(--suave); stroke: var(--suave); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="estados-text_2">
+      <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: middle; fill: var(--suave)" x="175.642905" y="436.586" transform="rotate(-0 175.642905 436.586)">-2</text>
+     </g>
+    </g>
+    <g id="estados-xtick_3">
+     <g id="estados-line2d_5">
+      <path d="M 216.224723 420.336 
+L 216.224723 10.08 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--fio); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="estados-line2d_6">
+      <g>
+       <use xlink:href="#estados-m5b2433104f" x="216.224723" y="420.336" style="fill: var(--suave); stroke: var(--suave); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="estados-text_3">
+      <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: middle; fill: var(--suave)" x="216.224723" y="436.586" transform="rotate(-0 216.224723 436.586)">-1</text>
+     </g>
+    </g>
+    <g id="estados-xtick_4">
+     <g id="estados-line2d_7">
+      <path d="M 256.806541 420.336 
+L 256.806541 10.08 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--fio); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="estados-line2d_8">
+      <g>
+       <use xlink:href="#estados-m5b2433104f" x="256.806541" y="420.336" style="fill: var(--suave); stroke: var(--suave); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="estados-text_4">
+      <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: middle; fill: var(--suave)" x="256.806541" y="436.586" transform="rotate(-0 256.806541 436.586)">0</text>
+     </g>
+    </g>
+    <g id="estados-xtick_5">
+     <g id="estados-line2d_9">
+      <path d="M 297.388359 420.336 
+L 297.388359 10.08 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--fio); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="estados-line2d_10">
+      <g>
+       <use xlink:href="#estados-m5b2433104f" x="297.388359" y="420.336" style="fill: var(--suave); stroke: var(--suave); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="estados-text_5">
+      <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: middle; fill: var(--suave)" x="297.388359" y="436.586" transform="rotate(-0 297.388359 436.586)">+1</text>
+     </g>
+    </g>
+    <g id="estados-xtick_6">
+     <g id="estados-line2d_11">
+      <path d="M 337.970178 420.336 
+L 337.970178 10.08 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--fio); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="estados-line2d_12">
+      <g>
+       <use xlink:href="#estados-m5b2433104f" x="337.970178" y="420.336" style="fill: var(--suave); stroke: var(--suave); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="estados-text_6">
+      <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: middle; fill: var(--suave)" x="337.970178" y="436.586" transform="rotate(-0 337.970178 436.586)">+2</text>
+     </g>
+    </g>
+    <g id="estados-xtick_7">
+     <g id="estados-line2d_13">
+      <path d="M 378.551996 420.336 
+L 378.551996 10.08 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--fio); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="estados-line2d_14">
+      <g>
+       <use xlink:href="#estados-m5b2433104f" x="378.551996" y="420.336" style="fill: var(--suave); stroke: var(--suave); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="estados-text_7">
+      <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: middle; fill: var(--suave)" x="378.551996" y="436.586" transform="rotate(-0 378.551996 436.586)">+3</text>
+     </g>
+    </g>
+    <g id="estados-xtick_8">
+     <g id="estados-line2d_15">
+      <path d="M 419.133814 420.336 
+L 419.133814 10.08 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--fio); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="estados-line2d_16">
+      <g>
+       <use xlink:href="#estados-m5b2433104f" x="419.133814" y="420.336" style="fill: var(--suave); stroke: var(--suave); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="estados-text_8">
+      <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: middle; fill: var(--suave)" x="419.133814" y="436.586" transform="rotate(-0 419.133814 436.586)">+4</text>
+     </g>
+    </g>
+    <g id="estados-xtick_9">
+     <g id="estados-line2d_17">
+      <path d="M 459.715632 420.336 
+L 459.715632 10.08 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--fio); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="estados-line2d_18">
+      <g>
+       <use xlink:href="#estados-m5b2433104f" x="459.715632" y="420.336" style="fill: var(--suave); stroke: var(--suave); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="estados-text_9">
+      <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: middle; fill: var(--suave)" x="459.715632" y="436.586" transform="rotate(-0 459.715632 436.586)">+5</text>
+     </g>
+    </g>
+    <g id="estados-text_10">
+     <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: middle; fill: var(--suave)" x="297.388359" y="452.986391" transform="rotate(-0 297.388359 452.986391)">variação de Lula, 2022 → 2026 (pontos percentuais)</text>
+    </g>
+   </g>
+   <g id="estados-matplotlib.axis_2">
+    <g id="estados-ytick_1">
+     <g id="estados-line2d_19"/>
+     <g id="estados-text_11">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="405.943" transform="rotate(-0 115.328359 405.943)">Tocantins</text>
+     </g>
+    </g>
+    <g id="estados-ytick_2">
+     <g id="estados-line2d_20"/>
+     <g id="estados-text_12">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="391.598385" transform="rotate(-0 115.328359 391.598385)">Maranhão</text>
+     </g>
+    </g>
+    <g id="estados-ytick_3">
+     <g id="estados-line2d_21"/>
+     <g id="estados-text_13">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="377.253769" transform="rotate(-0 115.328359 377.253769)">Rio Grande do Sul</text>
+     </g>
+    </g>
+    <g id="estados-ytick_4">
+     <g id="estados-line2d_22"/>
+     <g id="estados-text_14">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="362.909154" transform="rotate(-0 115.328359 362.909154)">Ceará</text>
+     </g>
+    </g>
+    <g id="estados-ytick_5">
+     <g id="estados-line2d_23"/>
+     <g id="estados-text_15">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="348.564538" transform="rotate(-0 115.328359 348.564538)">Piauí</text>
+     </g>
+    </g>
+    <g id="estados-ytick_6">
+     <g id="estados-line2d_24"/>
+     <g id="estados-text_16">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="334.219923" transform="rotate(-0 115.328359 334.219923)">Mato Grosso</text>
+     </g>
+    </g>
+    <g id="estados-ytick_7">
+     <g id="estados-line2d_25"/>
+     <g id="estados-text_17">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="319.875308" transform="rotate(-0 115.328359 319.875308)">Goiás</text>
+     </g>
+    </g>
+    <g id="estados-ytick_8">
+     <g id="estados-line2d_26"/>
+     <g id="estados-text_18">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="305.530692" transform="rotate(-0 115.328359 305.530692)">Bahia</text>
+     </g>
+    </g>
+    <g id="estados-ytick_9">
+     <g id="estados-line2d_27"/>
+     <g id="estados-text_19">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="291.186077" transform="rotate(-0 115.328359 291.186077)">Paraná</text>
+     </g>
+    </g>
+    <g id="estados-ytick_10">
+     <g id="estados-line2d_28"/>
+     <g id="estados-text_20">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="276.841462" transform="rotate(-0 115.328359 276.841462)">Santa Catarina</text>
+     </g>
+    </g>
+    <g id="estados-ytick_11">
+     <g id="estados-line2d_29"/>
+     <g id="estados-text_21">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="262.496846" transform="rotate(-0 115.328359 262.496846)">Mato Grosso do Sul</text>
+     </g>
+    </g>
+    <g id="estados-ytick_12">
+     <g id="estados-line2d_30"/>
+     <g id="estados-text_22">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="248.152231" transform="rotate(-0 115.328359 248.152231)">Minas Gerais</text>
+     </g>
+    </g>
+    <g id="estados-ytick_13">
+     <g id="estados-line2d_31"/>
+     <g id="estados-text_23">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="233.807615" transform="rotate(-0 115.328359 233.807615)">Pará</text>
+     </g>
+    </g>
+    <g id="estados-ytick_14">
+     <g id="estados-line2d_32"/>
+     <g id="estados-text_24">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="219.463" transform="rotate(-0 115.328359 219.463)">Rio Grande do Norte</text>
+     </g>
+    </g>
+    <g id="estados-ytick_15">
+     <g id="estados-line2d_33"/>
+     <g id="estados-text_25">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="205.118385" transform="rotate(-0 115.328359 205.118385)">Paraíba</text>
+     </g>
+    </g>
+    <g id="estados-ytick_16">
+     <g id="estados-line2d_34"/>
+     <g id="estados-text_26">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="190.773769" transform="rotate(-0 115.328359 190.773769)">Rondônia</text>
+     </g>
+    </g>
+    <g id="estados-ytick_17">
+     <g id="estados-line2d_35"/>
+     <g id="estados-text_27">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="176.429154" transform="rotate(-0 115.328359 176.429154)">São Paulo</text>
+     </g>
+    </g>
+    <g id="estados-ytick_18">
+     <g id="estados-line2d_36"/>
+     <g id="estados-text_28">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="162.187859" transform="rotate(-0 115.328359 162.187859)">Espírito Santo</text>
+     </g>
+    </g>
+    <g id="estados-ytick_19">
+     <g id="estados-line2d_37"/>
+     <g id="estados-text_29">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="147.739923" transform="rotate(-0 115.328359 147.739923)">Alagoas</text>
+     </g>
+    </g>
+    <g id="estados-ytick_20">
+     <g id="estados-line2d_38"/>
+     <g id="estados-text_30">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="133.395308" transform="rotate(-0 115.328359 133.395308)">Pernambuco</text>
+     </g>
+    </g>
+    <g id="estados-ytick_21">
+     <g id="estados-line2d_39"/>
+     <g id="estados-text_31">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="119.050692" transform="rotate(-0 115.328359 119.050692)">Sergipe</text>
+     </g>
+    </g>
+    <g id="estados-ytick_22">
+     <g id="estados-line2d_40"/>
+     <g id="estados-text_32">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="104.706077" transform="rotate(-0 115.328359 104.706077)">Amazonas</text>
+     </g>
+    </g>
+    <g id="estados-ytick_23">
+     <g id="estados-line2d_41"/>
+     <g id="estados-text_33">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="90.361462" transform="rotate(-0 115.328359 90.361462)">Rio de Janeiro</text>
+     </g>
+    </g>
+    <g id="estados-ytick_24">
+     <g id="estados-line2d_42"/>
+     <g id="estados-text_34">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="76.016846" transform="rotate(-0 115.328359 76.016846)">Roraima</text>
+     </g>
+    </g>
+    <g id="estados-ytick_25">
+     <g id="estados-line2d_43"/>
+     <g id="estados-text_35">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="61.672231" transform="rotate(-0 115.328359 61.672231)">Acre</text>
+     </g>
+    </g>
+    <g id="estados-ytick_26">
+     <g id="estados-line2d_44"/>
+     <g id="estados-text_36">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="47.430936" transform="rotate(-0 115.328359 47.430936)">Amapá</text>
+     </g>
+    </g>
+    <g id="estados-ytick_27">
+     <g id="estados-line2d_45"/>
+     <g id="estados-text_37">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="115.328359" y="32.983" transform="rotate(-0 115.328359 32.983)">Distrito Federal</text>
+     </g>
+    </g>
+   </g>
+   <g id="estados-LineCollection_1">
+    <path d="M 256.806541 401.688 
+L 146.018178 401.688 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: #c08a2e; stroke-width: 1.6"/>
+    <path d="M 256.806541 387.343385 
+L 191.063996 387.343385 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: #c08a2e; stroke-width: 1.6"/>
+    <path d="M 256.806541 372.998769 
+L 196.74545 372.998769 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: #c08a2e; stroke-width: 1.6"/>
+    <path d="M 256.806541 358.654154 
+L 214.195632 358.654154 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: #c08a2e; stroke-width: 1.6"/>
+    <path d="M 256.806541 344.309538 
+L 217.036359 344.309538 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: #c08a2e; stroke-width: 1.6"/>
+    <path d="M 256.806541 329.964923 
+L 217.036359 329.964923 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: #c08a2e; stroke-width: 1.6"/>
+    <path d="M 256.806541 315.620308 
+L 218.253814 315.620308 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: #c08a2e; stroke-width: 1.6"/>
+    <path d="M 256.806541 301.275692 
+L 224.341087 301.275692 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: #c08a2e; stroke-width: 1.6"/>
+    <path d="M 256.806541 286.931077 
+L 249.501814 286.931077 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: #c08a2e; stroke-width: 1.6"/>
+    <path d="M 256.806541 272.586462 
+L 250.719268 272.586462 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: #c08a2e; stroke-width: 1.6"/>
+    <path d="M 256.806541 258.241846 
+L 252.342541 258.241846 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: #c08a2e; stroke-width: 1.6"/>
+    <path d="M 256.806541 243.897231 
+L 264.517087 243.897231 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--destaque); stroke-width: 1.6"/>
+    <path d="M 256.806541 229.552615 
+L 267.357814 229.552615 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--destaque); stroke-width: 1.6"/>
+    <path d="M 256.806541 215.208 
+L 281.967268 215.208 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--destaque); stroke-width: 1.6"/>
+    <path d="M 256.806541 200.863385 
+L 290.895268 200.863385 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--destaque); stroke-width: 1.6"/>
+    <path d="M 256.806541 186.518769 
+L 299.41745 186.518769 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--destaque); stroke-width: 1.6"/>
+    <path d="M 256.806541 172.174154 
+L 313.215268 172.174154 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--destaque); stroke-width: 1.6"/>
+    <path d="M 256.806541 157.829538 
+L 324.578178 157.829538 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--destaque); stroke-width: 1.6"/>
+    <path d="M 256.806541 143.484923 
+L 341.622541 143.484923 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--destaque); stroke-width: 1.6"/>
+    <path d="M 256.806541 129.140308 
+L 348.115632 129.140308 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--destaque); stroke-width: 1.6"/>
+    <path d="M 256.806541 114.795692 
+L 350.956359 114.795692 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--destaque); stroke-width: 1.6"/>
+    <path d="M 256.806541 100.451077 
+L 374.899632 100.451077 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--destaque); stroke-width: 1.6"/>
+    <path d="M 256.806541 86.106462 
+L 396.002178 86.106462 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--destaque); stroke-width: 1.6"/>
+    <path d="M 256.806541 71.761846 
+L 403.712723 71.761846 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--destaque); stroke-width: 1.6"/>
+    <path d="M 256.806541 57.417231 
+L 408.176723 57.417231 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--destaque); stroke-width: 1.6"/>
+    <path d="M 256.806541 43.072615 
+L 428.87345 43.072615 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--destaque); stroke-width: 1.6"/>
+    <path d="M 256.806541 28.728 
+L 441.047996 28.728 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--destaque); stroke-width: 1.6"/>
+   </g>
+   <g id="estados-line2d_46">
+    <path d="M 256.806541 420.336 
+L 256.806541 10.08 
+" clip-path="url(#estados-p263b0aca72)" style="fill: none; stroke: var(--suave); stroke-width: 0.9; stroke-linecap: square"/>
+   </g>
+   <g id="estados-patch_3">
+    <path d="M 118.828359 420.336 
+L 475.948359 420.336 
+" style="fill: none; stroke: var(--suave); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="estados-PathCollection_1">
+    <defs>
+     <path id="estados-C0_0_813d91b8fe" d="M 0 2.54951 
+C 0.676138 2.54951 1.324674 2.280877 1.802776 1.802776 
+C 2.280877 1.324674 2.54951 0.676138 2.54951 -0 
+C 2.54951 -0.676138 2.280877 -1.324674 1.802776 -1.802776 
+C 1.324674 -2.280877 0.676138 -2.54951 0 -2.54951 
+C -0.676138 -2.54951 -1.324674 -2.280877 -1.802776 -1.802776 
+C -2.280877 -1.324674 -2.54951 -0.676138 -2.54951 0 
+C -2.54951 0.676138 -2.280877 1.324674 -1.802776 1.802776 
+C -1.324674 2.280877 -0.676138 2.54951 0 2.54951 
+z
+"/>
+    </defs>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="146.018178" y="401.688" style="fill: #c08a2e; stroke: #c08a2e"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="191.063996" y="387.343385" style="fill: #c08a2e; stroke: #c08a2e"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="196.74545" y="372.998769" style="fill: #c08a2e; stroke: #c08a2e"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="214.195632" y="358.654154" style="fill: #c08a2e; stroke: #c08a2e"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="217.036359" y="344.309538" style="fill: #c08a2e; stroke: #c08a2e"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="217.036359" y="329.964923" style="fill: #c08a2e; stroke: #c08a2e"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="218.253814" y="315.620308" style="fill: #c08a2e; stroke: #c08a2e"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="224.341087" y="301.275692" style="fill: #c08a2e; stroke: #c08a2e"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="249.501814" y="286.931077" style="fill: #c08a2e; stroke: #c08a2e"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="250.719268" y="272.586462" style="fill: #c08a2e; stroke: #c08a2e"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="252.342541" y="258.241846" style="fill: #c08a2e; stroke: #c08a2e"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="264.517087" y="243.897231" style="fill: var(--destaque); stroke: var(--destaque)"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="267.357814" y="229.552615" style="fill: var(--destaque); stroke: var(--destaque)"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="281.967268" y="215.208" style="fill: var(--destaque); stroke: var(--destaque)"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="290.895268" y="200.863385" style="fill: var(--destaque); stroke: var(--destaque)"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="299.41745" y="186.518769" style="fill: var(--destaque); stroke: var(--destaque)"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="313.215268" y="172.174154" style="fill: var(--destaque); stroke: var(--destaque)"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="324.578178" y="157.829538" style="fill: var(--destaque); stroke: var(--destaque)"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="341.622541" y="143.484923" style="fill: var(--destaque); stroke: var(--destaque)"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="348.115632" y="129.140308" style="fill: var(--destaque); stroke: var(--destaque)"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="350.956359" y="114.795692" style="fill: var(--destaque); stroke: var(--destaque)"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="374.899632" y="100.451077" style="fill: var(--destaque); stroke: var(--destaque)"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="396.002178" y="86.106462" style="fill: var(--destaque); stroke: var(--destaque)"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="403.712723" y="71.761846" style="fill: var(--destaque); stroke: var(--destaque)"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="408.176723" y="57.417231" style="fill: var(--destaque); stroke: var(--destaque)"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="428.87345" y="43.072615" style="fill: var(--destaque); stroke: var(--destaque)"/>
+    </g>
+    <g clip-path="url(#estados-p263b0aca72)">
+     <use xlink:href="#estados-C0_0_813d91b8fe" x="441.047996" y="28.728" style="fill: var(--destaque); stroke: var(--destaque)"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="estados-p263b0aca72">
+   <rect x="118.828359" y="10.08" width="357.12" height="410.256"/>
+  </clipPath>
+ </defs>
+</svg>

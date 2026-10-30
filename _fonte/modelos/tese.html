@@ -15,6 +15,12 @@
 {% endfor %}
 </ul>
 
+{% set foto = tese.foto %}
+<figure class="foto">
+  <img src="{{ rel(foto.grande) }}" srcset="{{ rel(foto.pequena) }} 700w, {{ rel(foto.grande) }} 1258w" sizes="(max-width: 46rem) 100vw, 44rem" alt="{{ foto.alt | t }}" width="1258" height="838" loading="lazy" decoding="async">
+  <figcaption>{{ foto.legenda | t }}</figcaption>
+</figure>
+
 <h2 id="anterior">{{ r.pesquisa_anterior | t }}</h2>
 <p>{{ r.dissertacao | t }}: <a href="{{ tese.dissertacao.url }}" lang="pt-BR"><i>{{ tese.dissertacao.titulo }}</i></a>. {{ tese.dissertacao.detalhe | t }}</p>
 

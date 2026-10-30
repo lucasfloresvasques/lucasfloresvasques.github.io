@@ -19,6 +19,7 @@ As páginas são geradas a partir de arquivos de dados. Não edite os `.html` à
    | `apresentacoes.yml` | apresentações em eventos |
    | `ensino.yml` | docência, minicursos, materiais didáticos, dados e código |
    | `curriculo.yml` | formação, bolsas, atuação acadêmica, prêmios e formação complementar |
+   | `eleicoes.yml` | página Eleições 2026: textos, vídeo, tabela e arquivos de dados; os gráficos saem de `_fonte/eleicoes/graficos.py` |
    | `site.yml` | data de atualização, menu e textos fixos da interface |
 
    Cada texto tem uma versão `pt` e outra `en`. Nos textos, `*assim*` vira itálico e `[texto](endereço)` vira link.

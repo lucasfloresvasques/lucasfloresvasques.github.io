@@ -1,0 +1,120 @@
+# Página Eleições 2026. Fonte dos números: modelo_eleitoral_2026/video_2022_2026/dados/fatos.json.
+# Nos textos, *assim* vira itálico e [texto](endereço) vira link.
+
+titulo:
+  pt: "Eleições de 2026: o segundo turno, município a município"
+  en: "The 2026 runoff, municipality by municipality"
+
+intro:
+  pt:
+    - Na noite de 25 de outubro de 2026 acompanhei a apuração do segundo turno presidencial, entre Lula e Flávio Bolsonaro, com um modelo que projeta o resultado a partir dos municípios já apurados. O modelo rodou 175 vezes entre 17h08 e 21h28 (horário de Brasília), e cada rodada lia os resultados dos 5.571 municípios no portal do TSE.
+    - A contagem oscilou. Flávio Bolsonaro passou à frente às 19h46, com 14% das seções apuradas, e Lula só voltou a liderar às 20h25. A projeção ficou estável. Desde 19h22, com 2,7% apurado, ela indicava a vitória de Lula, e a partir de 10% das seções nunca se afastou mais de 0,45 ponto percentual do resultado. Na leitura final, com 99,88% das seções, Lula tinha 51,76% dos votos válidos dados aos dois; a projeção dava 51,78%.
+  en:
+    - On the night of 25 October 2026 I followed the count of Brazil's presidential runoff, between Lula and Flávio Bolsonaro, with a model that projects the result from the municipalities already counted. It ran 175 times between 17:08 and 21:28 (Brasília time), each time reading the results of all 5,571 municipalities from the website of the Superior Electoral Court (TSE).
+    - The count swung. Flávio Bolsonaro took the lead at 19:46, with 14% of polling sections counted, and Lula only regained it at 20:25. The projection held steady. From 19:22, with 2.7% counted, it pointed to a Lula win, and once 10% of sections were in it never moved more than 0.45 percentage points away from the result. At the final reading, with 99.88% of sections counted, Lula had 51.76% of the valid votes cast for the two candidates; the projection said 51.78%.
+
+video:
+  arquivo: assets/eleicoes-2026/video-2022-2026.mp4
+  capa: assets/eleicoes-2026/video-capa.webp
+  legenda:
+    pt: 2022 × 2026, com os números da noite, em pouco mais de dois minutos. Vídeo vertical do painel independente Data Lucas, com narração em voz sintética.
+    en: 2022 × 2026, with the numbers from the night, in just over two minutes. Vertical video from the independent Data Lucas panel, with synthetic voice narration in Portuguese.
+
+noite:
+  id: {pt: a-noite, en: election-night}
+  titulo: {pt: A noite da apuração, en: Election night}
+  texto:
+    pt: A média das pesquisas da véspera, registrada pelo painel, dava a Lula 49,3% dos votos válidos, ou seja, derrota. Com 2,2% das seções apuradas, a projeção já estava em 50,95%, a 0,8 ponto do resultado. A contagem bruta só ficou a menos de meio ponto do resultado com 80,8% apurado, às 20h54. Às 21h09, com 96,8% das seções, a vantagem de Lula na contagem passou a estimativa dos votos que ainda faltavam.
+    en: The average of the polls from the day before, as recorded by the panel, gave Lula 49.3% of the valid vote, that is, a defeat. With 2.2% of sections counted, the projection was already at 50.95%, 0.8 points from the result. The raw count only came within half a point of the result at 80.8% counted, at 20:54. At 21:09, with 96.8% of sections in, Lula's lead in the count exceeded the estimate of the votes still to come.
+  legenda:
+    pt: Lula na contagem do TSE e na projeção, à medida que as seções eram apuradas. A faixa sombreada é o pior erro observado naquele ponto da apuração no teste com a eleição de 2022.
+    en: Lula's share in the official count and in the projection as polling sections came in. The shaded band is the worst error seen at that point of the count in the test with the 2022 election.
+
+mudancas:
+  id: {pt: o-que-mudou, en: what-changed}
+  titulo: {pt: O que mudou desde 2022, en: What changed since 2022}
+  texto:
+    pt:
+      - Lula passou de 50,90% em 2022 para 51,76% em 2026, e a vantagem em votos foi de 2,14 milhões para cerca de 4,37 milhões. Ele subiu em 16 unidades da federação e caiu em 11. Dois estados mudaram de lado, o Amapá para Lula e o Tocantins para Flávio Bolsonaro.
+      - Nos municípios, o movimento se dividiu pelo tamanho. Lula caiu em 4.352 dos 5.562 municípios comparáveis, quase todos pequenos, e subiu em 73 dos 75 que têm 200 mil votos ou mais. Entre os turnos, quanto mais cresceram numa cidade os votos válidos dados aos dois finalistas, mais Lula cresceu nela; em 2022, ele tinha caído em todas as faixas de crescimento.
+    en:
+      - Lula went from 50.90% in 2022 to 51.76% in 2026, and his lead in votes grew from 2.14 million to about 4.37 million. He gained in 16 of the 27 federative units and lost ground in 11. Two states changed sides, Amapá to Lula and Tocantins to Flávio Bolsonaro.
+      - Across municipalities, the movement split by size. Lula lost ground in 4,352 of the 5,562 comparable municipalities, almost all of them small, and gained in 73 of the 75 with 200,000 votes or more. Between the two rounds, the more the valid vote for the two finalists grew in a city, the more Lula grew there; in 2022 he had lost ground at every level of growth.
+  legenda_estados:
+    pt: Variação da parcela de Lula entre os dois finalistas, de 2022 a 2026, por unidade da federação. Em azul, onde subiu; em ocre, onde caiu.
+    en: Change in Lula's share of the two-candidate vote from 2022 to 2026, by federative unit. Blue where it rose, ochre where it fell.
+  legenda_porte:
+    pt: Variação de Lula por porte do município, medido pelos votos de 2026, ponderada pelos votos.
+    en: Change in Lula's share by municipality size, measured by 2026 votes and weighted by votes.
+
+metodo:
+  id: {pt: metodo, en: method}
+  titulo: {pt: Como a projeção funciona, en: How the projection works}
+  texto:
+    pt:
+      - O ponto de partida é o primeiro turno de 2026 em cada município. Para cada município que já apurou, o modelo mede quanto Lula subiu ou caiu em relação ao primeiro turno, entre os dois finalistas, em escala logística. Com essas medidas ele estima um deslocamento por estado, puxado para a média nacional enquanto o estado tem poucos votos apurados. Estima também uma inclinação comum, que deixa os municípios mais e menos lulistas se moverem de forma diferente, e o comparecimento relativo de cada estado.
+      - Os votos que faltam em cada município recebem a base do primeiro turno mais o deslocamento estimado. Os municípios mais apurados pesam mais na estimação, com peso proporcional aos votos e à quarta potência da fração apurada. Isso protege contra o viés de ordem dentro da cidade, já que as seções que chegam primeiro podem não representar as que faltam.
+      - O painel só indicava um vencedor quando a margem projetada passava da faixa de erro do teste com 2022.
+    en:
+      - The starting point is the 2026 first round in each municipality. For every municipality already counted, the model measures how much Lula rose or fell relative to the first round, between the two finalists, on a logistic scale. From these measures it estimates a shift for each state, pulled towards the national average while the state has few votes counted. It also estimates a common slope, which lets more and less pro-Lula municipalities move differently, and the relative turnout of each state.
+      - The votes still to come in each municipality get the first-round baseline plus the estimated shift. Municipalities with more of their vote counted weigh more in the estimation, with weights proportional to votes and to the fourth power of the share counted. This guards against order bias within a city, since the sections that arrive first may not represent those still missing.
+      - The panel only called a winner when the projected margin exceeded the error band from the 2022 test.
+
+teste:
+  id: {pt: teste-2022, en: test-2022}
+  titulo: {pt: O teste com a eleição de 2022, en: The test with the 2022 election}
+  texto:
+    pt: Antes da eleição, testei o modelo com 2022, usando o primeiro turno daquele ano como base e o segundo como alvo (Lula 50,90%). Como não existe registro histórico da ordem em que os votos chegam, simulei cinco ordens. São elas a aleatória, a regional (Sul, Sudeste e Centro-Oeste antes), a regional com as grandes cidades atrasadas, a regional com viés dentro da cidade e o pior caso, com as zonas mais favoráveis ao adversário chegando primeiro. A tabela mostra o pior erro (percentil 95) em cada ponto da apuração, em pontos percentuais.
+    en: Before the election I tested the model on 2022, using that year's first round as the baseline and the runoff as the target (Lula 50.90%). Since there is no historical record of the order in which votes arrive, I simulated five orders. These were random, regional (South, Southeast and Centre-West first), regional with large cities delayed, regional with bias within cities, and a worst case in which the zones most favourable to the opponent arrive first. The table gives the worst error (95th percentile) at each point of the count, in percentage points.
+  cabecalho:
+    pt: [Apurado, Pior erro nas cinco ordens, Sem o pior caso, "Contagem bruta (erro mediano, ordem regional)"]
+    en: [Counted, Worst error across five orders, Without the worst case, "Raw count (median error, regional order)"]
+  linhas:
+    pt:
+      - ["2%", "0,99", "0,54", "7,98"]
+      - ["10%", "0,61", "0,61", "7,03"]
+      - ["20%", "0,73", "0,73", "6,38"]
+      - ["50%", "0,67", "0,41", "4,33"]
+      - ["80%", "0,21", "0,20", "2,07"]
+    en:
+      - ["2%", "0.99", "0.54", "7.98"]
+      - ["10%", "0.61", "0.61", "7.03"]
+      - ["20%", "0.73", "0.73", "6.38"]
+      - ["50%", "0.67", "0.41", "4.33"]
+      - ["80%", "0.21", "0.20", "2.07"]
+  legenda:
+    pt: Erro da projeção em 2026 comparado à faixa do teste com 2022 e ao erro da contagem bruta, em pontos percentuais. Nas 144 rodadas a partir de 2% apurado, o resultado ficou sempre dentro da faixa.
+    en: Projection error in 2026 compared with the error band from the 2022 test and with the error of the raw count, in percentage points. In all 144 runs from 2% counted onwards, the result stayed within the band.
+
+limites:
+  id: {pt: limites, en: limitations}
+  titulo: {pt: Limites, en: Limitations}
+  itens:
+    pt:
+      - O teste usa uma única eleição, com ordens de chegada simuladas.
+      - Dentro de cada zona eleitoral, o teste supõe votos homogêneos. Na apuração real, as seções podem variar mais.
+      - A faixa é o pior erro do teste, não um intervalo de confiança nem uma probabilidade.
+      - O resultado de 2026 citado aqui é a leitura do painel às 21h29, com 99,88% das seções. O resultado oficial é o do [TSE](https://resultados.tse.jus.br/).
+      - Os dados cobrem só os votos válidos dados aos dois finalistas, sem abstenção, brancos, nulos ou perfil dos eleitores. A variação da parcela de um candidato num município não é transferência de votos.
+      - Na última coleta, o exterior ainda estava incompleto (90,9% das seções).
+    en:
+      - The test relies on a single election, with simulated arrival orders.
+      - Within each electoral zone, the test assumes homogeneous votes. In a real count, sections may vary more.
+      - The band is the worst error in the test, not a confidence interval or a probability.
+      - The 2026 result cited here is the panel's reading at 21:29, with 99.88% of sections counted. The official result is the [TSE's](https://resultados.tse.jus.br/).
+      - The data cover only valid votes for the two finalists, with no abstention, blank or spoiled ballots, or voter characteristics. A change in a candidate's share in a municipality is not a transfer of votes.
+      - At the last collection, votes from abroad were still incomplete (90.9% of sections).
+
+dados:
+  id: {pt: dados, en: data}
+  titulo: {pt: Dados, en: Data}
+  texto:
+    pt: Os resultados por município vêm do portal de divulgação e dos dados abertos do TSE. O modelo foi escrito em Python, com pandas e numpy. Os dados dos gráficos estão em CSV, nos arquivos abaixo.
+    en: Municipal results come from the TSE's results website and open data. The model was written in Python, with pandas and numpy. The data behind the charts are available as CSV files below.
+  arquivos:
+    - {rotulo: {pt: Rodadas da projeção, en: Projection runs}, arquivo: assets/eleicoes-2026/dados/serie_projecao_rodadas.csv}
+    - {rotulo: {pt: Erro por ponto da apuração, en: Error by point of the count}, arquivo: assets/eleicoes-2026/dados/erro_por_marco.csv}
+    - {rotulo: {pt: "Faixa de 2022 × erro de 2026", en: "2022 band × 2026 error"}, arquivo: assets/eleicoes-2026/dados/backtest_2022_vs_2026.csv}
+    - {rotulo: {pt: "Teste com 2022, por ordem de chegada", en: "2022 test by arrival order"}, arquivo: assets/eleicoes-2026/dados/backtest_2022_resumo.csv}
+    - {rotulo: {pt: Estados, en: States}, arquivo: assets/eleicoes-2026/dados/estados_2022_2026.csv}
+    - {rotulo: {pt: Municípios por porte, en: Municipalities by size}, arquivo: assets/eleicoes-2026/dados/municipios_por_porte.csv}

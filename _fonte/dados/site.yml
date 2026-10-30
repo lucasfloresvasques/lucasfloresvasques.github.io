@@ -8,7 +8,7 @@ atualizado: 2026-10-30
 verificacao_google: M9IlEVSjtsSrbR0DWqnVwk2Uz76tGjgEVWRNtrNYKeg
 
 # Ordem dos itens do menu principal.
-menu: [inicio, pesquisa, publicacoes, ensino, cv]
+menu: [inicio, pesquisa, publicacoes, ensino, eleicoes, cv]
 
 paginas:
   inicio:
@@ -46,6 +46,13 @@ paginas:
     descricao:
       en: "Teaching, short courses, teaching materials and data sources."
       pt: "Docência, minicursos, materiais didáticos e fontes de dados."
+  eleicoes:
+    arquivo: {en: elections-2026.html, pt: pt/elections-2026.html}
+    menu: {en: 2026 election, pt: Eleições 2026}
+    titulo: {en: The 2026 runoff, pt: Eleições 2026}
+    descricao:
+      en: "Projecting Brazil's 2026 presidential runoff from the municipal count: video, results, method and the test with 2022."
+      pt: "Projeção do segundo turno presidencial de 2026 pela apuração dos municípios: vídeo, resultados, método e o teste com 2022."
   cv:
     arquivo: {en: cv.html, pt: pt/cv.html}
     menu: {en: CV, pt: Currículo}

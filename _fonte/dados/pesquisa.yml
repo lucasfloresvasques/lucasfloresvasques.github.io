@@ -44,6 +44,16 @@ tese:
     - {pt: "4. Jardim dos cactos e das violetas: repertórios, apreciação e conservação"}
     - {pt: "5. Jardim das rosas em festa: exposição, autoria e participação na Expoflora"}
     - {pt: "Conclusão — A colheita"}
+  # Foto do capítulo 5, com os rostos desfocados como na tese.
+  foto:
+    grande: assets/chuva-de-petalas-expoflora-2023-1258.webp
+    pequena: assets/chuva-de-petalas-expoflora-2023-700.webp
+    legenda:
+      pt: Confetes em suspensão diante da torre da Chuva de Pétalas, Expoflora, Holambra (SP), 22 de setembro de 2023. Rostos desfocados. Figura 37 da tese.
+      en: Confetti in the air in front of the Chuva de Pétalas tower, Expoflora, Holambra (São Paulo), 22 September 2023. Faces blurred. Figure 37 of the thesis.
+    alt:
+      pt: Confetes no ar diante da torre da Chuva de Pétalas, com o público embaixo
+      en: Confetti in the air in front of the Chuva de Pétalas tower, with the crowd below
   dissertacao:
     titulo: "As emoções e sua inserção no espaço empresarial brasileiro através da revista Exame: uma análise em sociologia econômica dos mercados"
     detalhe:

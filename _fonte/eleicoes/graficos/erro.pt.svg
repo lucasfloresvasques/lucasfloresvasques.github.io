@@ -1,0 +1,335 @@
+<svg role="img" aria-label="erro da projeção em 2026" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 431.355487 255.394391" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="erro-figure_1">
+  <g id="erro-patch_1">
+   <path d="M 0 255.394391 
+L 431.355487 255.394391 
+L 431.355487 0 
+L 0 0 
+L 0 255.394391 
+z
+" style="fill: none"/>
+  </g>
+  <g id="erro-axes_1">
+   <g id="erro-patch_2">
+    <path d="M 58.316328 209.664 
+L 415.436328 209.664 
+L 415.436328 10.08 
+L 58.316328 10.08 
+L 58.316328 209.664 
+z
+" style="fill: none"/>
+   </g>
+   <g id="erro-matplotlib.axis_1">
+    <g id="erro-xtick_1">
+     <g id="erro-line2d_1">
+      <defs>
+       <path id="erro-m5b2433104f" d="M 0 0 
+L 0 3.5 
+" style="stroke: var(--suave); stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#erro-m5b2433104f" x="58.316328" y="209.664" style="fill: var(--suave); stroke: var(--suave); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="erro-text_1">
+      <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: middle; fill: var(--suave)" x="58.316328" y="225.914" transform="rotate(-0 58.316328 225.914)">0</text>
+     </g>
+    </g>
+    <g id="erro-xtick_2">
+     <g id="erro-line2d_2">
+      <g>
+       <use xlink:href="#erro-m5b2433104f" x="129.03316" y="209.664" style="fill: var(--suave); stroke: var(--suave); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="erro-text_2">
+      <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: middle; fill: var(--suave)" x="129.03316" y="225.914" transform="rotate(-0 129.03316 225.914)">20</text>
+     </g>
+    </g>
+    <g id="erro-xtick_3">
+     <g id="erro-line2d_3">
+      <g>
+       <use xlink:href="#erro-m5b2433104f" x="199.749991" y="209.664" style="fill: var(--suave); stroke: var(--suave); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="erro-text_3">
+      <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: middle; fill: var(--suave)" x="199.749991" y="225.914" transform="rotate(-0 199.749991 225.914)">40</text>
+     </g>
+    </g>
+    <g id="erro-xtick_4">
+     <g id="erro-line2d_4">
+      <g>
+       <use xlink:href="#erro-m5b2433104f" x="270.466823" y="209.664" style="fill: var(--suave); stroke: var(--suave); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="erro-text_4">
+      <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: middle; fill: var(--suave)" x="270.466823" y="225.914" transform="rotate(-0 270.466823 225.914)">60</text>
+     </g>
+    </g>
+    <g id="erro-xtick_5">
+     <g id="erro-line2d_5">
+      <g>
+       <use xlink:href="#erro-m5b2433104f" x="341.183655" y="209.664" style="fill: var(--suave); stroke: var(--suave); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="erro-text_5">
+      <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: middle; fill: var(--suave)" x="341.183655" y="225.914" transform="rotate(-0 341.183655 225.914)">80</text>
+     </g>
+    </g>
+    <g id="erro-xtick_6">
+     <g id="erro-line2d_6">
+      <g>
+       <use xlink:href="#erro-m5b2433104f" x="411.900487" y="209.664" style="fill: var(--suave); stroke: var(--suave); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="erro-text_6">
+      <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: middle; fill: var(--suave)" x="411.900487" y="225.914" transform="rotate(-0 411.900487 225.914)">100</text>
+     </g>
+    </g>
+    <g id="erro-text_7">
+     <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: middle; fill: var(--suave)" x="236.876328" y="242.314391" transform="rotate(-0 236.876328 242.314391)">seções apuradas (%)</text>
+    </g>
+   </g>
+   <g id="erro-matplotlib.axis_2">
+    <g id="erro-ytick_1">
+     <g id="erro-line2d_7">
+      <path d="M 58.316328 209.664 
+L 415.436328 209.664 
+" clip-path="url(#erro-p0067d15c37)" style="fill: none; stroke: var(--fio); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="erro-line2d_8">
+      <defs>
+       <path id="erro-m355b769063" d="M 0 0 
+L -3.5 0 
+" style="stroke: var(--suave); stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#erro-m355b769063" x="58.316328" y="209.664" style="fill: var(--suave); stroke: var(--suave); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="erro-text_8">
+      <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="51.316328" y="214.289" transform="rotate(-0 51.316328 214.289)">0</text>
+     </g>
+    </g>
+    <g id="erro-ytick_2">
+     <g id="erro-line2d_9">
+      <path d="M 58.316328 171.282462 
+L 415.436328 171.282462 
+" clip-path="url(#erro-p0067d15c37)" style="fill: none; stroke: var(--fio); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="erro-line2d_10">
+      <g>
+       <use xlink:href="#erro-m355b769063" x="58.316328" y="171.282462" style="fill: var(--suave); stroke: var(--suave); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="erro-text_9">
+      <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="51.316328" y="175.907462" transform="rotate(-0 51.316328 175.907462)">0,5 p.p.</text>
+     </g>
+    </g>
+    <g id="erro-ytick_3">
+     <g id="erro-line2d_11">
+      <path d="M 58.316328 132.900923 
+L 415.436328 132.900923 
+" clip-path="url(#erro-p0067d15c37)" style="fill: none; stroke: var(--fio); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="erro-line2d_12">
+      <g>
+       <use xlink:href="#erro-m355b769063" x="58.316328" y="132.900923" style="fill: var(--suave); stroke: var(--suave); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="erro-text_10">
+      <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="51.316328" y="137.525923" transform="rotate(-0 51.316328 137.525923)">1,0 p.p.</text>
+     </g>
+    </g>
+    <g id="erro-ytick_4">
+     <g id="erro-line2d_13">
+      <path d="M 58.316328 94.519385 
+L 415.436328 94.519385 
+" clip-path="url(#erro-p0067d15c37)" style="fill: none; stroke: var(--fio); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="erro-line2d_14">
+      <g>
+       <use xlink:href="#erro-m355b769063" x="58.316328" y="94.519385" style="fill: var(--suave); stroke: var(--suave); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="erro-text_11">
+      <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="51.316328" y="99.144385" transform="rotate(-0 51.316328 99.144385)">1,5 p.p.</text>
+     </g>
+    </g>
+    <g id="erro-ytick_5">
+     <g id="erro-line2d_15">
+      <path d="M 58.316328 56.137846 
+L 415.436328 56.137846 
+" clip-path="url(#erro-p0067d15c37)" style="fill: none; stroke: var(--fio); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="erro-line2d_16">
+      <g>
+       <use xlink:href="#erro-m355b769063" x="58.316328" y="56.137846" style="fill: var(--suave); stroke: var(--suave); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="erro-text_12">
+      <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="51.316328" y="60.762846" transform="rotate(-0 51.316328 60.762846)">2,0 p.p.</text>
+     </g>
+    </g>
+    <g id="erro-ytick_6">
+     <g id="erro-line2d_17">
+      <path d="M 58.316328 17.756308 
+L 415.436328 17.756308 
+" clip-path="url(#erro-p0067d15c37)" style="fill: none; stroke: var(--fio); stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="erro-line2d_18">
+      <g>
+       <use xlink:href="#erro-m355b769063" x="58.316328" y="17.756308" style="fill: var(--suave); stroke: var(--suave); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="erro-text_13">
+      <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="51.316328" y="22.381308" transform="rotate(-0 51.316328 22.381308)">2,5 p.p.</text>
+     </g>
+    </g>
+   </g>
+   <g id="erro-line2d_19">
+    <path d="M 66.024463 146.718277 
+L 77.763457 174.352985 
+L 99.650316 176.655877 
+L 112.379346 177.423508 
+L 130.730364 175.888246 
+L 165.841271 182.796923 
+L 200.386443 192.008492 
+L 235.957009 198.149538 
+L 275.805944 200.452431 
+L 307.982102 205.058215 
+L 341.926182 207.361108 
+L 377.178522 205.825846 
+" clip-path="url(#erro-p0067d15c37)" style="fill: none; stroke: var(--destaque); stroke-width: 2.2; stroke-linecap: square"/>
+    <defs>
+     <path id="erro-m83cde2a6b7" d="M 0 1.75 
+C 0.464105 1.75 0.909265 1.565609 1.237437 1.237437 
+C 1.565609 0.909265 1.75 0.464105 1.75 0 
+C 1.75 -0.464105 1.565609 -0.909265 1.237437 -1.237437 
+C 0.909265 -1.565609 0.464105 -1.75 0 -1.75 
+C -0.464105 -1.75 -0.909265 -1.565609 -1.237437 -1.237437 
+C -1.565609 -0.909265 -1.75 -0.464105 -1.75 0 
+C -1.75 0.464105 -1.565609 0.909265 -1.237437 1.237437 
+C -0.909265 1.565609 -0.464105 1.75 0 1.75 
+z
+" style="stroke: var(--destaque)"/>
+    </defs>
+    <g clip-path="url(#erro-p0067d15c37)">
+     <use xlink:href="#erro-m83cde2a6b7" x="66.024463" y="146.718277" style="fill: var(--destaque); stroke: var(--destaque)"/>
+     <use xlink:href="#erro-m83cde2a6b7" x="77.763457" y="174.352985" style="fill: var(--destaque); stroke: var(--destaque)"/>
+     <use xlink:href="#erro-m83cde2a6b7" x="99.650316" y="176.655877" style="fill: var(--destaque); stroke: var(--destaque)"/>
+     <use xlink:href="#erro-m83cde2a6b7" x="112.379346" y="177.423508" style="fill: var(--destaque); stroke: var(--destaque)"/>
+     <use xlink:href="#erro-m83cde2a6b7" x="130.730364" y="175.888246" style="fill: var(--destaque); stroke: var(--destaque)"/>
+     <use xlink:href="#erro-m83cde2a6b7" x="165.841271" y="182.796923" style="fill: var(--destaque); stroke: var(--destaque)"/>
+     <use xlink:href="#erro-m83cde2a6b7" x="200.386443" y="192.008492" style="fill: var(--destaque); stroke: var(--destaque)"/>
+     <use xlink:href="#erro-m83cde2a6b7" x="235.957009" y="198.149538" style="fill: var(--destaque); stroke: var(--destaque)"/>
+     <use xlink:href="#erro-m83cde2a6b7" x="275.805944" y="200.452431" style="fill: var(--destaque); stroke: var(--destaque)"/>
+     <use xlink:href="#erro-m83cde2a6b7" x="307.982102" y="205.058215" style="fill: var(--destaque); stroke: var(--destaque)"/>
+     <use xlink:href="#erro-m83cde2a6b7" x="341.926182" y="207.361108" style="fill: var(--destaque); stroke: var(--destaque)"/>
+     <use xlink:href="#erro-m83cde2a6b7" x="377.178522" y="205.825846" style="fill: var(--destaque); stroke: var(--destaque)"/>
+    </g>
+   </g>
+   <g id="erro-line2d_20">
+    <path d="M 65.388011 133.668554 
+L 75.995536 161.303262 
+L 93.674744 162.838523 
+L 111.353952 153.626954 
+L 129.03316 153.626954 
+L 164.391576 159.000369 
+L 199.749991 151.324062 
+L 235.108407 158.232738 
+L 270.466823 169.7472 
+L 305.825239 182.029292 
+L 341.183655 193.543754 
+L 376.542071 201.220062 
+" clip-path="url(#erro-p0067d15c37)" style="fill: none; stroke-dasharray: 5.6,4.2; stroke-dashoffset: 0; stroke: var(--suave); stroke-width: 1.4"/>
+   </g>
+   <g id="erro-line2d_21">
+    <path d="M 66.024463 200.452431 
+L 77.763457 151.324062 
+L 99.650316 94.519385 
+L 150.071417 35.411815 
+L 235.957009 81.469662 
+L 325.095576 161.303262 
+L 377.178522 198.149538 
+L 411.440827 209.664 
+" clip-path="url(#erro-p0067d15c37)" style="fill: none; stroke: #c08a2e; stroke-width: 1.6; stroke-linecap: square"/>
+    <defs>
+     <path id="erro-me671be7e5f" d="M 0 1.75 
+C 0.464105 1.75 0.909265 1.565609 1.237437 1.237437 
+C 1.565609 0.909265 1.75 0.464105 1.75 0 
+C 1.75 -0.464105 1.565609 -0.909265 1.237437 -1.237437 
+C 0.909265 -1.565609 0.464105 -1.75 0 -1.75 
+C -0.464105 -1.75 -0.909265 -1.565609 -1.237437 -1.237437 
+C -1.565609 -0.909265 -1.75 -0.464105 -1.75 0 
+C -1.75 0.464105 -1.565609 0.909265 -1.237437 1.237437 
+C -0.909265 1.565609 -0.464105 1.75 0 1.75 
+z
+" style="stroke: #c08a2e"/>
+    </defs>
+    <g clip-path="url(#erro-p0067d15c37)">
+     <use xlink:href="#erro-me671be7e5f" x="66.024463" y="200.452431" style="fill: #c08a2e; stroke: #c08a2e"/>
+     <use xlink:href="#erro-me671be7e5f" x="77.763457" y="151.324062" style="fill: #c08a2e; stroke: #c08a2e"/>
+     <use xlink:href="#erro-me671be7e5f" x="99.650316" y="94.519385" style="fill: #c08a2e; stroke: #c08a2e"/>
+     <use xlink:href="#erro-me671be7e5f" x="150.071417" y="35.411815" style="fill: #c08a2e; stroke: #c08a2e"/>
+     <use xlink:href="#erro-me671be7e5f" x="235.957009" y="81.469662" style="fill: #c08a2e; stroke: #c08a2e"/>
+     <use xlink:href="#erro-me671be7e5f" x="325.095576" y="161.303262" style="fill: #c08a2e; stroke: #c08a2e"/>
+     <use xlink:href="#erro-me671be7e5f" x="377.178522" y="198.149538" style="fill: #c08a2e; stroke: #c08a2e"/>
+     <use xlink:href="#erro-me671be7e5f" x="411.440827" y="209.664" style="fill: #c08a2e; stroke: #c08a2e"/>
+    </g>
+   </g>
+   <g id="erro-patch_3">
+    <path d="M 58.316328 209.664 
+L 58.316328 10.08 
+" style="fill: none; stroke: var(--suave); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="erro-patch_4">
+    <path d="M 58.316328 209.664 
+L 415.436328 209.664 
+" style="fill: none; stroke: var(--suave); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="erro-legend_1">
+    <g id="erro-line2d_22">
+     <path d="M 242.797969 21.465 
+L 256.597969 21.465 
+L 270.397969 21.465 
+" style="fill: none; stroke: var(--destaque); stroke-width: 2.2; stroke-linecap: square"/>
+     <g>
+      <use xlink:href="#erro-m83cde2a6b7" x="256.597969" y="21.465" style="fill: var(--destaque); stroke: var(--destaque)"/>
+     </g>
+    </g>
+    <g id="erro-text_14">
+     <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: start; fill: var(--tinta)" x="279.597969" y="25.49" transform="rotate(-0 279.597969 25.49)">erro da projeção em 2026</text>
+    </g>
+    <g id="erro-line2d_23">
+     <path d="M 242.797969 38.6 
+L 256.597969 38.6 
+L 270.397969 38.6 
+" style="fill: none; stroke-dasharray: 5.6,4.2; stroke-dashoffset: 0; stroke: var(--suave); stroke-width: 1.4"/>
+    </g>
+    <g id="erro-text_15">
+     <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: start; fill: var(--tinta)" x="279.597969" y="42.625" transform="rotate(-0 279.597969 42.625)">faixa do teste com 2022</text>
+    </g>
+    <g id="erro-line2d_24">
+     <path d="M 242.797969 55.62 
+L 256.597969 55.62 
+L 270.397969 55.62 
+" style="fill: none; stroke: #c08a2e; stroke-width: 1.6; stroke-linecap: square"/>
+     <g>
+      <use xlink:href="#erro-me671be7e5f" x="256.597969" y="55.62" style="fill: #c08a2e; stroke: #c08a2e"/>
+     </g>
+    </g>
+    <g id="erro-text_16">
+     <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: start; fill: var(--tinta)" x="279.597969" y="59.645" transform="rotate(-0 279.597969 59.645)">erro da contagem</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="erro-p0067d15c37">
+   <rect x="58.316328" y="10.08" width="357.12" height="199.584"/>
+  </clipPath>
+ </defs>
+</svg>

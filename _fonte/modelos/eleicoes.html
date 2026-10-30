@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block conteudo %}
+{% set e = eleicoes %}
+<h1>{{ e.titulo | t }}</h1>
+{% for paragrafo in e.intro | t %}
+<p>{{ paragrafo | inline }}</p>
+{% endfor %}
+
+<figure class="video">
+  <video controls preload="none" playsinline poster="{{ rel(e.video.capa) }}" width="720" height="1280">
+    <source src="{{ rel(e.video.arquivo) }}" type="video/mp4">
+  </video>
+  <figcaption>{{ e.video.legenda | t }}</figcaption>
+</figure>
+
+<h2 id="{{ e.noite.id | t }}">{{ e.noite.titulo | t }}</h2>
+<p>{{ e.noite.texto | t | inline }}</p>
+<figure class="grafico">
+  {{ grafico('noite') }}
+  <figcaption>{{ e.noite.legenda | t }}</figcaption>
+</figure>
+
+<h2 id="{{ e.mudancas.id | t }}">{{ e.mudancas.titulo | t }}</h2>
+{% for paragrafo in e.mudancas.texto | t %}
+<p>{{ paragrafo | inline }}</p>
+{% endfor %}
+<figure class="grafico">
+  {{ grafico('estados') }}
+  <figcaption>{{ e.mudancas.legenda_estados | t }}</figcaption>
+</figure>
+<figure class="grafico">
+  {{ grafico('porte') }}
+  <figcaption>{{ e.mudancas.legenda_porte | t }}</figcaption>
+</figure>
+
+<h2 id="{{ e.metodo.id | t }}">{{ e.metodo.titulo | t }}</h2>
+{% for paragrafo in e.metodo.texto | t %}
+<p>{{ paragrafo | inline }}</p>
+{% endfor %}
+
+<h2 id="{{ e.teste.id | t }}">{{ e.teste.titulo | t }}</h2>
+<p>{{ e.teste.texto | t }}</p>
+<div class="tabela-rolagem">
+<table class="tabela">
+  <thead><tr>{% for coluna in e.teste.cabecalho | t %}<th scope="col">{{ coluna }}</th>{% endfor %}</tr></thead>
+  <tbody>
+{% for linha in e.teste.linhas | t %}
+    <tr>{% for celula in linha %}<td>{{ celula }}</td>{% endfor %}</tr>
+{% endfor %}
+  </tbody>
+</table>
+</div>
+<figure class="grafico">
+  {{ grafico('erro') }}
+  <figcaption>{{ e.teste.legenda | t }}</figcaption>
+</figure>
+
+<h2 id="{{ e.limites.id | t }}">{{ e.limites.titulo | t }}</h2>
+<ul class="limites">
+{% for item in e.limites.itens | t %}
+  <li>{{ item | inline }}</li>
+{% endfor %}
+</ul>
+
+<h2 id="{{ e.dados.id | t }}">{{ e.dados.titulo | t }}</h2>
+<p>{{ e.dados.texto | t }}</p>
+<ul class="lista sem-ano arquivos">
+{% for a in e.dados.arquivos %}
+  <li><p><a class="titulo" href="{{ rel(a.arquivo) }}">{{ a.rotulo | t }}</a></p></li>
+{% endfor %}
+</ul>
+{% endblock %}

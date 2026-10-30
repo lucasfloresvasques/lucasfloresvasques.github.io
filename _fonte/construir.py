@@ -35,6 +35,7 @@ MODELOS = {
     "tese": "tese.html",
     "publicacoes": "publicacoes.html",
     "ensino": "ensino.html",
+    "eleicoes": "eleicoes.html",
     "cv": "cv.html",
 }
 CV_PDF = {"en": "cv.pdf", "pt": "pt/cv.pdf"}
@@ -149,6 +150,12 @@ def _rel(ctx, destino):
 
 
 @pass_context
+def _grafico(ctx, nome):
+    """Embute o SVG do gráfico no idioma da página (ver _fonte/eleicoes/graficos.py)."""
+    return Markup((FONTE / "eleicoes" / "graficos" / f"{nome}.{ctx['idioma']}.svg").read_text(encoding="utf-8"))
+
+
+@pass_context
 def _autores(ctx, lista):
     return formatar_autores(lista or [], ctx["idioma"], ctx["perfil"]["nome"])
 
@@ -162,7 +169,7 @@ def criar_ambiente() -> Environment:
         keep_trailing_newline=True,
     )
     env.filters.update(t=_t, inline=inline, autores=_autores)
-    env.globals.update(rel=_rel)
+    env.globals.update(rel=_rel, grafico=_grafico)
     return env
 
 
@@ -248,6 +255,7 @@ def contexto(dados, chave, idioma, arquivo, alternativas_arquivos) -> dict:
         apresentacoes=dados["apresentacoes"],
         ensino=dados["ensino"],
         curriculo=dados["curriculo"],
+        eleicoes=dados["eleicoes"],
         destaques=[p for p in artigos if p.get("destaque")],
         json_ld=(json_ld(pessoa_json_ld(dados, idioma)) if chave == "inicio"
                  else json_ld(publicacoes_json_ld(dados, idioma)) if chave == "publicacoes" else None),

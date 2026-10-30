@@ -1,0 +1,112 @@
+<svg role="img" aria-label="variação de Lula por porte do município (p.p.)" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.933203 175.234609" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="porte-figure_1">
+  <g id="porte-patch_1">
+   <path d="M 0 175.234609 
+L 460.933203 175.234609 
+L 460.933203 0 
+L 0 0 
+L 0 175.234609 
+z
+" style="fill: none"/>
+  </g>
+  <g id="porte-axes_1">
+   <g id="porte-patch_2">
+    <path d="M 93.733203 148.68 
+L 450.853203 148.68 
+L 450.853203 10.08 
+L 93.733203 10.08 
+L 93.733203 148.68 
+z
+" style="fill: none"/>
+   </g>
+   <g id="porte-matplotlib.axis_1">
+    <g id="porte-text_1">
+     <text style="font-size: 12.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: middle; fill: var(--suave)" x="272.293203" y="162.154609" transform="rotate(-0 272.293203 162.154609)">variação de Lula por porte do município (p.p.)</text>
+    </g>
+   </g>
+   <g id="porte-matplotlib.axis_2">
+    <g id="porte-ytick_1">
+     <g id="porte-line2d_1"/>
+     <g id="porte-text_2">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="90.233203" y="30.395563" transform="rotate(-0 90.233203 30.395563)">até 20 mil</text>
+     </g>
+    </g>
+    <g id="porte-ytick_2">
+     <g id="porte-line2d_2"/>
+     <g id="porte-text_3">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="90.233203" y="65.888521" transform="rotate(-0 90.233203 65.888521)">20 a 100 mil</text>
+     </g>
+    </g>
+    <g id="porte-ytick_3">
+     <g id="porte-line2d_3"/>
+     <g id="porte-text_4">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="90.233203" y="101.381479" transform="rotate(-0 90.233203 101.381479)">100 a 200 mil</text>
+     </g>
+    </g>
+    <g id="porte-ytick_4">
+     <g id="porte-line2d_4"/>
+     <g id="porte-text_5">
+      <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--suave)" x="90.233203" y="136.874437" transform="rotate(-0 90.233203 136.874437)">200 mil ou mais</text>
+     </g>
+    </g>
+   </g>
+   <g id="porte-patch_3">
+    <path d="M 269.912403 35.901127 
+L 167.061843 35.901127 
+L 167.061843 16.38 
+L 269.912403 16.38 
+z
+" clip-path="url(#porte-pd5aa88e0d6)" style="fill: #c08a2e"/>
+   </g>
+   <g id="porte-patch_4">
+    <path d="M 269.912403 71.394085 
+L 268.960083 71.394085 
+L 268.960083 51.872958 
+L 269.912403 51.872958 
+z
+" clip-path="url(#porte-pd5aa88e0d6)" style="fill: #c08a2e"/>
+   </g>
+   <g id="porte-patch_5">
+    <path d="M 269.912403 106.887042 
+L 341.812563 106.887042 
+L 341.812563 87.365915 
+L 269.912403 87.365915 
+z
+" clip-path="url(#porte-pd5aa88e0d6)" style="fill: var(--destaque)"/>
+   </g>
+   <g id="porte-patch_6">
+    <path d="M 269.912403 142.38 
+L 403.713363 142.38 
+L 403.713363 122.858873 
+L 269.912403 122.858873 
+z
+" clip-path="url(#porte-pd5aa88e0d6)" style="fill: var(--destaque)"/>
+   </g>
+   <g id="porte-line2d_5">
+    <path d="M 269.912403 148.68 
+L 269.912403 10.08 
+" clip-path="url(#porte-pd5aa88e0d6)" style="fill: none; stroke: var(--suave); stroke-width: 0.9; stroke-linecap: square"/>
+   </g>
+   <g id="porte-text_6">
+    <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--tinta)" x="163.252563" y="29.015563" transform="rotate(-0 163.252563 29.015563)">-2,16</text>
+   </g>
+   <g id="porte-text_7">
+    <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: end; fill: var(--tinta)" x="265.150803" y="64.508521" transform="rotate(-0 265.150803 64.508521)">-0,02</text>
+   </g>
+   <g id="porte-text_8">
+    <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: start; fill: var(--tinta)" x="345.621843" y="100.001479" transform="rotate(-0 345.621843 100.001479)">+1,51</text>
+   </g>
+   <g id="porte-text_9">
+    <text style="font-size: 11.5px; font-family: 'Source Serif 4', 'Georgia', 'DejaVu Serif'; text-anchor: start; fill: var(--tinta)" x="407.522643" y="135.494437" transform="rotate(-0 407.522643 135.494437)">+2,81</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="porte-pd5aa88e0d6">
+   <rect x="93.733203" y="10.08" width="357.12" height="138.6"/>
+  </clipPath>
+ </defs>
+</svg>
