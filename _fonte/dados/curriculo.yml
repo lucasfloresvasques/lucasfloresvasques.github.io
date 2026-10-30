@@ -1,0 +1,118 @@
+# Seções do currículo que não aparecem em outras páginas.
+# Publicações, manuscritos, apresentações e docência vêm dos outros arquivos.
+
+formacao:
+  - periodo: "2022–2027"
+    titulo: {pt: Doutorado em Ciências Sociais, en: PhD in Social Sciences}
+    instituicao: {pt: "UNESP, Faculdade de Ciências e Letras de Araraquara", en: "São Paulo State University (UNESP), Araraquara"}
+    detalhe:
+      pt: "Tese: *A vida social das flores: a classificação das coisas e a autoridade de quem julga*. Orientadora: Maria Aparecida Chaves Jardim. Defesa prevista para março de 2027."
+      en: "Thesis: *The Social Life of Flowers: The Classification of Things and the Authority of Those Who Judge*. Supervisor: Maria Aparecida Chaves Jardim. Defence scheduled for March 2027."
+  - periodo: "2020–2022"
+    titulo: {pt: Mestrado em Ciências Sociais, en: MA in Social Sciences}
+    instituicao: {pt: "UNESP, Faculdade de Ciências e Letras de Araraquara", en: "São Paulo State University (UNESP), Araraquara"}
+    detalhe:
+      pt: "Dissertação: [*As emoções e sua inserção no espaço empresarial brasileiro através da revista Exame*](https://hdl.handle.net/11449/217868). Orientadora: Maria Aparecida Chaves Jardim."
+      en: "Dissertation: [*As emoções e sua inserção no espaço empresarial brasileiro através da revista Exame*](https://hdl.handle.net/11449/217868). Supervisor: Maria Aparecida Chaves Jardim."
+  - periodo: "2015–2019"
+    titulo: {pt: Graduação em Ciências Sociais, en: BA in Social Sciences}
+    instituicao: {pt: "UNESP, Faculdade de Ciências e Letras de Araraquara", en: "São Paulo State University (UNESP), Araraquara"}
+    detalhe:
+      pt: "Iniciação científica sobre mulheres executivas e emoções na doxa empresarial brasileira."
+      en: "Undergraduate research on women executives and emotions in Brazilian business doxa."
+
+estagio:
+  - periodo: "2025–2026"
+    titulo: {pt: Pesquisador visitante de doutorado, en: Visiting doctoral researcher}
+    instituicao: {pt: "IDHE.S, École normale supérieure Paris-Saclay (França)", en: "IDHE.S, École normale supérieure Paris-Saclay (France)"}
+    detalhe:
+      pt: "Estágio de pesquisa no exterior (BEPE/FAPESP), com supervisão de Frédéric Lebaron."
+      en: "Research stay abroad (FAPESP BEPE), supervised by Frédéric Lebaron."
+
+vinculos:
+  - periodo: "2016–"
+    titulo: NESPOM/UNESP
+    detalhe:
+      pt: "Núcleo de Estudos e Pesquisas sobre Emoções, Sociedade, Poder, Organização e Mercado."
+      en: "Research group on Emotions, Society, Power, Organization and Markets."
+  - periodo: ""
+    titulo: RESOA/UFSCar
+    detalhe:
+      pt: "Membro da Rede de Estudos Socioeconômicos e Organizacionais da Amazônia."
+      en: "Member of the Network for Socioeconomic and Organizational Studies of the Amazon."
+
+bolsas:
+  - periodo: "2025–2026"
+    titulo: {pt: "FAPESP, Bolsa Estágio de Pesquisa no Exterior (BEPE)", en: "FAPESP, Research Internship Abroad (BEPE)"}
+    detalhe: {pt: "Processo 2024/08337-9. ENS Paris-Saclay.", en: "Grant 2024/08337-9. ENS Paris-Saclay."}
+  - periodo: "2022–2027"
+    titulo: {pt: "FAPESP, Bolsa de Doutorado", en: "FAPESP, PhD fellowship"}
+    detalhe: {pt: "Processo 2021/09533-8. UNESP.", en: "Grant 2021/09533-8. UNESP."}
+  - periodo: "2020–2022"
+    titulo: {pt: "FAPESP, Bolsa de Mestrado", en: "FAPESP, MA fellowship"}
+    detalhe: {pt: "Processo 2019/18706-3. UNESP.", en: "Grant 2019/18706-3. UNESP."}
+  - periodo: "2017–2019"
+    titulo: {pt: "FAPESP, Bolsa de Iniciação Científica", en: "FAPESP, undergraduate research fellowship"}
+    detalhe: {pt: "Processo 2017/09805-2. UNESP.", en: "Grant 2017/09805-2. UNESP."}
+  - periodo: "2016"
+    titulo: {pt: "FAPESP, Bolsa de Treinamento Técnico (TT-1)", en: "FAPESP, technical training fellowship (TT-1)"}
+    detalhe:
+      pt: "Processo 2016/05105-3. Projeto temático “1968: o retorno midiático e bibliográfico trinta e quarenta anos depois no Brasil”, coordenado por Maria Ribeiro do Valle."
+      en: "Grant 2016/05105-3. Thematic project “1968: o retorno midiático e bibliográfico trinta e quarenta anos depois no Brasil”, coordinated by Maria Ribeiro do Valle."
+
+editorial:
+  - periodo: "2020–"
+    titulo: Novos Olhares Sociais
+    detalhe: {pt: Corpo editorial., en: Editorial board.}
+  - periodo: "2022–2024"
+    titulo: Cadernos de Campo
+    detalhe: {pt: Corpo editorial., en: Editorial board.}
+
+pareceres:
+  - periodo: "2020–"
+    titulo: {pt: Parecerista ad hoc, en: Ad hoc reviewer}
+    detalhe:
+      pt: "Civitas, Revista Brasileira de Sociologia, Sociologias, Estudos de Sociologia, CSOnline, Revista Sem Aspas, Sociologias Plurais, Cadernos de Campo e Conversas e Controvérsias."
+      en: "Civitas, Revista Brasileira de Sociologia, Sociologias, Estudos de Sociologia, CSOnline, Revista Sem Aspas, Sociologias Plurais, Cadernos de Campo and Conversas e Controvérsias."
+  - periodo: "2026"
+    titulo: {pt: "Avaliador de trabalhos", en: "Paper reviewer"}
+    detalhe: {pt: "XXXVIII Congresso de Iniciação Científica da UNESP.", en: "38th UNESP Undergraduate Research Congress."}
+
+eventos:
+  - periodo: "2018–2022"
+    titulo: {pt: "Organização de nove eventos científicos", en: "Organisation of nine scientific events"}
+    detalhe:
+      pt: "Entre eles o Congresso Internacional de Pesquisa NESPOM (2022), o II Congresso de Ciências Sociais da UNESP/FCLAr (2022), a XIX Semana de Pós-Graduação em Ciências Sociais da UNESP (2020) e seminários sobre Bourdieu, Boltanski, etnografia e análise do discurso (2021)."
+      en: "Including the NESPOM International Research Congress (2022), the 2nd Social Sciences Congress at UNESP/FCLAr (2022), the 19th Social Sciences Graduate Week at UNESP (2020) and seminars on Bourdieu, Boltanski, ethnography and discourse analysis (2021)."
+
+premios:
+  - periodo: "2018"
+    titulo: {pt: "Menção honrosa, 30º Congresso de Iniciação Científica da UNESP", en: "Honourable mention, 30th UNESP Undergraduate Research Congress"}
+    detalhe: {pt: "Pela pesquisa “As mulheres executivas e suas emoções na doxa empresarial brasileira”.", en: "For the research “As mulheres executivas e suas emoções na doxa empresarial brasileira”."}
+
+complementar:
+  - periodo: "2025"
+    texto: {pt: "Geometric Data Analysis Workshop (IDHE.S, ENS Paris-Saclay), com Brigitte Le Roux e equipe.", en: "Geometric Data Analysis Workshop (IDHE.S, ENS Paris-Saclay), with Brigitte Le Roux and team."}
+  - periodo: "2025"
+    texto: {pt: "Computational Social Science (University of California, Davis, via Coursera, 55 h); Academic English: Writing (University of California, Irvine, via Coursera, 87 h); Survey Data Collection and Analytics (University of Michigan, 96 h).", en: "Computational Social Science (University of California, Davis, via Coursera, 55 h); Academic English: Writing (University of California, Irvine, via Coursera, 87 h); Survey Data Collection and Analytics (University of Michigan, 96 h)."}
+  - periodo: "2025"
+    texto: {pt: "Data Analytics with Excel and R (IBM, 127 h); Power BI Data Analyst (Microsoft, 192 h).", en: "Data Analytics with Excel and R (IBM, 127 h); Power BI Data Analyst (Microsoft, 192 h)."}
+  - periodo: "2023"
+    texto: {pt: "“Pesquisando o espaço social: questões metodológicas”, com Frédéric Lebaron (UNESP, 25 h).", en: "“Pesquisando o espaço social: questões metodológicas”, with Frédéric Lebaron (UNESP, 25 h)."}
+  - periodo: "2023"
+    texto: {pt: "Indexadores para Periódicos Científicos (60 h) e Avaliador de Artigo Científico (60 h), ABEC Brasil.", en: "Journal indexing (60 h) and peer review training (60 h), ABEC Brasil."}
+  - periodo: "2022–2023"
+    texto: {pt: "Ciência de Dados com R (35 h), Análise de Redes (24 h) e Técnicas para Análise de Textos (12 h), IBPAD.", en: "Data science with R (35 h), network analysis (24 h) and text analysis techniques (12 h), IBPAD."}
+  - periodo: "2017, 2022"
+    texto: {pt: "Análise de Correspondências Múltiplas, duas edições (UNESP; NESPOM).", en: "Multiple Correspondence Analysis, two editions (UNESP; NESPOM)."}
+  - periodo: "2020"
+    texto: {pt: "Análise Qualitativa de Dados com o MAXQDA (GADES Solutions, Lisboa, 20 h).", en: "Qualitative data analysis with MAXQDA (GADES Solutions, Lisbon, 20 h)."}
+
+competencias:
+  metodos:
+    pt: "ACM e ACM específica; análise de classe específica (CSA); prosopografia; análise de conteúdo; pesquisa documental; bibliometria e análise de redes sociais."
+    en: "MCA and specific MCA; class specific analysis (CSA); prosopography; content analysis; documentary research; bibliometrics and social network analysis."
+  programas: "R, Python, SPAD, IRaMuTeQ, MAXQDA, Gephi, VOSviewer, Bibliometrix."
+  idiomas:
+    pt: "Português (nativo); inglês e francês (avançado)."
+    en: "Portuguese (native); English and French (advanced)."

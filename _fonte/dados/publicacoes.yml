@@ -1,0 +1,143 @@
+# Publicações, da mais recente para a mais antiga.
+# Campos: ano, titulo, titulo_en (título oficial em inglês, se houver), lingua (pt ou en),
+# autores, veiculo, volume, paginas, doi, url, nota, destaque (true leva o item à página inicial; use no máximo 3).
+# Se houver DOI, o título aponta para ele; sem DOI, aponta para "url".
+
+aceitas:
+  - ano: 2026
+    tipo: verbete
+    titulo: "Análise de Correspondências Múltiplas"
+    lingua: pt
+    autores: [Lucas Flôres Vasques]
+    veiculo: {pt: "Enciclopédia de métodos do ENCIPS (verbete)", en: "ENCIPS methods encyclopedia (entry)"}
+
+artigos:
+  - ano: 2026
+    titulo: "A ilusio da liberdade afetiva: poliamor, amor romântico e classificações relacionais de gênero"
+    lingua: pt
+    autores: [Pedro Araujo, Lucas Flôres Vasques]
+    veiculo: Novos Olhares Sociais
+    volume: "9(1)"
+    paginas: "113–137"
+    doi: 10.66983/nos.v7i1.5951
+    url: https://periodicos.ufrb.edu.br/index.php/novos-olhares-sociais/article/view/5951
+  - ano: 2025
+    titulo: "Governar pelo afeto: emoções e poder simbólico no discurso empresarial da revista Exame"
+    lingua: pt
+    autores: [Lucas Flôres Vasques]
+    veiculo: Estudos de Sociologia
+    volume: "30(3)"
+    paginas: "1283–1300"
+    doi: 10.52780/res.v30i3.20433
+    url: https://periodicos.fclar.unesp.br/estudos/article/view/20433
+    destaque: true
+  - ano: 2025
+    titulo: "O Direito, as Ciências e as Plantas: uma análise bibliométrica dos estudos sobre a cannabis"
+    lingua: pt
+    autores: [Pablo Emanuel Romero Almada, Lucas Flôres Vasques, Danielle Barreto Lima, Júlia Araújo Carvalho]
+    veiculo: Equatorial
+    volume: "12(22)"
+    paginas: "1–29"
+    doi: 10.21680/2446-5674.2025v12n22ID36330
+    url: https://periodicos.ufrn.br/equatorial/article/view/36330
+  - ano: 2025
+    titulo: "A fotografia na Sociologia: cartografia da produção científica brasileira e internacional"
+    lingua: pt
+    autores: [Lucas Flôres Vasques, Thaís Cristina Caetano de Souza, Luana Estela Di Pires]
+    veiculo: Novos Rumos Sociológicos
+    volume: "13(23)"
+    paginas: "5–30"
+    doi: 10.15210/norus.v13i23.30297
+  - ano: 2024
+    titulo: "Intimidade e mercado no Instagram: trabalho relacional como estratégia de denegação do econômico"
+    titulo_en: "Intimacy and market on Instagram: relational work as a strategy of economic denial"
+    lingua: pt
+    autores: [Maria Chaves Jardim, Luana Estela Di Pires, Lucas Flôres Vasques]
+    veiculo: Sociologia & Antropologia
+    volume: "14(2)"
+    paginas: "e230068"
+    doi: 10.1590/2238-38752024v1425
+    url: https://www.scielo.br/j/sant/a/nc4tKY6jszqyZd9GXDB48dp/
+    destaque: true
+  - ano: 2023
+    titulo: "Considerações sobre o corpo em Pierre Bourdieu e Michel Foucault"
+    lingua: pt
+    autores: [Lucas Flôres Vasques, Thaís Caetano de Souza]
+    veiculo: Novos Rumos Sociológicos
+    volume: "11(20)"
+    paginas: "29–44"
+    doi: 10.15210/norus.v11i20.26234
+    nota: {pt: "Edição datada de 2023; publicação eletrônica em 2024.", en: "Issue dated 2023; published online in 2024."}
+  - ano: 2023
+    titulo: "Possibilidades teóricas e metodológicas para interpretação do gosto e do consumo no mercado de plantas ornamentais"
+    lingua: pt
+    autores: [Lucas Flôres Vasques, Thaís Caetano de Souza]
+    veiculo: Revista Sem Aspas
+    volume: "12"
+    paginas: "e023012"
+    doi: 10.29373/sas.v12i00.18098
+    url: https://periodicos.fclar.unesp.br/semaspas/article/view/18098
+  - ano: 2023
+    titulo: "A telenovela brasileira em foco: uma análise sobre intimidade, emoção e processos de subjetivação em Pantanal"
+    lingua: pt
+    autores: [Thaís Caetano de Souza, Lucas Flôres Vasques]
+    veiculo: EntreRios
+    volume: "6(1)"
+    paginas: "111–130"
+    doi: 10.26694/rer.v6i1.14084
+    url: https://periodicos.ufpi.br/index.php/entrerios/article/view/5146
+  - ano: 2022
+    titulo: "Canções de amor e sofrimento: o amor romântico como crença na construção do mercado do sertanejo universitário"
+    lingua: pt
+    autores: [Gabriela Lanza Porcionato, Lucas Flôres Vasques, Thaís Caetano de Souza]
+    veiculo: Política & Sociedade
+    volume: "21(51)"
+    paginas: "158–191"
+    doi: 10.5007/2175-7984.2022.e91472
+    url: https://periodicos.ufsc.br/index.php/politica/article/view/91472
+    nota: {pt: "Edição datada de 2022; publicação eletrônica em 2023.", en: "Issue dated 2022; published online in 2023."}
+  - ano: 2021
+    titulo: "Emoções e Sociologia Econômica"
+    lingua: pt
+    autores: [Lucas Flôres Vasques, Maria Chaves Jardim]
+    veiculo: Ensaios
+    volume: "18"
+    paginas: "142–164"
+    doi: 10.22409/ensaios.v18.50973
+    url: https://periodicos.uff.br/ensaios/article/view/50973
+    destaque: true
+  - ano: 2021
+    titulo: "O “lugar” do liberalismo no Brasil do século XIX"
+    lingua: pt
+    autores: [Lucas Flôres Vasques]
+    veiculo: Revista Sem Aspas
+    volume: "10"
+    paginas: "e021010"
+    doi: 10.29373/sas.v10i00.15186
+    url: https://periodicos.fclar.unesp.br/semaspas/article/view/15186
+  - ano: 2019
+    titulo: "A “boa combinação” entre gênero e Sociologia Econômica: uma (re)leitura dos mercados inspirada em Viviana Zelizer"
+    lingua: pt
+    autores: [Maria Chaves Jardim, Lucas Flôres Vasques]
+    veiculo: Novos Olhares Sociais
+    volume: "2(2)"
+    paginas: "122–149"
+    url: https://periodicos.ufrb.edu.br/index.php/novos-olhares-sociais/article/view/4521
+  - ano: 2019
+    titulo: "Grande performatividade e economia comportamental"
+    lingua: pt
+    autores: [Gabriela Lanza Porcionato, Lucas Flôres Vasques]
+    veiculo: "REDD – Revista Espaço de Diálogo e Desconexão"
+    volume: "11(2)"
+    url: https://periodicos.fclar.unesp.br/redd/article/view/13853
+
+capitulos:
+  - ano: 2020
+    titulo: "Do confessionário ao divã: uma análise sobre a grande performatividade"
+    lingua: pt
+    autores: [Lucas Flôres Vasques, Thaís Caetano de Souza]
+    veiculo:
+      pt: "Em: Maria Chaves Jardim, Gabriela Porcionato e James Washington Alves dos Santos (org.), *Socioanálise das emoções: instituições socioculturais na produção das emoções*. São Paulo: Cultura Acadêmica (Série Temas em Sociologia, 15)"
+      en: "In: Maria Chaves Jardim, Gabriela Porcionato and James Washington Alves dos Santos (eds.), *Socioanálise das emoções: instituições socioculturais na produção das emoções*. São Paulo: Cultura Acadêmica (Série Temas em Sociologia, 15)"
+    paginas: "97–112"
+    url: https://www.fclar.unesp.br/Home/Instituicao/Administracao/DivisaoTecnicaAcademica/ApoioaoEnsino/LaboratorioEditorial/serie-temas-em-sociologia-n15---e-book.pdf

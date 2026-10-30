@@ -1,0 +1,42 @@
+# Manuscritos em avaliação ou em preparação.
+# Regra do site: só título, autores e situação, sem o nome do periódico e sem resumo.
+# O resumo entra quando o artigo for publicado ou estiver disponível como preprint,
+# e um manuscrito em coautoria só entra com o acordo de todos os coautores.
+# situacao: em_avaliacao | versao_revisada | em_preparacao | aceito
+# titulo: no idioma em que o manuscrito foi escrito; traducao: o título no outro idioma.
+
+- titulo: "A economia do prestígio científico: análise do efeito Mateus nas trajetórias de citação da economia comportamental e da sociologia econômica"
+  traducao: "The economy of scientific prestige: an analysis of the Matthew effect in the citation trajectories of behavioral economics and economic sociology"
+  lingua: pt
+  autores: [Lucas Flôres Vasques, Petrus Henrique de Souza, Carolina Vega Silva]
+  situacao: versao_revisada
+
+- titulo: "What divides men in power? Position-takings on gender among Latin American parliamentary elites"
+  traducao: "O que divide homens em posições de poder? Tomadas de posição sobre gênero entre elites parlamentares latino-americanas"
+  lingua: en
+  autores: [Lucas Flôres Vasques]
+  situacao: em_avaliacao
+
+- titulo: "Digital inequalities in Brazil: Social positions and the structure of Internet use"
+  traducao: "Desigualdades digitais no Brasil: posições sociais e estrutura dos usos da Internet"
+  lingua: en
+  autores: [Lucas Flôres Vasques, Maria Chaves Jardim]
+  situacao: em_avaliacao
+
+- titulo: "A plataformização do quintal: influenciadores como mediadores digitais"
+  traducao: "The platformization of the backyard: influencers as digital mediators"
+  lingua: pt
+  autores: [Lucas Flôres Vasques, Maria Chaves Jardim]
+  situacao: em_avaliacao
+
+- titulo: "Plantas ornamentais e distinção social no Brasil: as fronteiras simbólicas do consumo"
+  traducao: "Ornamental plants and social distinction in Brazil: the symbolic boundaries of consumption"
+  lingua: pt
+  autores: [Lucas Flôres Vasques, Maria Chaves Jardim]
+  situacao: em_avaliacao
+
+- titulo: "A política da equivalência: mineração e finanças na Taxonomia Sustentável Brasileira"
+  traducao: "The politics of equivalence: mining and finance in the Brazilian Sustainable Taxonomy"
+  lingua: pt
+  autores: [Lucas Flôres Vasques, Silvio Eduardo Alvarez Candido]
+  situacao: em_preparacao

@@ -1,0 +1,80 @@
+# Perfil, apresentação da página inicial, linhas de pesquisa e novidades.
+# Nos textos, *assim* vira itálico e [texto](endereço) vira link.
+
+nome: Lucas Flôres Vasques
+outros_nomes: [Lucas Flores Vasques, Lucas F. Vasques, L. F. Vasques, Lucas Vasques]
+email: lucas.vasques@unesp.br
+instituicao: Universidade Estadual Paulista (UNESP)
+foto: assets/lucas-vasques-retrato.webp
+foto_alt:
+  pt: Retrato de Lucas Flôres Vasques ao ar livre
+  en: Portrait of Lucas Flôres Vasques outdoors
+# Imagem usada quando o site é compartilhado (1200 × 630).
+cartao: assets/cartao-compartilhamento.jpg
+
+cargo:
+  pt: Doutorando em Ciências Sociais · UNESP · defesa prevista para março de 2027
+  en: PhD candidate in Social Sciences · UNESP · defence scheduled for March 2027
+
+lead:
+  pt: Investigo como classificações, julgamentos e posições sociais participam da produção dos mercados, das políticas públicas e das práticas culturais.
+  en: My research examines how social classifications, judgments, and positions shape markets, public policy, and cultural practices.
+
+bio:
+  pt:
+    - No doutorado em Ciências Sociais na UNESP, orientado por Maria Aparecida Chaves Jardim, estudo as classificações e os julgamentos que atribuem valor a flores e plantas ornamentais, das normas comerciais da Veiling Holambra às escolhas de quem cultiva. A tese, *A vida social das flores*, tem defesa prevista para março de 2027.
+    - Sou bolsista da FAPESP desde 2016, em cinco modalidades sucessivas, da iniciação científica ao doutorado e ao estágio de pesquisa no exterior. Em 2025–2026 fui pesquisador visitante no IDHE.S da ENS Paris-Saclay, com supervisão de Frédéric Lebaron. Trabalho com a Análise Geométrica de Dados na tradição de Brigitte Le Roux e Henry Rouanet.
+    - Meu próximo projeto, uma proposta de pós-doutorado na UFSCar com supervisão de Silvio Eduardo Alvarez Candido, compara trajetórias e posições de quem produz a política ambiental federal no Executivo, no Congresso Nacional e no CONAMA, entre 2003 e 2026.
+  en:
+    - My PhD in Social Sciences at UNESP, supervised by Maria Aparecida Chaves Jardim, examines the classifications and judgments that confer value on flowers and ornamental plants, from the commercial standards of Veiling Holambra to the choices of those who grow them. The thesis, *The Social Life of Flowers*, will be defended in March 2027.
+    - I have held FAPESP fellowships since 2016, in five successive schemes, from undergraduate research to the PhD and a research stay abroad. In 2025–2026 I was a visiting researcher at IDHE.S, ENS Paris-Saclay, supervised by Frédéric Lebaron. I work with Geometric Data Analysis in the tradition of Brigitte Le Roux and Henry Rouanet.
+    - My next project, a postdoctoral proposal at the Federal University of São Carlos (UFSCar) supervised by Silvio Eduardo Alvarez Candido, compares the trajectories and positions of those who make federal environmental policy in the executive, Congress and the National Environment Council (CONAMA) between 2003 and 2026.
+
+# Perfis exibidos na página inicial, no rodapé e no currículo.
+links:
+  - {rotulo: Lattes, url: "https://lattes.cnpq.br/2751639399347420"}
+  - {rotulo: ORCID, url: "https://orcid.org/0000-0003-1124-8506"}
+  - {rotulo: {pt: Google Acadêmico, en: Google Scholar}, url: "https://scholar.google.com/citations?user=8L_OiukAAAAJ"}
+  - {rotulo: GitHub, url: "https://github.com/lucasfloresvasques"}
+  - {rotulo: LinkedIn, url: "https://www.linkedin.com/in/lucas-vasques-29765b141/"}
+
+# Só no currículo. Sem url, o identificador aparece como texto.
+identificadores:
+  - {rotulo: "ORCID 0000-0003-1124-8506", url: "https://orcid.org/0000-0003-1124-8506"}
+  - {rotulo: "Lattes 2751639399347420", url: "https://lattes.cnpq.br/2751639399347420"}
+  - {rotulo: "Scopus Author ID 57215107026", url: "https://www.scopus.com/authid/detail.uri?authorId=57215107026"}
+  - {rotulo: "Web of Science ResearcherID K-8419-2018"}
+  - {rotulo: {pt: "FAPESP, Biblioteca Virtual", en: "FAPESP Virtual Library"}, url: "https://bv.fapesp.br/pt/pesquisador/682865/lucas-flores-vasques/"}
+
+linhas:
+  - nome: {pt: "Classificação, valor e mercados", en: "Classification, value and markets"}
+    texto:
+      pt: Como normas, especialistas e instituições tornam uma diferença pertinente, das plantas ornamentais à Taxonomia Sustentável Brasileira.
+      en: How standards, experts and institutions make a difference pertinent, from ornamental plants to the Brazilian Sustainable Taxonomy.
+  - nome: {pt: "Elites, Estado e política ambiental", en: "Elites, the state and environmental policy"}
+    texto:
+      pt: Posições e tomadas de posição de elites parlamentares latino-americanas e de quem produz a política ambiental federal no Brasil.
+      en: Positions and position-takings of Latin American parliamentary elites and of those who make federal environmental policy in Brazil.
+  - nome: {pt: "Gosto, emoções e desigualdades culturais", en: "Taste, emotions and cultural inequalities"}
+    texto:
+      pt: Repertórios de gosto, emoções na vida econômica e desigualdades nos usos da Internet no Brasil.
+      en: Repertoires of taste, emotions in economic life and inequalities in Internet use in Brazil.
+  - nome: {pt: Análise Geométrica de Dados, en: Geometric Data Analysis}
+    texto:
+      pt: ACM específica e análise de classe específica (CSA), na tradição de Le Roux e Rouanet.
+      en: Specific MCA and class specific analysis (CSA), in the tradition of Le Roux and Rouanet.
+
+# Novidades da página inicial: as mais recentes primeiro; data no formato AAAA-MM ou AAAA.
+novidades:
+  - data: 2026-10
+    texto:
+      pt: "50º Encontro Anual da ANPOCS: trabalho “Plantas ornamentais e distinção social no Brasil: as fronteiras simbólicas do consumo”, com Maria Chaves Jardim, no GT Sociedade e Vida Econômica."
+      en: "50th Annual Meeting of ANPOCS: paper “Plantas ornamentais e distinção social no Brasil: as fronteiras simbólicas do consumo”, with Maria Chaves Jardim, in the working group on Society and Economic Life."
+  - data: 2026
+    texto:
+      pt: Verbete sobre Análise de Correspondências Múltiplas aceito para a enciclopédia de métodos do ENCIPS.
+      en: Entry on Multiple Correspondence Analysis accepted for the ENCIPS methods encyclopedia.
+  - data: 2026-03
+    texto:
+      pt: Concluí o estágio de pesquisa no IDHE.S, ENS Paris-Saclay (BEPE/FAPESP), com supervisão de Frédéric Lebaron.
+      en: Completed my research stay at IDHE.S, ENS Paris-Saclay (FAPESP BEPE), supervised by Frédéric Lebaron.

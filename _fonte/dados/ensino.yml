@@ -1,0 +1,75 @@
+# Página Ensino e materiais: docência, minicursos, materiais didáticos, dados e código.
+# "arquivo" aponta para um arquivo do próprio site (por exemplo resources/...).
+
+declaracao:
+  pt: Ensino sociologia econômica, sociologia da cultura e métodos a partir de problemas empíricos. Em cursos de métodos, proponho ensinar a construir espaços sociais com ACM específica e CSA, no SPAD e no R, partindo da pergunta sociológica e da codificação das variáveis.
+  en: I teach economic sociology, cultural sociology and methods through empirical problems. In methods courses, I aim to teach how to construct social spaces with specific MCA and CSA, in SPAD and R, starting from the sociological question and the coding of variables.
+
+disciplinas:
+  - ano: "2022"
+    titulo: {pt: Sociologia das Emoções, en: Sociology of Emotions}
+    detalhe: {pt: "Estágio de docência (PAADES), graduação em Ciências Sociais, UNESP.", en: "Teaching internship (PAADES), undergraduate Social Sciences, UNESP."}
+  - ano: "2020"
+    titulo: {pt: Sociologia e Questões da Contemporaneidade, en: Sociology and Contemporary Issues}
+    detalhe: {pt: "Estágio de docência (PAADES), graduação em Ciências Sociais, UNESP.", en: "Teaching internship (PAADES), undergraduate Social Sciences, UNESP."}
+  - ano: "2019"
+    titulo: {pt: Sociologias Empíricas e Funcionalistas, en: Empirical and Functionalist Sociologies}
+    detalhe: {pt: "Monitoria, graduação em Ciências Sociais, UNESP.", en: "Teaching assistant, undergraduate Social Sciences, UNESP."}
+
+cursos:
+  - ano: "2026"
+    titulo: {pt: "Bourdieu na prática: possibilidades de técnicas e ferramentas na pesquisa", en: "Bourdieu in practice: techniques and tools for research"}
+    detalhe:
+      pt: "Aula no minicurso de extensão “Formação em metodologias no mundo digital e a Sociologia” (NESPOM/UNESP e NUSEC/UFSC, remoto)."
+      en: "Lecture in the extension short course “Formação em metodologias no mundo digital e a Sociologia” (NESPOM/UNESP and NUSEC/UFSC, online)."
+    material:
+      rotulo: {pt: "Slides (PDF)", en: "Slides (PDF, in Portuguese)"}
+      arquivo: resources/slides/bourdieu-na-pratica-2026.pdf
+  - ano: "2025"
+    titulo: {pt: "Ferramentas na pesquisa em Ciências Sociais", en: "Tools for research in the social sciences"}
+    detalhe:
+      pt: "Minicurso de extensão para a pós-graduação em Ciências Sociais e em Engenharia de Produção da UFSCar (remoto, 4 h)."
+      en: "Extension short course for graduate students in Social Sciences and Production Engineering at UFSCar (online, 4 h)."
+  - ano: "2022"
+    titulo: {pt: "IRaMuTeQ aplicado na pesquisa qualitativa", en: "IRaMuTeQ in qualitative research"}
+    detalhe: {pt: "Palestra e oficina de métodos.", en: "Methods talk and workshop."}
+  - ano: "2021"
+    titulo: {pt: "O MAXQDA na pesquisa qualitativa", en: "MAXQDA in qualitative research"}
+    detalhe: {pt: "Palestra e oficina de métodos.", en: "Methods talk and workshop."}
+  - ano: "2021"
+    titulo: {pt: "Sociologia do Amor", en: "Sociology of Love"}
+    detalhe: {pt: "Curso de curta duração (4 h), ministrado em colaboração.", en: "Short course (4 h), co-taught."}
+
+outras:
+  - ano: "2021–2022"
+    titulo: {pt: "Consultoria de pesquisa em programas de análise qualitativa", en: "Research consultancy on qualitative analysis software"}
+    detalhe: {pt: "Universidade Federal do Recôncavo da Bahia (UFRB).", en: "Federal University of Recôncavo da Bahia (UFRB)."}
+  - ano: "2022, 2023"
+    titulo: {pt: "Bancas de trabalho de conclusão de curso", en: "Undergraduate thesis committees"}
+    detalhe: {pt: "Graduação em Ciências Sociais, UNESP.", en: "Undergraduate Social Sciences, UNESP."}
+
+materiais:
+  - titulo: {pt: "Bourdieu na prática (slides, 2026)", en: "Bourdieu in practice (slides, 2026)"}
+    detalhe: {pt: "37 slides, em português.", en: "37 slides, in Portuguese."}
+    arquivo: resources/slides/bourdieu-na-pratica-2026.pdf
+    licenca: CC BY 4.0
+  - titulo: {pt: "ACM e classificação hierárquica: exemplo didático com dados sintéticos", en: "MCA and hierarchical clustering: a teaching example with synthetic data"}
+    detalhe:
+      pt: "Script em R (FactoMineR) e uma base inteiramente simulada, sem dados reais de pesquisa."
+      en: "R script (FactoMineR) and an entirely simulated dataset, with no real research data."
+    arquivo: resources/exemplo-didatico-acm.zip
+    licenca: CC BY 4.0
+
+dados:
+  - nome: TIC Domicílios 2024
+    detalhe:
+      pt: "Microdados de indivíduos e documentação. Núcleo de Informação e Coordenação do Ponto BR (NIC.br), Cetic.br. Licença [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)."
+      en: "Individual-level microdata and documentation. Brazilian Network Information Center (NIC.br), Cetic.br. Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)."
+    url: https://www.cetic.br/pt/arquivos/domicilios/2024/individuos/
+  - nome: PELA-USAL
+    detalhe:
+      pt: "Alcántara, M. (dir.). Proyecto Élites Latinoamericanas (PELA-USAL). Universidad de Salamanca. Acesso mediante cadastro, para uso acadêmico e publicação de resultados agregados. Os microdados não são redistribuídos aqui."
+      en: "Alcántara, M. (dir.). Proyecto Élites Latinoamericanas (PELA-USAL). Universidad de Salamanca. Access upon registration, for academic use and publication of aggregated results. The microdata are not redistributed here."
+    url: https://oir.org.es/pela/access-database/
+
+software: "R · SPAD · Python · IRaMuTeQ · MAXQDA · Gephi · VOSviewer · Bibliometrix"

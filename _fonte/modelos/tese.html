@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block conteudo %}
+{% set tese = pesquisa.tese %}
+{% set defesa = tese.defesa | t %}
+<div class="pagehead">
+  <p class="kicker">{{ r.tese | t }}</p>
+  <h1 class="page-title">{{ tese.titulo | t }}</h1>
+</div>
+
+<dl class="facts">
+  <dt>{{ r.programa | t }}</dt><dd>{{ tese.programa | t }}</dd>
+  <dt>{{ r.orientacao | t }}</dt><dd>{{ tese.orientacao }}</dd>
+  <dt>{{ r.estagio_exterior | t }}</dt><dd>{{ tese.estagio | t }}</dd>
+  <dt>{{ r.defesa | t }}</dt><dd>{{ defesa[:1] | upper }}{{ defesa[1:] }}</dd>
+  <dt>{{ r.financiamento_titulo | t }}</dt><dd>{{ tese.financiamento | t }}</dd>
+</dl>
+
+<section class="section-block" aria-labelledby="resumo">
+  <h2 id="resumo">{{ r.resumo | t }}</h2>
+  <p class="prose">{{ tese.resumo | t }}</p>
+  <p class="note"><span class="label">{{ r.palavras_chave | t }}:</span> {{ tese.palavras_chave | t }}</p>
+  <p class="note">{{ tese.versao_resumo | t }}</p>
+</section>
+
+<section class="section-block" aria-labelledby="capitulos">
+  <h2 id="capitulos">{{ r.capitulos | t }}</h2>
+{% if r.capitulos_nota | t %}
+  <p class="note">{{ r.capitulos_nota | t }}</p>
+{% endif %}
+  <ul class="chapters">
+{% for capitulo in tese.capitulos %}
+    <li{% if idioma == 'en' and not capitulo.en %} lang="pt-BR"{% endif %}>{{ capitulo | t }}</li>
+{% endfor %}
+  </ul>
+</section>
+
+<section class="section-block" aria-labelledby="anterior">
+  <h2 id="anterior">{{ r.pesquisa_anterior | t }}</h2>
+  <p class="prose"><span class="label">{{ r.dissertacao | t }}:</span> <a href="{{ tese.dissertacao.url }}" lang="pt-BR"><em>{{ tese.dissertacao.titulo }}</em></a>. {{ tese.dissertacao.detalhe | t }}</p>
+</section>
+
+<p class="funding-note">{{ r.financiamento | t }} {{ r.aviso_fapesp | t }}</p>
+{% endblock %}

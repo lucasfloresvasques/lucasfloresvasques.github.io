@@ -1,0 +1,36 @@
+# Apresentações em eventos, da mais recente para a mais antiga.
+
+- ano: 2026
+  titulo: "Plantas ornamentais e distinção social no Brasil: as fronteiras simbólicas do consumo"
+  lingua: pt
+  autores: [Lucas Flôres Vasques, Maria Chaves Jardim]
+  evento:
+    pt: 50º Encontro Anual da ANPOCS, GT Sociedade e Vida Econômica
+    en: 50th Annual Meeting of ANPOCS, working group on Society and Economic Life
+  nota: {pt: Com publicação nos anais., en: Published in the proceedings.}
+
+- ano: 2025
+  titulo: "Plantas ornamentais no Brasil"
+  lingua: pt
+  autores: [Lucas Flôres Vasques]
+  evento:
+    pt: Geometric Data Analysis Workshop, IDHE.S, ENS Paris-Saclay (França)
+    en: Geometric Data Analysis Workshop, IDHE.S, ENS Paris-Saclay (France)
+
+- ano: 2022
+  titulo: "A construção social do gosto e as emoções: o mercado de plantas ornamentais brasileiro visitado pela sociologia econômica"
+  lingua: pt
+  autores: [Lucas Flôres Vasques]
+  evento:
+    pt: Congresso Internacional de Pesquisa NESPOM, UNESP (Araraquara)
+    en: NESPOM International Research Congress, UNESP (Araraquara)
+  nota: {pt: Com publicação nos anais., en: Published in the proceedings.}
+
+- ano: 2018
+  titulo: "As mulheres executivas e suas emoções na doxa empresarial brasileira"
+  lingua: pt
+  autores: [Lucas Flôres Vasques]
+  evento:
+    pt: 30º Congresso de Iniciação Científica da UNESP
+    en: 30th UNESP Undergraduate Research Congress
+  nota: {pt: Menção honrosa., en: Honourable mention.}

@@ -1,0 +1,13 @@
+# Exemplo didático sobre dados SINTÉTICOS (não são dados de pesquisa).
+# Instale antes: install.packages("FactoMineR")
+library(FactoMineR)
+dados <- read.csv("dados_sinteticos.csv", fileEncoding="UTF-8", stringsAsFactors=TRUE)
+ativas <- c("computador", "estudo_online", "banco_online", "video")
+res_acm <- MCA(dados[ativas], ncp=4, graph=FALSE)
+print(res_acm$eig)
+write.csv(res_acm$eig, "autovalores.csv", row.names=TRUE)
+png("mapa_categorias.png", width=1000, height=800)
+plot(res_acm, choix="var")
+dev.off()
+res_classe <- HCPC(res_acm, nb.clust=3, consol=FALSE, graph=FALSE)
+write.csv(res_classe$data.clust, "classes.csv", row.names=FALSE)

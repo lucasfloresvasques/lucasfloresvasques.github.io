@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ lingua_html }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ r.pagina_movida | t }} · {{ perfil.nome }}</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="{{ destino_absoluto }}">
+<meta http-equiv="refresh" content="0; url={{ rel(destino) }}">
+<link rel="stylesheet" href="{{ rel('assets/styles.css') }}">
+</head>
+<body>
+<main class="shell redirect">
+  <p>{{ r.pagina_movida | t }}. {{ r.ir_para | t }} <a href="{{ rel(destino) }}">{{ destino_absoluto }}</a>.</p>
+</main>
+</body>
+</html>

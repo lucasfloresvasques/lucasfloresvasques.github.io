@@ -1,0 +1,62 @@
+{# Peças repetidas nas páginas. Importe com: from "_macros.html" import ... with context #}
+
+{% macro lang_de(lingua) %}{% if lingua and lingua != idioma %} lang="{{ 'pt-BR' if lingua == 'pt' else 'en' }}"{% endif %}{% endmacro %}
+
+{% macro destino(p) %}{{ ('https://doi.org/' ~ p.doi) if p.doi else (p.url or '') }}{% endmacro %}
+
+{% macro veiculo(p, capitulo=false) %}
+{% if capitulo %}{{ p.veiculo | t | inline }}{% else %}<em>{{ p.veiculo | t }}</em>{% endif %}{% if p.volume %}, {{ p.volume }}{% endif %}{% if p.paginas %}, {{ p.paginas }}{% endif %}{% if idioma == 'en' and p.lingua == 'pt' %} · {{ r.em_portugues | t }}{% endif %}
+{% endmacro %}
+
+{# Publicação com ano à esquerda: página inicial e página de publicações. #}
+{% macro publicacao(p, capitulo=false) %}
+<article class="pub">
+  <span class="pub-year">{{ p.ano }}</span>
+  <div class="pub-main">
+    <h3 class="pub-title"{{ lang_de(p.lingua) }}>{% if destino(p) %}<a href="{{ destino(p) }}">{{ p.titulo }}</a>{% else %}{{ p.titulo }}{% endif %}</h3>
+{% if idioma == 'en' and p.titulo_en %}
+    <p class="pub-translation">{{ p.titulo_en }}</p>
+{% endif %}
+    <p class="pub-authors">{{ p.autores | autores }}</p>
+    <p class="pub-venue">{{ veiculo(p, capitulo) | trim }}</p>
+{% if p.doi %}
+    <p class="pub-doi">doi:{{ p.doi }}</p>
+{% elif p.situacao or p.tipo == 'verbete' %}
+    <p class="pub-doi">{{ r.situacao.aceito | t }}</p>
+{% endif %}
+{% if p.nota %}
+    <p class="pub-note">{{ p.nota | t }}</p>
+{% endif %}
+  </div>
+</article>
+{% endmacro %}
+
+{# Referência compacta, para o currículo. #}
+{% macro referencia(p, capitulo=false) %}
+<li><span class="cv-year">{{ p.ano }}</span><span>{{ p.autores | autores }}. {% if destino(p) %}<a href="{{ destino(p) }}"{{ lang_de(p.lingua) }}>{{ p.titulo }}</a>{% else %}<span{{ lang_de(p.lingua) }}>{{ p.titulo }}</span>{% endif %}. {{ veiculo(p, capitulo) | trim }}.{% if p.doi %} doi:{{ p.doi }}{% endif %}{% if p.tipo == 'verbete' %} {{ r.situacao.aceito | t }}.{% endif %}</span></li>
+{% endmacro %}
+
+{# Manuscrito: título no idioma original, tradução entre colchetes, autores e situação. #}
+{% macro manuscrito(m, compacto=false) %}
+{% if compacto %}
+<li><strong{{ lang_de(m.lingua) }}>{{ m.titulo }}</strong>{% if m.lingua != idioma and m.traducao %} <span class="translation">[{{ m.traducao }}]</span>{% endif %}<span class="cv-meta">{{ m.autores | autores }} · {{ r.situacao[m.situacao] | t }}</span></li>
+{% else %}
+<article class="paper-entry">
+  <h3{{ lang_de(m.lingua) }}>{{ m.titulo }}</h3>
+{% if m.lingua != idioma and m.traducao %}
+  <p class="paper-translation">[{{ m.traducao }}]</p>
+{% endif %}
+  <p class="manuscript-authors">{{ m.autores | autores }}</p>
+  <p class="manuscript-status">{{ r.situacao[m.situacao] | t }}</p>
+</article>
+{% endif %}
+{% endmacro %}
+
+{# Item de linha do tempo: data à esquerda, título e detalhe à direita. #}
+{% macro item(periodo, titulo, detalhe='', lingua=none, extra='') %}
+<li><span class="tl-date">{{ periodo }}</span><div><strong{{ lang_de(lingua) }}>{{ titulo }}</strong>{% if detalhe %}<p>{{ detalhe }}</p>{% endif %}{{ extra }}</div></li>
+{% endmacro %}
+
+{% macro apresentacao(a) %}
+{{ item(a.ano, a.titulo, (((a.autores | autores) ~ '. ') if a.autores | length > 1 else '') ~ (a.evento | t) ~ '.' ~ ((' ' ~ (a.nota | t)) if a.nota else ''), a.lingua) }}
+{% endmacro %}

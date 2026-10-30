@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% from "_macros.html" import publicacao, manuscrito, apresentacao with context %}
+{% block conteudo %}
+{% set ids = {'aceitas': 'aceitos', 'artigos': 'artigos', 'capitulos': 'capitulos', 'andamento': 'em-andamento', 'apresentacoes': 'apresentacoes'} if idioma == 'pt' else {'aceitas': 'forthcoming', 'artigos': 'articles', 'capitulos': 'chapters', 'andamento': 'work-in-progress', 'apresentacoes': 'presentations'} %}
+<div class="pagehead"><h1 class="page-title">{{ titulo_pagina }}</h1></div>
+
+{% if publicacoes.aceitas %}
+<section class="pub-page-section" aria-labelledby="{{ ids.aceitas }}">
+  <h2 id="{{ ids.aceitas }}">{{ r.aceitas | t }}</h2>
+  <div class="pub-list">
+{% for p in publicacoes.aceitas %}
+{{ publicacao(p) }}
+{% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section class="pub-page-section" aria-labelledby="{{ ids.artigos }}">
+  <h2 id="{{ ids.artigos }}">{{ r.artigos | t }}</h2>
+  <div class="pub-list">
+{% for p in publicacoes.artigos %}
+{{ publicacao(p) }}
+{% endfor %}
+  </div>
+</section>
+
+<section class="pub-page-section" aria-labelledby="{{ ids.capitulos }}">
+  <h2 id="{{ ids.capitulos }}">{{ r.capitulos_livro | t }}</h2>
+  <div class="pub-list">
+{% for p in publicacoes.capitulos %}
+{{ publicacao(p, capitulo=true) }}
+{% endfor %}
+  </div>
+</section>
+
+<section class="pub-page-section" aria-labelledby="{{ ids.andamento }}">
+  <h2 id="{{ ids.andamento }}">{{ r.em_andamento | t }}</h2>
+  <p class="section-note">{{ r.em_andamento_nota | t }}</p>
+  <div class="paper-list">
+{% for m in manuscritos %}
+{{ manuscrito(m) }}
+{% endfor %}
+  </div>
+</section>
+
+<section class="pub-page-section" aria-labelledby="{{ ids.apresentacoes }}">
+  <h2 id="{{ ids.apresentacoes }}">{{ r.apresentacoes | t }}</h2>
+  <ul class="timeline">
+{% for a in apresentacoes %}
+{{ apresentacao(a) }}
+{% endfor %}
+  </ul>
+</section>
+{% endblock %}

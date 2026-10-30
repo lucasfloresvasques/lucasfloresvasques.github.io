@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block conteudo %}
+{% set id_tese = 'tese' if idioma == 'pt' else 'thesis' %}
+{% set id_projeto = 'proximo-projeto' if idioma == 'pt' else 'next-project' %}
+{% set id_metodo = 'metodo' if idioma == 'pt' else 'method' %}
+<div class="pagehead"><h1 class="page-title">{{ titulo_pagina }}</h1></div>
+
+<section class="statement" aria-label="{{ r.declaracao | t }}">
+{% for paragrafo in pesquisa.declaracao | t %}
+  <p>{{ paragrafo | inline }}</p>
+{% endfor %}
+</section>
+
+<section class="section-block" aria-labelledby="{{ id_tese }}">
+  <h2 id="{{ id_tese }}">{{ r.tese | t }}</h2>
+  <article class="feature">
+    <h3><a href="{{ rel(paginas.tese.arquivo[idioma]) }}">{{ pesquisa.tese.titulo | t }}</a></h3>
+    <p class="meta">UNESP · {{ r.orientacao | t }}: {{ pesquisa.tese.orientacao }} · {{ r.defesa | t }} {{ pesquisa.tese.defesa | t }}</p>
+    <p>{{ pesquisa.tese.sintese | t }}</p>
+    <p class="more"><a href="{{ rel(paginas.tese.arquivo[idioma]) }}">{{ r.sobre_tese | t }}</a></p>
+  </article>
+</section>
+
+<section class="section-block" aria-labelledby="{{ id_projeto }}">
+  <h2 id="{{ id_projeto }}">{{ r.proximo_projeto | t }}</h2>
+  <article class="feature">
+    <h3{% if idioma == 'en' %} lang="en"{% endif %}>{{ pesquisa.proximo_projeto.titulo | t }}</h3>
+    <p class="meta">{{ pesquisa.proximo_projeto.situacao | t }}</p>
+    <p>{{ pesquisa.proximo_projeto.descricao | t }}</p>
+    <details class="abstract">
+      <summary>{{ r.resumo_projeto | t }}</summary>
+      <p lang="pt-BR">{{ pesquisa.proximo_projeto.resumo_pt }}</p>
+    </details>
+  </article>
+</section>
+
+<section class="section-block" aria-labelledby="{{ id_metodo }}">
+  <h2 id="{{ id_metodo }}">{{ r.metodo | t }}</h2>
+  <p class="prose">{{ pesquisa.metodo | t | inline }}</p>
+</section>
+
+<p class="inline-next"><a href="{{ rel(paginas.publicacoes.arquivo[idioma] ~ ('#em-andamento' if idioma == 'pt' else '#work-in-progress')) }}">{{ r.em_andamento_link | t }}</a></p>
+{% endblock %}
