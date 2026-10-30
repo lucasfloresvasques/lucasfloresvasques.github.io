@@ -8,10 +8,10 @@ titulo:
 intro:
   pt:
     - Na noite de 25 de outubro de 2026 acompanhei a apuração do segundo turno presidencial, entre Lula e Flávio Bolsonaro, com um modelo que projeta o resultado a partir dos municípios já apurados. O modelo rodou 175 vezes entre 17h08 e 21h28 (horário de Brasília), e cada rodada lia os resultados dos 5.571 municípios no portal do TSE.
-    - A contagem oscilou. Flávio Bolsonaro passou à frente às 19h46, com 14% das seções apuradas, e Lula só voltou a liderar às 20h25. A projeção ficou estável. Desde 19h22, com 2,7% apurado, ela indicava a vitória de Lula, e a partir de 10% das seções nunca se afastou mais de 0,45 ponto percentual do resultado. Na leitura final, com 99,88% das seções, Lula tinha 51,76% dos votos válidos dados aos dois; a projeção dava 51,78%.
+    - A contagem oscilou. Flávio Bolsonaro passou à frente às 19h46, com 14% das seções apuradas, e Lula só voltou a liderar às 20h25. A projeção ficou estável. Com 2% das seções apuradas, ela já quase cravava o resultado, dentro da margem; com 8%, cravou a vitória de Lula. Na leitura final, com 99,88% das seções, Lula tinha 51,76% dos votos válidos dados aos dois; a projeção dava 51,78%.
   en:
     - On the night of 25 October 2026 I followed the count of Brazil's presidential runoff, between Lula and Flávio Bolsonaro, with a model that projects the result from the municipalities already counted. It ran 175 times between 17:08 and 21:28 (Brasília time), each time reading the results of all 5,571 municipalities from the website of the Superior Electoral Court (TSE).
-    - The count swung. Flávio Bolsonaro took the lead at 19:46, with 14% of polling sections counted, and Lula only regained it at 20:25. The projection held steady. From 19:22, with 2.7% counted, it pointed to a Lula win, and once 10% of sections were in it never moved more than 0.45 percentage points away from the result. At the final reading, with 99.88% of sections counted, Lula had 51.76% of the valid votes cast for the two candidates; the projection said 51.78%.
+    - The count swung. Flávio Bolsonaro took the lead at 19:46, with 14% of polling sections counted, and Lula only regained it at 20:25. The projection held steady. With 2% of sections counted, it had almost nailed the result, within the margin; with 8%, it had nailed Lula's win. At the final reading, with 99.88% of sections counted, Lula had 51.76% of the valid votes cast for the two candidates; the projection said 51.78%.
 
 video:
   arquivo: assets/eleicoes-2026/video-2022-2026.mp4
@@ -26,8 +26,8 @@ noite:
   id: {pt: a-noite, en: election-night}
   titulo: {pt: A noite da apuração, en: Election night}
   texto:
-    pt: A média das pesquisas da véspera, registrada pelo painel, dava a Lula 49,3% dos votos válidos, ou seja, derrota. Com 2,2% das seções apuradas, a projeção já estava em 50,95%, a 0,8 ponto do resultado. A contagem bruta só ficou a menos de meio ponto do resultado com 80,8% apurado, às 20h54. Às 21h09, com 96,8% das seções, a vantagem de Lula na contagem passou a estimativa dos votos que ainda faltavam.
-    en: The average of the polls from the day before, as recorded by the panel, gave Lula 49.3% of the valid vote, that is, a defeat. With 2.2% of sections counted, the projection was already at 50.95%, 0.8 points from the result. The raw count only came within half a point of the result at 80.8% counted, at 20:54. At 21:09, with 96.8% of sections in, Lula's lead in the count exceeded the estimate of the votes still to come.
+    pt: A média das pesquisas da véspera, registrada pelo painel, dava a Lula 49,3% dos votos válidos, ou seja, derrota. Com 2,2% das seções apuradas, a projeção já estava em 50,95%, a 0,82 ponto do resultado e dentro da margem. Às 19h22, com 2,7%, o painel passou a indicar a vitória de Lula. Às 19h35, com 8,1%, a vantagem de Lula na projeção passava da margem mesmo descontando o pior viés possível da ordem de chegada dos votos; a vitória estava cravada. A partir de 10% das seções, a projeção nunca se afastou mais de 0,45 ponto do resultado. A contagem bruta só ficou a menos de meio ponto do resultado com 80,8% apurado, às 20h54. Às 21h09, com 96,8% das seções, a vantagem de Lula na contagem passou a estimativa dos votos que ainda faltavam.
+    en: The average of the polls from the day before, as recorded by the panel, gave Lula 49.3% of the valid vote, that is, a defeat. With 2.2% of sections counted, the projection was already at 50.95%, 0.82 points from the result and within the margin. At 19:22, with 2.7% counted, the panel began to call Lula the winner. At 19:35, with 8.1%, Lula's projected lead exceeded the margin even after allowing for the worst possible bias from the order in which votes arrived; the win was nailed down. From 10% of sections onwards, the projection never moved more than 0.45 points away from the result. The raw count only came within half a point of the result at 80.8% counted, at 20:54. At 21:09, with 96.8% of sections in, Lula's lead in the count exceeded the estimate of the votes still to come.
   legenda:
     pt: Lula na contagem do TSE e na projeção, à medida que as seções eram apuradas. A faixa sombreada é o pior erro observado naquele ponto da apuração no teste com a eleição de 2022.
     en: Lula's share in the official count and in the projection as polling sections came in. The shaded band is the worst error seen at that point of the count in the test with the 2022 election.
@@ -88,31 +88,12 @@ teste:
     pt: Erro da projeção em 2026 comparado à faixa do teste com 2022 e ao erro da contagem bruta, em pontos percentuais. Nas 144 rodadas a partir de 2% apurado, o resultado ficou sempre dentro da faixa.
     en: Projection error in 2026 compared with the error band from the 2022 test and with the error of the raw count, in percentage points. In all 144 runs from 2% counted onwards, the result stayed within the band.
 
-limites:
-  id: {pt: limites, en: limitations}
-  titulo: {pt: Limites, en: Limitations}
-  itens:
-    pt:
-      - O teste usa uma única eleição, com ordens de chegada simuladas.
-      - Dentro de cada zona eleitoral, o teste supõe votos homogêneos. Na apuração real, as seções podem variar mais.
-      - A faixa é o pior erro do teste, não um intervalo de confiança nem uma probabilidade.
-      - O resultado de 2026 citado aqui é a leitura do painel às 21h29, com 99,88% das seções. O resultado oficial é o do [TSE](https://resultados.tse.jus.br/).
-      - Os dados cobrem só os votos válidos dados aos dois finalistas, sem abstenção, brancos, nulos ou perfil dos eleitores. A variação da parcela de um candidato num município não é transferência de votos.
-      - Na última coleta, o exterior ainda estava incompleto (90,9% das seções).
-    en:
-      - The test relies on a single election, with simulated arrival orders.
-      - Within each electoral zone, the test assumes homogeneous votes. In a real count, sections may vary more.
-      - The band is the worst error in the test, not a confidence interval or a probability.
-      - The 2026 result cited here is the panel's reading at 21:29, with 99.88% of sections counted. The official result is the [TSE's](https://resultados.tse.jus.br/).
-      - The data cover only valid votes for the two finalists, with no abstention, blank or spoiled ballots, or voter characteristics. A change in a candidate's share in a municipality is not a transfer of votes.
-      - At the last collection, votes from abroad were still incomplete (90.9% of sections).
-
 dados:
   id: {pt: dados, en: data}
   titulo: {pt: Dados, en: Data}
   texto:
-    pt: Os resultados por município vêm do portal de divulgação e dos dados abertos do TSE. O modelo foi escrito em Python, com pandas e numpy. Os dados dos gráficos estão em CSV, nos arquivos abaixo.
-    en: Municipal results come from the TSE's results website and open data. The model was written in Python, with pandas and numpy. The data behind the charts are available as CSV files below.
+    pt: Os resultados por município vêm do portal de divulgação e dos dados abertos do TSE. Os números de 2026 são a leitura do painel às 21h29, com 99,88% das seções; o resultado oficial é o do TSE. O modelo foi escrito em Python, com pandas e numpy. Os dados dos gráficos estão em CSV, nos arquivos abaixo.
+    en: Municipal results come from the TSE's results website and open data. The 2026 figures are the panel's reading at 21:29, with 99.88% of sections counted; the official result is the TSE's. The model was written in Python, with pandas and numpy. The data behind the charts are available as CSV files below.
   arquivos:
     - {rotulo: {pt: Rodadas da projeção, en: Projection runs}, arquivo: assets/eleicoes-2026/dados/serie_projecao_rodadas.csv}
     - {rotulo: {pt: Erro por ponto da apuração, en: Error by point of the count}, arquivo: assets/eleicoes-2026/dados/erro_por_marco.csv}

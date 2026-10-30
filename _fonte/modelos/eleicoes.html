@@ -63,13 +63,6 @@
   <figcaption>{{ e.teste.legenda | t }}</figcaption>
 </figure>
 
-<h2 id="{{ e.limites.id | t }}">{{ e.limites.titulo | t }}</h2>
-<ul class="limites">
-{% for item in e.limites.itens | t %}
-  <li>{{ item | inline }}</li>
-{% endfor %}
-</ul>
-
 <h2 id="{{ e.dados.id | t }}">{{ e.dados.titulo | t }}</h2>
 <p>{{ e.dados.texto | t }}</p>
 <ul class="lista sem-ano arquivos">

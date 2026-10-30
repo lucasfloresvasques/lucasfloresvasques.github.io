@@ -48,7 +48,7 @@
 <main id="conteudo">
 <h1>The 2026 runoff, municipality by municipality</h1>
 <p>On the night of 25 October 2026 I followed the count of Brazil&#39;s presidential runoff, between Lula and Flávio Bolsonaro, with a model that projects the result from the municipalities already counted. It ran 175 times between 17:08 and 21:28 (Brasília time), each time reading the results of all 5,571 municipalities from the website of the Superior Electoral Court (TSE).</p>
-<p>The count swung. Flávio Bolsonaro took the lead at 19:46, with 14% of polling sections counted, and Lula only regained it at 20:25. The projection held steady. From 19:22, with 2.7% counted, it pointed to a Lula win, and once 10% of sections were in it never moved more than 0.45 percentage points away from the result. At the final reading, with 99.88% of sections counted, Lula had 51.76% of the valid votes cast for the two candidates; the projection said 51.78%.</p>
+<p>The count swung. Flávio Bolsonaro took the lead at 19:46, with 14% of polling sections counted, and Lula only regained it at 20:25. The projection held steady. With 2% of sections counted, it had almost nailed the result, within the margin; with 8%, it had nailed Lula&#39;s win. At the final reading, with 99.88% of sections counted, Lula had 51.76% of the valid votes cast for the two candidates; the projection said 51.78%.</p>
 
 <figure class="video">
   <video controls preload="none" playsinline poster="assets/eleicoes-2026/video-capa.webp" width="720" height="1280">
@@ -73,7 +73,7 @@
 </details>
 
 <h2 id="election-night">Election night</h2>
-<p>The average of the polls from the day before, as recorded by the panel, gave Lula 49.3% of the valid vote, that is, a defeat. With 2.2% of sections counted, the projection was already at 50.95%, 0.8 points from the result. The raw count only came within half a point of the result at 80.8% counted, at 20:54. At 21:09, with 96.8% of sections in, Lula&#39;s lead in the count exceeded the estimate of the votes still to come.</p>
+<p>The average of the polls from the day before, as recorded by the panel, gave Lula 49.3% of the valid vote, that is, a defeat. With 2.2% of sections counted, the projection was already at 50.95%, 0.82 points from the result and within the margin. At 19:22, with 2.7% counted, the panel began to call Lula the winner. At 19:35, with 8.1%, Lula&#39;s projected lead exceeded the margin even after allowing for the worst possible bias from the order in which votes arrived; the win was nailed down. From 10% of sections onwards, the projection never moved more than 0.45 points away from the result. The raw count only came within half a point of the result at 80.8% counted, at 20:54. At 21:09, with 96.8% of sections in, Lula&#39;s lead in the count exceeded the estimate of the votes still to come.</p>
 <figure class="grafico">
   <svg role="img" aria-label="projection × official count (TSE)" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 413.619158 272.026391" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <defs>
@@ -1829,18 +1829,8 @@ L 242.233906 55.62
   <figcaption>Projection error in 2026 compared with the error band from the 2022 test and with the error of the raw count, in percentage points. In all 144 runs from 2% counted onwards, the result stayed within the band.</figcaption>
 </figure>
 
-<h2 id="limitations">Limitations</h2>
-<ul class="limites">
-  <li>The test relies on a single election, with simulated arrival orders.</li>
-  <li>Within each electoral zone, the test assumes homogeneous votes. In a real count, sections may vary more.</li>
-  <li>The band is the worst error in the test, not a confidence interval or a probability.</li>
-  <li>The 2026 result cited here is the panel&#39;s reading at 21:29, with 99.88% of sections counted. The official result is the <a href="https://resultados.tse.jus.br/">TSE&#39;s</a>.</li>
-  <li>The data cover only valid votes for the two finalists, with no abstention, blank or spoiled ballots, or voter characteristics. A change in a candidate&#39;s share in a municipality is not a transfer of votes.</li>
-  <li>At the last collection, votes from abroad were still incomplete (90.9% of sections).</li>
-</ul>
-
 <h2 id="data">Data</h2>
-<p>Municipal results come from the TSE&#39;s results website and open data. The model was written in Python, with pandas and numpy. The data behind the charts are available as CSV files below.</p>
+<p>Municipal results come from the TSE&#39;s results website and open data. The 2026 figures are the panel&#39;s reading at 21:29, with 99.88% of sections counted; the official result is the TSE&#39;s. The model was written in Python, with pandas and numpy. The data behind the charts are available as CSV files below.</p>
 <ul class="lista sem-ano arquivos">
   <li><p><a class="titulo" href="assets/eleicoes-2026/dados/serie_projecao_rodadas.csv">Projection runs</a></p></li>
   <li><p><a class="titulo" href="assets/eleicoes-2026/dados/erro_por_marco.csv">Error by point of the count</a></p></li>

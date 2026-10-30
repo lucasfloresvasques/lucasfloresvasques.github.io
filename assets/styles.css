@@ -109,8 +109,6 @@ main { padding-bottom: 3rem; }
 .tabela th { font-weight: 600; color: var(--tinta); text-align: right; vertical-align: bottom; padding: .35rem .5rem; border-bottom: 1px solid var(--suave); }
 .tabela td { text-align: right; padding: .3rem .5rem; border-bottom: 1px solid var(--fio); }
 .tabela th:first-child, .tabela td:first-child { text-align: left; padding-left: 0; }
-.limites { padding-left: 1.2rem; }
-.limites li { margin-bottom: .45rem; }
 
 /* Listas: ano à esquerda, título e detalhe */
 .lista { list-style: none; margin: 0 0 1rem; padding: 0; }

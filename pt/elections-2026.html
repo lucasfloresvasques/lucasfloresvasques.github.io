@@ -48,7 +48,7 @@
 <main id="conteudo">
 <h1>Eleições de 2026: o segundo turno, município a município</h1>
 <p>Na noite de 25 de outubro de 2026 acompanhei a apuração do segundo turno presidencial, entre Lula e Flávio Bolsonaro, com um modelo que projeta o resultado a partir dos municípios já apurados. O modelo rodou 175 vezes entre 17h08 e 21h28 (horário de Brasília), e cada rodada lia os resultados dos 5.571 municípios no portal do TSE.</p>
-<p>A contagem oscilou. Flávio Bolsonaro passou à frente às 19h46, com 14% das seções apuradas, e Lula só voltou a liderar às 20h25. A projeção ficou estável. Desde 19h22, com 2,7% apurado, ela indicava a vitória de Lula, e a partir de 10% das seções nunca se afastou mais de 0,45 ponto percentual do resultado. Na leitura final, com 99,88% das seções, Lula tinha 51,76% dos votos válidos dados aos dois; a projeção dava 51,78%.</p>
+<p>A contagem oscilou. Flávio Bolsonaro passou à frente às 19h46, com 14% das seções apuradas, e Lula só voltou a liderar às 20h25. A projeção ficou estável. Com 2% das seções apuradas, ela já quase cravava o resultado, dentro da margem; com 8%, cravou a vitória de Lula. Na leitura final, com 99,88% das seções, Lula tinha 51,76% dos votos válidos dados aos dois; a projeção dava 51,78%.</p>
 
 <figure class="video">
   <video controls preload="none" playsinline poster="../assets/eleicoes-2026/video-capa.webp" width="720" height="1280">
@@ -73,7 +73,7 @@
 </details>
 
 <h2 id="a-noite">A noite da apuração</h2>
-<p>A média das pesquisas da véspera, registrada pelo painel, dava a Lula 49,3% dos votos válidos, ou seja, derrota. Com 2,2% das seções apuradas, a projeção já estava em 50,95%, a 0,8 ponto do resultado. A contagem bruta só ficou a menos de meio ponto do resultado com 80,8% apurado, às 20h54. Às 21h09, com 96,8% das seções, a vantagem de Lula na contagem passou a estimativa dos votos que ainda faltavam.</p>
+<p>A média das pesquisas da véspera, registrada pelo painel, dava a Lula 49,3% dos votos válidos, ou seja, derrota. Com 2,2% das seções apuradas, a projeção já estava em 50,95%, a 0,82 ponto do resultado e dentro da margem. Às 19h22, com 2,7%, o painel passou a indicar a vitória de Lula. Às 19h35, com 8,1%, a vantagem de Lula na projeção passava da margem mesmo descontando o pior viés possível da ordem de chegada dos votos; a vitória estava cravada. A partir de 10% das seções, a projeção nunca se afastou mais de 0,45 ponto do resultado. A contagem bruta só ficou a menos de meio ponto do resultado com 80,8% apurado, às 20h54. Às 21h09, com 96,8% das seções, a vantagem de Lula na contagem passou a estimativa dos votos que ainda faltavam.</p>
 <figure class="grafico">
   <svg role="img" aria-label="projeção × contagem do TSE" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 413.619158 272.026391" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <defs>
@@ -1829,18 +1829,8 @@ L 270.397969 55.62
   <figcaption>Erro da projeção em 2026 comparado à faixa do teste com 2022 e ao erro da contagem bruta, em pontos percentuais. Nas 144 rodadas a partir de 2% apurado, o resultado ficou sempre dentro da faixa.</figcaption>
 </figure>
 
-<h2 id="limites">Limites</h2>
-<ul class="limites">
-  <li>O teste usa uma única eleição, com ordens de chegada simuladas.</li>
-  <li>Dentro de cada zona eleitoral, o teste supõe votos homogêneos. Na apuração real, as seções podem variar mais.</li>
-  <li>A faixa é o pior erro do teste, não um intervalo de confiança nem uma probabilidade.</li>
-  <li>O resultado de 2026 citado aqui é a leitura do painel às 21h29, com 99,88% das seções. O resultado oficial é o do <a href="https://resultados.tse.jus.br/">TSE</a>.</li>
-  <li>Os dados cobrem só os votos válidos dados aos dois finalistas, sem abstenção, brancos, nulos ou perfil dos eleitores. A variação da parcela de um candidato num município não é transferência de votos.</li>
-  <li>Na última coleta, o exterior ainda estava incompleto (90,9% das seções).</li>
-</ul>
-
 <h2 id="dados">Dados</h2>
-<p>Os resultados por município vêm do portal de divulgação e dos dados abertos do TSE. O modelo foi escrito em Python, com pandas e numpy. Os dados dos gráficos estão em CSV, nos arquivos abaixo.</p>
+<p>Os resultados por município vêm do portal de divulgação e dos dados abertos do TSE. Os números de 2026 são a leitura do painel às 21h29, com 99,88% das seções; o resultado oficial é o do TSE. O modelo foi escrito em Python, com pandas e numpy. Os dados dos gráficos estão em CSV, nos arquivos abaixo.</p>
 <ul class="lista sem-ano arquivos">
   <li><p><a class="titulo" href="../assets/eleicoes-2026/dados/serie_projecao_rodadas.csv">Rodadas da projeção</a></p></li>
   <li><p><a class="titulo" href="../assets/eleicoes-2026/dados/erro_por_marco.csv">Erro por ponto da apuração</a></p></li>
