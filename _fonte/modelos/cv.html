@@ -6,8 +6,8 @@
 <article class="cv">
 <header class="cv-cabecalho">
   <h1>{{ perfil.nome }}</h1>
-  <p>{{ perfil.cargo | t }} · Araraquara, {{ 'Brasil' if pt else 'Brazil' }} · <a href="mailto:{{ perfil.email }}">{{ perfil.email }}</a></p>
-  <p class="cv-links">{% for l in perfil.links %}<a href="{{ l.url }}">{{ l.rotulo | t }}</a> {% endfor %}<a class="cv-baixar" href="{{ rel(cv_pdf) }}">{{ r.baixar_cv | t }}</a></p>
+  <p>{{ perfil.cargo | t }} · Araraquara, {{ 'Brasil' if pt else 'Brazil' }}</p>
+  <p class="cv-links"><a href="mailto:{{ perfil.email }}">{{ perfil.email }}</a> {% for l in perfil.links %}<a href="{{ l.url }}">{{ l.rotulo | t }}</a> {% endfor %}<a class="cv-baixar" href="{{ rel(cv_pdf) }}">{{ r.baixar_cv | t }}</a></p>
   <p class="nota">{{ r.atualizado | t }} {{ data_atualizacao }}.</p>
 </header>
 

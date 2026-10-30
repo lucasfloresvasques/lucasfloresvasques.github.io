@@ -6,6 +6,7 @@
 {% if r.nota_idioma | t %}
 <p class="nota">{{ r.nota_idioma | t }}</p>
 {% endif %}
+<p class="sumario">{% if publicacoes.aceitas %}<a href="#{{ ids.aceitas }}">{{ r.aceitas | t }}</a>{% endif %}<a href="#{{ ids.artigos }}">{{ r.artigos | t }}</a><a href="#{{ ids.capitulos }}">{{ r.capitulos_livro | t }}</a><a href="#{{ ids.andamento }}">{{ r.em_andamento | t }}</a><a href="#{{ ids.apresentacoes }}">{{ r.apresentacoes | t }}</a></p>
 
 {% if publicacoes.aceitas %}
 <h2 id="{{ ids.aceitas }}">{{ r.aceitas | t }}</h2>
