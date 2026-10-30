@@ -2,8 +2,10 @@
 
 Rode só quando mudar a foto, o favicon ou o texto do cartão:
     python _fonte/gerar_imagens.py
-Usa Pillow e PyMuPDF, e as fontes Georgia e Segoe UI do Windows.
+O cartão usa a Source Serif 4 se a variável FONTE_CARTAO apontar para o arquivo .ttf variável
+(google/fonts, ofl/sourceserif4); sem ela, usa a Georgia do Windows.
 """
+import os
 from pathlib import Path
 
 import fitz
@@ -11,7 +13,19 @@ from PIL import Image, ImageDraw, ImageFont
 
 RAIZ = Path(__file__).resolve().parent.parent
 ASSETS = RAIZ / "assets"
-FONTES = Path("C:/Windows/Fonts")
+GEORGIA = "C:/Windows/Fonts/georgia.ttf"
+TINTA, SUAVE, DESTAQUE = (27, 29, 26), (91, 96, 88), (31, 78, 90)
+
+
+def fonte(tamanho, peso=400, tamanho_otico=None):
+    caminho = os.environ.get("FONTE_CARTAO")
+    if not caminho:
+        return ImageFont.truetype(GEORGIA, tamanho)
+    serifa = ImageFont.truetype(caminho, tamanho)
+    eixos = {eixo["name"]: eixo for eixo in serifa.get_variation_axes()}
+    valores = {b"Weight": peso, b"Optical Size": tamanho_otico or min(60, tamanho)}
+    serifa.set_variation_by_axes([valores.get(nome, eixo["default"]) for nome, eixo in eixos.items()])
+    return serifa
 
 
 def icone_celular():
@@ -22,23 +36,17 @@ def icone_celular():
 
 def cartao():
     largura, altura = 1200, 630
-    tinta, suave, destaque = (37, 41, 35), (89, 96, 88), (52, 83, 104)
-    cartao = Image.new("RGB", (largura, altura), (255, 255, 255))
+    cartao = Image.new("RGB", (largura, altura), (253, 253, 251))
     foto = Image.open(ASSETS / "lucas-vasques-retrato.webp").convert("RGB")
     foto = foto.resize((round(foto.width * altura / foto.height), altura), Image.LANCZOS)
     cartao.paste(foto, (0, 0))
     desenho = ImageDraw.Draw(cartao)
-    x = foto.width + 64
-    serifa = ImageFont.truetype(str(FONTES / "georgia.ttf"), 64)
-    sans = ImageFont.truetype(str(FONTES / "segoeui.ttf"), 30)
-    sans_menor = ImageFont.truetype(str(FONTES / "segoeui.ttf"), 26)
-    desenho.rectangle([x, 196, x + 56, 200], fill=destaque)
-    desenho.text((x, 222), "Lucas Flôres", font=serifa, fill=tinta)
-    desenho.text((x, 296), "Vasques", font=serifa, fill=tinta)
-    desenho.text((x, 396), "Sociologist · PhD candidate, UNESP", font=sans, fill=suave)
-    desenho.text((x, 438), "Classification, markets, elites", font=sans, fill=suave)
-    desenho.text((x, 480), "Geometric Data Analysis", font=sans, fill=suave)
-    desenho.text((x, 552), "lucasfloresvasques.github.io", font=sans_menor, fill=destaque)
+    x = foto.width + 70
+    desenho.rectangle([x, 214, x + 48, 217], fill=DESTAQUE)
+    desenho.text((x, 238), "Lucas Flôres", font=fonte(68, 600), fill=TINTA)
+    desenho.text((x, 316), "Vasques", font=fonte(68, 600), fill=TINTA)
+    desenho.text((x, 418), "Sociologist, UNESP", font=fonte(32, 400, 20), fill=SUAVE)
+    desenho.text((x, 540), "lucasfloresvasques.github.io", font=fonte(26, 400, 16), fill=DESTAQUE)
     cartao.save(ASSETS / "cartao-compartilhamento.jpg", quality=86, optimize=True, progressive=True)
 
 

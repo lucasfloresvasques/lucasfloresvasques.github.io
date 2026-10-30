@@ -2,8 +2,8 @@
 # "arquivo" aponta para um arquivo do próprio site (por exemplo resources/...).
 
 declaracao:
-  pt: Ensino sociologia econômica, sociologia da cultura e métodos a partir de problemas empíricos. Em cursos de métodos, proponho ensinar a construir espaços sociais com ACM específica e CSA, no SPAD e no R, partindo da pergunta sociológica e da codificação das variáveis.
-  en: I teach economic sociology, cultural sociology and methods through empirical problems. In methods courses, I aim to teach how to construct social spaces with specific MCA and CSA, in SPAD and R, starting from the sociological question and the coding of variables.
+  pt: Ensino sociologia econômica, sociologia da cultura e métodos. Em cursos de métodos, gosto de partir da pergunta sociológica e da codificação das variáveis antes de chegar à ACM e à CSA.
+  en: I teach economic sociology, the sociology of culture and methods. In methods courses I like to start from the sociological question and the coding of variables before turning to MCA and CSA.
 
 disciplinas:
   - ano: "2022"

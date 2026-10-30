@@ -45,10 +45,6 @@ MESES = {
     "en": ["January", "February", "March", "April", "May", "June", "July",
            "August", "September", "October", "November", "December"],
 }
-MESES_CURTOS = {
-    "pt": ["jan.", "fev.", "mar.", "abr.", "maio", "jun.", "jul.", "ago.", "set.", "out.", "nov.", "dez."],
-    "en": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-}
 NAVEGADORES = [
     r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
     r"C:\Program Files\Microsoft\Edge\Application\msedge.exe",
@@ -157,15 +153,6 @@ def _autores(ctx, lista):
     return formatar_autores(lista or [], ctx["idioma"], ctx["perfil"]["nome"])
 
 
-@pass_context
-def _mes_ano(ctx, valor):
-    texto = str(valor)
-    if re.fullmatch(r"\d{4}-\d{2}", texto):
-        ano, mes = texto.split("-")
-        return f"{MESES_CURTOS[ctx['idioma']][int(mes) - 1]} {ano}"
-    return texto
-
-
 def criar_ambiente() -> Environment:
     env = Environment(
         loader=FileSystemLoader(FONTE / "modelos"),
@@ -174,7 +161,7 @@ def criar_ambiente() -> Environment:
         lstrip_blocks=True,
         keep_trailing_newline=True,
     )
-    env.filters.update(t=_t, inline=inline, autores=_autores, mes_ano=_mes_ano)
+    env.filters.update(t=_t, inline=inline, autores=_autores)
     env.globals.update(rel=_rel)
     return env
 
@@ -194,7 +181,7 @@ def pessoa_json_ld(dados, idioma) -> dict:
         "jobTitle": "Doutorando em Ciências Sociais" if idioma == "pt" else "PhD candidate in Social Sciences",
         "affiliation": unesp,
         "alumniOf": unesp,
-        "knowsAbout": [traduzir(linha["nome"], idioma) for linha in perfil["linhas"]],
+        "knowsAbout": [traduzir(linha, idioma) for linha in perfil["linhas"]],
         "sameAs": [l["url"] for l in perfil["links"]] + [i["url"] for i in perfil["identificadores"]
                                                          if i.get("url") and i["url"] not in
                                                          {l["url"] for l in perfil["links"]}],
@@ -368,7 +355,7 @@ def gerar_pdfs(dados) -> None:
             "title": f"{perfil['nome']} — " + ("Currículo" if idioma == "pt" else "Curriculum vitae"),
             "author": perfil["nome"],
             "subject": traduzir(perfil["cargo"], idioma),
-            "keywords": "; ".join(traduzir(l["nome"], idioma) for l in perfil["linhas"]),
+            "keywords": "; ".join(traduzir(linha, idioma) for linha in perfil["linhas"]),
             "creator": "_fonte/construir.py",
             "producer": documento.metadata.get("producer", ""),
         })

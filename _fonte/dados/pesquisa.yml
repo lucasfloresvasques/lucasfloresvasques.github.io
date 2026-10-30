@@ -3,36 +3,29 @@
 
 declaracao:
   pt:
-    - Minha pesquisa trata da formação social das classificações, isto é, de como normas, especialistas e instituições tornam uma diferença pertinente e em que relações essa diferença ganha consequência. No doutorado, acompanhei esse processo no comércio, na recomendação, no cultivo e na apreciação de flores e plantas ornamentais, do lote classificado na Veiling Holambra ao exemplar que se decide conservar.
-    - Os trabalhos em andamento estendem a mesma pergunta a outros espaços. São eles as tomadas de posição de elites parlamentares latino-americanas sobre gênero, os usos desiguais da Internet no Brasil, a construção de equivalências na Taxonomia Sustentável Brasileira e, no projeto de pós-doutorado, as posições e trajetórias de quem produz a política ambiental federal. Nos estudos de espaços de posições e de práticas, construo esses espaços com Análise Geométrica de Dados; no estudo da Taxonomia, a análise é documental.
+    - "Estudo a formação social das classificações: como uma diferença passa a contar e que consequências tem. Na tese, sigo essa pergunta no comércio de flores e plantas ornamentais e no gosto de quem as cultiva."
+    - Em outros trabalhos, a mesma pergunta aparece nas tomadas de posição de parlamentares latino-americanos sobre gênero, nos usos desiguais da Internet no Brasil e na Taxonomia Sustentável Brasileira. Quando o problema é um espaço de posições ou de práticas, construo esse espaço com Análise Geométrica de Dados.
   en:
-    - My research is about the social formation of classifications, that is, how standards, experts and institutions make a difference pertinent, and in which relations that difference has consequences. In my PhD I followed this process in the trade, recommendation, cultivation and appreciation of flowers and ornamental plants, from the lot graded at Veiling Holambra to the specimen someone decides to keep.
-    - My work in progress extends the same question to other spaces. These are the position-takings of Latin American parliamentary elites on gender, unequal uses of the Internet in Brazil, the making of equivalences in the Brazilian Sustainable Taxonomy and, in my postdoctoral project, the positions and trajectories of those who make federal environmental policy. Where I study spaces of positions and practices, I construct them with Geometric Data Analysis; the study of the Taxonomy is documentary.
+    - "I study the social formation of classifications: how a difference comes to count, and what follows from it. In my thesis I pursue this question in the trade in flowers and ornamental plants and in the tastes of those who grow them."
+    - Other work asks the same question about the position-takings of Latin American legislators on gender, unequal Internet use in Brazil and the Brazilian Sustainable Taxonomy. When the problem is a space of positions or practices, I construct it with Geometric Data Analysis.
 
 metodo:
-  pt: Trabalho com a Análise Geométrica de Dados na formulação de Brigitte Le Roux e Henry Rouanet. Uso a ACM específica, com modalidades raras ou de não resposta tratadas como passivas, e as taxas modificadas. Leio os eixos pelas contribuições e as variáveis suplementares pelos desvios. Comparo subnuvens com a nuvem global pela análise de classe específica (CSA). A geometria constrói o objeto, e a interpretação se apoia nas contribuições, nos desvios e nas fontes documentais e qualitativas. Uso o SPAD e o R. Em novembro de 2025 participei do Geometric Data Analysis Workshop no IDHE.S (ENS Paris-Saclay), onde apresentei a pesquisa sobre plantas ornamentais.
-  en: I work with Geometric Data Analysis as formulated by Brigitte Le Roux and Henry Rouanet. I use specific MCA, with rare or non-response categories treated as passive, and modified rates. I interpret axes through contributions and supplementary variables through deviations. I compare subclouds with the overall cloud through class specific analysis (CSA). The geometry constructs the object, and interpretation relies on contributions, deviations and documentary and qualitative sources. I use SPAD and R. In November 2025 I took part in the Geometric Data Analysis Workshop at IDHE.S (ENS Paris-Saclay), where I presented the research on ornamental plants.
+  pt: "Trabalho com a Análise Geométrica de Dados na formulação de Brigitte Le Roux e Henry Rouanet: ACM específica, taxas modificadas, interpretação dos eixos pelas contribuições, variáveis suplementares e análise de classe específica (CSA) para comparar subnuvens. Uso o SPAD e o R. Em novembro de 2025 apresentei a pesquisa sobre plantas no Geometric Data Analysis Workshop, no IDHE.S."
+  en: "I work with Geometric Data Analysis as formulated by Brigitte Le Roux and Henry Rouanet: specific MCA, modified rates, interpretation of axes through contributions, supplementary variables, and class specific analysis (CSA) to compare subclouds. I use SPAD and R. In November 2025 I presented the plant research at the Geometric Data Analysis Workshop at IDHE.S."
 
 tese:
   titulo:
     pt: "A vida social das flores: a classificação das coisas e a autoridade de quem julga"
     en: "The Social Life of Flowers: The Classification of Things and the Authority of Those Who Judge"
   sintese:
-    pt: Classificações e julgamentos que atribuem valor a flores e plantas ornamentais, com normas comerciais, nomes e direitos, recomendações em plataformas digitais, repertórios de gosto e a festa da Expoflora.
-    en: Classifications and judgments that confer value on flowers and ornamental plants, through commercial standards, names and rights, recommendations on digital platforms, repertoires of taste and the Expoflora festival.
-  programa:
-    pt: Programa de Pós-Graduação em Ciências Sociais, Faculdade de Ciências e Letras, UNESP (Araraquara)
-    en: Graduate Programme in Social Sciences, School of Sciences and Letters, São Paulo State University (UNESP), Araraquara
-  orientacao: Maria Aparecida Chaves Jardim
-  estagio:
-    pt: IDHE.S, ENS Paris-Saclay (2025–2026), com supervisão de Frédéric Lebaron (BEPE/FAPESP)
-    en: IDHE.S, ENS Paris-Saclay (2025–2026), supervised by Frédéric Lebaron (FAPESP BEPE)
+    pt: Como flores e plantas ornamentais são classificadas e avaliadas no comércio, nas plataformas digitais e por quem as cultiva.
+    en: How flowers and ornamental plants are classified and judged in the trade, on digital platforms and by the people who grow them.
+  ficha:
+    pt: Tese de doutorado em Ciências Sociais, UNESP, Araraquara, com orientação de Maria Aparecida Chaves Jardim. Estágio de pesquisa no IDHE.S, ENS Paris-Saclay, com Frédéric Lebaron (BEPE/FAPESP).
+    en: PhD thesis in Social Sciences, UNESP, Araraquara, supervised by Maria Aparecida Chaves Jardim. Research stay at IDHE.S, ENS Paris-Saclay, with Frédéric Lebaron (FAPESP BEPE).
   defesa:
-    pt: prevista para março de 2027
-    en: scheduled for March 2027
-  financiamento:
-    pt: FAPESP, processos 2021/09533-8 (doutorado) e 2024/08337-9 (BEPE)
-    en: FAPESP, grants 2021/09533-8 (PhD) and 2024/08337-9 (BEPE)
+    pt: Defesa prevista para março de 2027.
+    en: Defence scheduled for March 2027.
   versao_resumo:
     pt: Resumo da versão de outubro de 2026.
     en: Abstract as of October 2026.
@@ -63,11 +56,11 @@ proximo_projeto:
     pt: "O espaço de produção da política ambiental federal no Brasil: posições, trajetórias sociais e princípios de diferenciação"
     en: The social space of federal environmental policymaking in Brazil
   situacao:
-    pt: Proposta de pós-doutorado na UFSCar (RESOA), com supervisão de Silvio Eduardo Alvarez Candido; em avaliação.
-    en: Postdoctoral proposal at the Federal University of São Carlos (UFSCar, RESOA), supervised by Silvio Eduardo Alvarez Candido; under review.
+    pt: Proposta de pós-doutorado na UFSCar, com supervisão de Silvio Eduardo Alvarez Candido, em avaliação.
+    en: Postdoctoral proposal at the Federal University of São Carlos, supervised by Silvio Eduardo Alvarez Candido; under review.
   descricao:
-    pt: O projeto compara trajetórias e posições de agentes do Executivo, do Congresso Nacional e do CONAMA em três períodos entre 2003 e 2026. Combina prosopografia, Análise Geométrica de Dados (ACM específica e CSA) e análise documental.
-    en: The project compares the trajectories and positions of policymakers across the federal executive, Congress, and the National Environment Council (CONAMA), in three periods between 2003 and 2026. It combines prosopography, Geometric Data Analysis (specific MCA and CSA) and documentary research.
+    pt: Compara trajetórias e posições de dirigentes do Executivo ambiental, de membros das comissões de meio ambiente do Congresso e de conselheiros do CONAMA, em três períodos entre 2003 e 2026.
+    en: It compares the trajectories and positions of environmental officials in the federal executive, members of the environmental committees of Congress and members of the National Environment Council (CONAMA) in three periods between 2003 and 2026.
   # Resumo original da proposta, mostrado num bloco que abre e fecha.
   resumo_pt: >-
     A política ambiental federal brasileira passou por processos de ampliação de capacidades estatais, desmonte e recomposição institucional. Esta pesquisa investiga quais princípios de oposição estruturam o espaço social dos agentes que exercem funções de direção, normatização e deliberação ambiental e como persistem ou se reconfiguram diante das mudanças institucionais e da renovação dos agentes. A população, delimitada pelo método posicional, reúne os dirigentes nacionais do Executivo ambiental, os membros das comissões permanentes da Câmara dos Deputados e do Senado Federal com competência ambiental geral e os integrantes do Plenário do Conselho Nacional do Meio Ambiente (CONAMA). O estudo articula a reconstrução histórica das três arenas em três períodos: 2003-2008, 2019-2022 e 2023-2026. Cada período reúne uma observação por pessoa, vinculada aos seus episódios de exercício. Análises de Correspondências Múltiplas específicas (MCAs) examinam as associações entre a formação e as experiências anteriores ao ingresso; e Análises de Classe específicas (CSA) investigam diferenças internas nos subgrupos e arenas. A interpretação mobiliza essas geometrias com as atribuições das posições, as experiências posteriores e evidências de atuação e reconhecimento. A contribuição consiste em estabelecer em que medida a reorganização institucional, a renovação dos ocupantes e a mudança dos princípios de diferenciação social se acompanham ou se dissociam. Esse confronto fundamenta uma interpretação das bases sociais da autoridade ambiental e das condições em que critérios de proteção encontram sustentação nas relações entre os agentes e as instituições.

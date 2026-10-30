@@ -3,177 +3,145 @@
 {% block conteudo %}
 {% set pt = idioma == 'pt' %}
 {% set cv = curriculo %}
-<article class="cv-page">
-<header class="cv-heading">
-  <p class="cv-kicker">{{ titulo_pagina }} · {{ r.atualizado | t }} {{ data_atualizacao }}</p>
+<article class="cv">
+<header class="cv-cabecalho">
   <h1>{{ perfil.nome }}</h1>
-  <p class="cv-deck">{{ perfil.cargo | t }}</p>
-  <p class="cv-base">{{ perfil.instituicao }} · Araraquara, {{ 'Brasil' if pt else 'Brazil' }} · <a href="mailto:{{ perfil.email }}">{{ perfil.email }}</a></p>
-  <p class="cv-links">{% for l in perfil.links %}<a href="{{ l.url }}">{{ l.rotulo | t }}</a>{% endfor %}</p>
-  <p class="cv-download"><a href="{{ rel(cv_pdf) }}">{{ r.baixar_cv | t }}</a></p>
+  <p>{{ perfil.cargo | t }} · Araraquara, {{ 'Brasil' if pt else 'Brazil' }} · <a href="mailto:{{ perfil.email }}">{{ perfil.email }}</a></p>
+  <p class="cv-links">{% for l in perfil.links %}<a href="{{ l.url }}">{{ l.rotulo | t }}</a> {% endfor %}<a class="cv-baixar" href="{{ rel(cv_pdf) }}">{{ r.baixar_cv | t }}</a></p>
+  <p class="nota">{{ r.atualizado | t }} {{ data_atualizacao }}.</p>
 </header>
 
-<section class="cv-section" aria-labelledby="{{ 'formacao' if pt else 'education' }}">
-  <h2 id="{{ 'formacao' if pt else 'education' }}">{{ r.cv_formacao | t }}</h2>
-  <ul class="timeline cv-timeline">
+<h2 id="{{ 'formacao' if pt else 'education' }}">{{ r.cv_formacao | t }}</h2>
+<ol class="lista">
 {% for f in cv.formacao %}
-{{ item(f.periodo, (f.titulo | t) ~ ' · ' ~ (f.instituicao | t), f.detalhe | t | inline) }}
+{{ item(f.periodo, (f.titulo | t) ~ ', ' ~ (f.instituicao | t), f.detalhe | t | inline) }}
 {% endfor %}
-  </ul>
-</section>
+</ol>
 
-<section class="cv-section" aria-labelledby="{{ 'estagio' if pt else 'research-stay' }}">
-  <h2 id="{{ 'estagio' if pt else 'research-stay' }}">{{ r.cv_estagio | t }}</h2>
-  <ul class="timeline cv-timeline">
+<h2 id="{{ 'estagio' if pt else 'research-stay' }}">{{ r.cv_estagio | t }}</h2>
+<ol class="lista">
 {% for e in cv.estagio %}
-{{ item(e.periodo, (e.titulo | t) ~ ' · ' ~ (e.instituicao | t), e.detalhe | t) }}
+{{ item(e.periodo, (e.titulo | t) ~ ', ' ~ (e.instituicao | t), e.detalhe | t) }}
 {% endfor %}
-  </ul>
-</section>
+</ol>
 
-<section class="cv-section" aria-labelledby="{{ 'vinculos' if pt else 'affiliations' }}">
-  <h2 id="{{ 'vinculos' if pt else 'affiliations' }}">{{ r.cv_vinculos | t }}</h2>
-  <ul class="timeline cv-timeline">
+<h2 id="{{ 'vinculos' if pt else 'affiliations' }}">{{ r.cv_vinculos | t }}</h2>
+<ol class="lista">
 {% for v in cv.vinculos %}
 {{ item(v.periodo, v.titulo, v.detalhe | t) }}
 {% endfor %}
-  </ul>
-</section>
+</ol>
 
-<section class="cv-section" aria-labelledby="{{ 'em-desenvolvimento' if pt else 'research-in-development' }}">
-  <h2 id="{{ 'em-desenvolvimento' if pt else 'research-in-development' }}">{{ r.cv_em_desenvolvimento | t }}</h2>
-  <ul class="timeline cv-timeline">
+<h2 id="{{ 'em-desenvolvimento' if pt else 'research-in-development' }}">{{ r.cv_em_desenvolvimento | t }}</h2>
+<ol class="lista">
 {{ item('2026', pesquisa.proximo_projeto.titulo | t, pesquisa.proximo_projeto.situacao | t) }}
-  </ul>
-</section>
+</ol>
 
-<section class="cv-section" aria-labelledby="{{ 'bolsas' if pt else 'fellowships' }}">
-  <h2 id="{{ 'bolsas' if pt else 'fellowships' }}">{{ r.cv_bolsas | t }}</h2>
-  <ul class="timeline cv-timeline">
+<h2 id="{{ 'bolsas' if pt else 'fellowships' }}">{{ r.cv_bolsas | t }}</h2>
+<ol class="lista">
 {% for b in cv.bolsas %}
 {{ item(b.periodo, b.titulo | t, b.detalhe | t) }}
 {% endfor %}
-  </ul>
-</section>
+</ol>
 
-<section class="cv-section" aria-labelledby="{{ 'publicacoes' if pt else 'publications' }}">
-  <h2 id="{{ 'publicacoes' if pt else 'publications' }}">{{ r.cv_publicacoes | t }}</h2>
+<h2 id="{{ 'publicacoes' if pt else 'publications' }}">{{ r.cv_publicacoes | t }}</h2>
 {% if publicacoes.aceitas %}
-  <h3 class="cv-subhead">{{ r.aceitas | t }}</h3>
-  <ul class="cv-bibliography">
+<h3>{{ r.aceitas | t }}</h3>
+<ol class="lista">
 {% for p in publicacoes.aceitas %}
-{{ referencia(p) }}
+{{ referencia(p, completa=true) }}
 {% endfor %}
-  </ul>
+</ol>
 {% endif %}
-  <h3 class="cv-subhead">{{ r.artigos | t }}</h3>
-  <ul class="cv-bibliography">
+<h3>{{ r.artigos | t }}</h3>
+<ol class="lista">
 {% for p in publicacoes.artigos %}
-{{ referencia(p) }}
+{{ referencia(p, completa=true) }}
 {% endfor %}
-  </ul>
-  <h3 class="cv-subhead">{{ r.capitulos_livro | t }}</h3>
-  <ul class="cv-bibliography">
+</ol>
+<h3>{{ r.capitulos_livro | t }}</h3>
+<ol class="lista">
 {% for p in publicacoes.capitulos %}
-{{ referencia(p, capitulo=true) }}
+{{ referencia(p, capitulo=true, completa=true) }}
 {% endfor %}
-  </ul>
-</section>
+</ol>
 
-<section class="cv-section" aria-labelledby="{{ 'em-andamento' if pt else 'work-in-progress' }}">
-  <h2 id="{{ 'em-andamento' if pt else 'work-in-progress' }}">{{ r.em_andamento | t }}</h2>
-  <ul class="cv-wip">
+<h2 id="{{ 'em-andamento' if pt else 'work-in-progress' }}">{{ r.em_andamento | t }}</h2>
+<ul class="lista sem-ano">
 {% for m in manuscritos %}
-{{ manuscrito(m, compacto=true) }}
+{{ manuscrito(m) }}
 {% endfor %}
-  </ul>
-</section>
+</ul>
 
-<section class="cv-section" aria-labelledby="{{ 'apresentacoes' if pt else 'presentations' }}">
-  <h2 id="{{ 'apresentacoes' if pt else 'presentations' }}">{{ r.apresentacoes | t }}</h2>
-  <ul class="timeline cv-timeline">
+<h2 id="{{ 'apresentacoes' if pt else 'presentations' }}">{{ r.apresentacoes | t }}</h2>
+<ol class="lista">
 {% for a in apresentacoes %}
 {{ apresentacao(a) }}
 {% endfor %}
-  </ul>
-</section>
+</ol>
 
-<section class="cv-section" aria-labelledby="{{ 'docencia' if pt else 'teaching' }}">
-  <h2 id="{{ 'docencia' if pt else 'teaching' }}">{{ r.declaracao_ensino | t }}</h2>
-  <ul class="timeline cv-timeline">
+<h2 id="{{ 'docencia' if pt else 'teaching' }}">{{ r.cv_docencia | t }}</h2>
+<h3>{{ r.cv_graduacao | t }}</h3>
+<ol class="lista">
 {% for d in ensino.disciplinas %}
 {{ item(d.ano, d.titulo | t, d.detalhe | t) }}
 {% endfor %}
+</ol>
+<h3>{{ r.cursos | t }}</h3>
+<ol class="lista">
 {% for c in ensino.cursos %}
 {{ item(c.ano, c.titulo | t, c.detalhe | t) }}
 {% endfor %}
-  </ul>
-</section>
+</ol>
 
-<section class="cv-section" aria-labelledby="{{ 'atuacao' if pt else 'service' }}">
-  <h2 id="{{ 'atuacao' if pt else 'service' }}">{{ r.cv_atuacao | t }}</h2>
-  <h3 class="cv-subhead">{{ r.cv_editorial | t }}</h3>
-  <ul class="timeline cv-timeline">
+<h2 id="{{ 'atuacao' if pt else 'service' }}">{{ r.cv_atuacao | t }}</h2>
+<h3>{{ r.cv_editorial | t }}</h3>
+<ol class="lista">
 {% for e in cv.editorial %}
 {{ item(e.periodo, e.titulo, e.detalhe | t) }}
 {% endfor %}
-  </ul>
-  <h3 class="cv-subhead">{{ r.cv_pareceres | t }}</h3>
-  <ul class="timeline cv-timeline">
+</ol>
+<h3>{{ r.cv_pareceres | t }}</h3>
+<ol class="lista">
 {% for p in cv.pareceres %}
 {{ item(p.periodo, p.titulo | t, p.detalhe | t) }}
 {% endfor %}
-  </ul>
-  <h3 class="cv-subhead">{{ r.cv_eventos | t }}</h3>
-  <ul class="timeline cv-timeline">
+</ol>
+<h3>{{ r.cv_eventos | t }}</h3>
+<ol class="lista">
 {% for e in cv.eventos %}
 {{ item(e.periodo, e.titulo | t, e.detalhe | t) }}
 {% endfor %}
-  </ul>
-  <h3 class="cv-subhead">{{ r.outras_atividades | t }}</h3>
-  <ul class="timeline cv-timeline">
+</ol>
+<h3>{{ r.outras_atividades | t }}</h3>
+<ol class="lista">
 {% for o in ensino.outras %}
 {{ item(o.ano, o.titulo | t, o.detalhe | t) }}
 {% endfor %}
-  </ul>
-</section>
+</ol>
 
-<section class="cv-section" aria-labelledby="{{ 'premios' if pt else 'awards' }}">
-  <h2 id="{{ 'premios' if pt else 'awards' }}">{{ r.cv_premios | t }}</h2>
-  <ul class="timeline cv-timeline">
+<h2 id="{{ 'premios' if pt else 'awards' }}">{{ r.cv_premios | t }}</h2>
+<ol class="lista">
 {% for p in cv.premios %}
 {{ item(p.periodo, p.titulo | t, p.detalhe | t) }}
 {% endfor %}
-  </ul>
-</section>
+</ol>
 
-<section class="cv-section" aria-labelledby="{{ 'complementar' if pt else 'additional-training' }}">
-  <h2 id="{{ 'complementar' if pt else 'additional-training' }}">{{ r.cv_complementar | t }}</h2>
-  <ul class="timeline cv-timeline cv-compact">
+<h2 id="{{ 'complementar' if pt else 'additional-training' }}">{{ r.cv_complementar | t }}</h2>
+<ol class="lista compacta">
 {% for c in cv.complementar %}
-    <li><span class="tl-date">{{ c.periodo }}</span><p>{{ c.texto | t }}</p></li>
+{{ item(c.periodo, c.texto | t) }}
 {% endfor %}
-  </ul>
-</section>
+</ol>
 
-<section class="cv-section" aria-labelledby="{{ 'competencias' if pt else 'skills' }}">
-  <h2 id="{{ 'competencias' if pt else 'skills' }}">{{ r.cv_competencias | t }}</h2>
-  <dl class="facts">
-    <dt>{{ r.cv_metodos | t }}</dt><dd>{{ cv.competencias.metodos | t }}</dd>
-    <dt>{{ r.cv_programas | t }}</dt><dd>{{ cv.competencias.programas }}</dd>
-    <dt>{{ r.cv_idiomas | t }}</dt><dd>{{ cv.competencias.idiomas | t }}</dd>
-  </dl>
-</section>
+<h2 id="{{ 'competencias' if pt else 'skills' }}">{{ r.cv_competencias | t }}</h2>
+<p><i>{{ r.cv_metodos | t }}:</i> {{ cv.competencias.metodos | t }}<br>
+<i>{{ r.cv_programas | t }}:</i> {{ cv.competencias.programas }}<br>
+<i>{{ r.cv_idiomas | t }}:</i> {{ cv.competencias.idiomas | t }}</p>
 
-<section class="cv-section" aria-labelledby="{{ 'identificadores' if pt else 'identifiers' }}">
-  <h2 id="{{ 'identificadores' if pt else 'identifiers' }}">{{ r.cv_identificadores | t }}</h2>
-  <ul class="cv-identifiers">
-{% for i in perfil.identificadores %}
-    <li>{% if i.url %}<a href="{{ i.url }}">{{ i.rotulo | t }}</a>{% else %}{{ i.rotulo | t }}{% endif %}</li>
-{% endfor %}
-  </ul>
-</section>
+<h2 id="{{ 'identificadores' if pt else 'identifiers' }}">{{ r.cv_identificadores | t }}</h2>
+<p class="cv-identificadores">{% for i in perfil.identificadores %}{% if i.url %}<a href="{{ i.url }}">{{ i.rotulo | t }}</a>{% else %}<span>{{ i.rotulo | t }}</span>{% endif %}{% if not loop.last %}<br>{% endif %}{% endfor %}</p>
 
-<p class="funding-note">{{ r.financiamento | t }}</p>
+<p class="nota financiamento so-impressao">{{ r.financiamento | t }}</p>
 </article>
 {% endblock %}

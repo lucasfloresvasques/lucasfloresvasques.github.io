@@ -16,15 +16,15 @@ paginas:
     menu: {en: About, pt: Sobre}
     titulo: {en: Lucas Flôres Vasques, pt: Lucas Flôres Vasques}
     descricao:
-      en: "Lucas Flôres Vasques, sociologist and PhD candidate at UNESP (Brazil). Research on classifications, markets, elites and environmental policy, with Geometric Data Analysis."
-      pt: "Lucas Flôres Vasques, sociólogo e doutorando na UNESP. Pesquisa sobre classificações, mercados, elites e política ambiental, com Análise Geométrica de Dados."
+      en: "Lucas Flôres Vasques, sociologist and PhD candidate at UNESP (Brazil). Classifications, markets, elites and environmental policy, studied with Geometric Data Analysis."
+      pt: "Lucas Flôres Vasques, sociólogo e doutorando na UNESP. Classificações, mercados, elites e política ambiental, estudados com Análise Geométrica de Dados."
   pesquisa:
     arquivo: {en: research.html, pt: pt/research.html}
     menu: {en: Research, pt: Pesquisa}
     titulo: {en: Research, pt: Pesquisa}
     descricao:
       en: "Research statement, doctoral thesis, next project and method of Lucas Flôres Vasques."
-      pt: "Declaração de pesquisa, tese de doutorado, próximo projeto e método de Lucas Flôres Vasques."
+      pt: "Pesquisa, tese de doutorado, próximo projeto e método de Lucas Flôres Vasques."
   tese:
     arquivo: {en: thesis.html, pt: pt/thesis.html}
     menu_ativo: pesquisa
@@ -37,15 +37,15 @@ paginas:
     menu: {en: Publications, pt: Publicações}
     titulo: {en: Publications, pt: Publicações}
     descricao:
-      en: "Journal articles, book chapters, work in progress and conference papers by Lucas Flôres Vasques."
+      en: "Articles, book chapters, work in progress and conference papers by Lucas Flôres Vasques."
       pt: "Artigos, capítulos, trabalhos em andamento e apresentações de Lucas Flôres Vasques."
   ensino:
     arquivo: {en: teaching.html, pt: pt/teaching.html}
-    menu: {en: Teaching & materials, pt: Ensino e materiais}
+    menu: {en: Teaching, pt: Ensino}
     titulo: {en: Teaching and materials, pt: Ensino e materiais}
     descricao:
-      en: "Teaching, short courses, teaching materials, data sources and code."
-      pt: "Docência, minicursos, materiais didáticos, fontes de dados e código."
+      en: "Teaching, short courses, teaching materials and data sources."
+      pt: "Docência, minicursos, materiais didáticos e fontes de dados."
   cv:
     arquivo: {en: cv.html, pt: pt/cv.html}
     menu: {en: CV, pt: Currículo}
@@ -68,55 +68,39 @@ rotulos:
   idioma: {en: Language, pt: Idioma}
   navegacao: {en: Main navigation, pt: Navegação principal}
   atualizado: {en: Updated, pt: Atualizado em}
-  financiamento: {en: "Research funded by FAPESP (grants 2021/09533-8 and 2024/08337-9).", pt: "Pesquisa financiada pela FAPESP (processos 2021/09533-8 e 2024/08337-9)."}
+  financiamento: {en: "Research funded by FAPESP, grants 2021/09533-8 and 2024/08337-9.", pt: "Pesquisa financiada pela FAPESP, processos 2021/09533-8 e 2024/08337-9."}
   cv_pdf: {en: CV (PDF), pt: Currículo (PDF)}
-  baixar_cv: {en: Download CV (PDF), pt: Baixar currículo (PDF)}
-  linhas: {en: Research lines, pt: Linhas de pesquisa}
-  destaques: {en: Selected publications, pt: Publicações em destaque}
-  criterio_destaques: {en: "Work that represents my current lines of research.", pt: "Trabalhos que representam as linhas atuais."}
+  baixar_cv: {en: Download as PDF, pt: Baixar em PDF}
+  selecionadas: {en: Selected publications, pt: Publicações selecionadas}
   todas_publicacoes: {en: All publications, pt: Todas as publicações}
-  novidades: {en: News, pt: Novidades}
-  em_andamento_link: {en: "Manuscripts under review and in preparation", pt: "Manuscritos em avaliação e em preparação"}
-  declaracao: {en: Research statement, pt: Declaração de pesquisa}
   tese: {en: Doctoral thesis, pt: Tese de doutorado}
-  sobre_tese: {en: About the thesis, pt: Sobre a tese}
+  sobre_tese: {en: More about the thesis, pt: Mais sobre a tese}
   proximo_projeto: {en: Next project, pt: Próximo projeto}
   resumo_projeto: {en: "Project abstract (in Portuguese)", pt: "Resumo do projeto"}
   metodo: {en: Method, pt: Método}
-  programa: {en: Programme, pt: Programa}
-  orientacao: {en: Supervisor, pt: Orientação}
-  estagio_exterior: {en: Research stay abroad, pt: Estágio no exterior}
-  defesa: {en: Defence, pt: Defesa}
-  financiamento_titulo: {en: Funding, pt: Financiamento}
   resumo: {en: Abstract, pt: Resumo}
   palavras_chave: {en: Keywords, pt: Palavras-chave}
-  capitulos: {en: Chapters, pt: Capítulos}
-  capitulos_nota: {en: "Chapter titles in the original Portuguese.", pt: ""}
+  capitulos: {en: "Chapters (in Portuguese)", pt: Capítulos}
   pesquisa_anterior: {en: Previous research, pt: Pesquisa anterior}
   dissertacao: {en: "MA dissertation", pt: "Dissertação de mestrado"}
   aviso_fapesp: {en: "Opinions, hypotheses and conclusions or recommendations expressed in this material are the responsibility of the author and do not necessarily reflect the views of FAPESP.", pt: "As opiniões, hipóteses e conclusões ou recomendações expressas neste material são de responsabilidade do autor e não necessariamente refletem a visão da FAPESP."}
-  aceitas: {en: Forthcoming, pt: Aceitos para publicação}
-  artigos: {en: Journal articles, pt: Artigos em periódicos}
-  capitulos_livro: {en: Book chapters, pt: Capítulos de livro}
+  nota_idioma: {en: "Most of my publications are in Portuguese.", pt: ""}
+  aceitas: {en: Forthcoming, pt: Aceito para publicação}
+  artigos: {en: Journal articles, pt: Artigos}
+  capitulos_livro: {en: Book chapter, pt: Capítulo de livro}
   em_andamento: {en: Work in progress, pt: Em andamento}
-  em_andamento_nota: {en: "Titles, authors and status only. Abstracts will be added once the papers are published or available as preprints.", pt: "Só título, autores e situação. Os resumos entram quando os artigos forem publicados ou estiverem disponíveis como preprint."}
-  apresentacoes: {en: Conference papers and talks, pt: Apresentações em eventos}
-  em_portugues: {en: in Portuguese, pt: ""}
-  em_ingles: {en: "", pt: em inglês}
-  traducao: {en: "English translation of the title", pt: "Tradução do título"}
-  com: {en: with, pt: com}
+  apresentacoes: {en: Conference papers, pt: Apresentações em eventos}
+  com: {en: With, pt: Com}
   situacao:
     em_avaliacao: {en: Under review, pt: Em avaliação}
     versao_revisada: {en: Revised and resubmitted, pt: Versão revisada em avaliação}
     em_preparacao: {en: In preparation, pt: Em preparação}
     aceito: {en: Accepted, pt: Aceito}
-  declaracao_ensino: {en: Teaching, pt: Docência}
-  disciplinas: {en: Undergraduate teaching, pt: Docência na graduação}
-  cursos: {en: "Short courses and workshops", pt: "Minicursos, aulas e oficinas"}
+  disciplinas: {en: Teaching, pt: Docência}
+  cursos: {en: Short courses and talks, pt: Minicursos e palestras}
   outras_atividades: {en: Consultancy and committees, pt: Consultoria e bancas}
   materiais: {en: Teaching materials, pt: Materiais didáticos}
   dados_codigo: {en: Data and code, pt: Dados e código}
-  fontes_dados: {en: Data sources used in my work, pt: Fontes de dados usadas nos meus trabalhos}
   software: {en: Software, pt: Programas}
   licenca: {en: Licence, pt: Licença}
   ver_fonte: {en: Data source, pt: Fonte dos dados}
@@ -127,6 +111,8 @@ rotulos:
   cv_em_desenvolvimento: {en: Research in development, pt: Pesquisa em desenvolvimento}
   cv_bolsas: {en: Fellowships, pt: Bolsas}
   cv_publicacoes: {en: Publications, pt: Publicações}
+  cv_docencia: {en: Teaching, pt: Docência}
+  cv_graduacao: {en: Undergraduate courses, pt: Disciplinas de graduação}
   cv_atuacao: {en: Academic service, pt: Atuação acadêmica}
   cv_editorial: {en: Editorial boards, pt: Corpo editorial}
   cv_pareceres: {en: Peer review, pt: Pareceres}
@@ -140,5 +126,3 @@ rotulos:
   cv_identificadores: {en: Research identifiers, pt: Identificadores de pesquisador}
   pagina_movida: {en: This page has moved, pt: Esta página mudou de endereço}
   ir_para: {en: Go to, pt: Ir para}
-  nao_encontrada: {en: Page not found, pt: Página não encontrada}
-  nao_encontrada_texto: {en: "The address may have changed. Try the home page.", pt: "O endereço pode ter mudado. Tente a página inicial."}

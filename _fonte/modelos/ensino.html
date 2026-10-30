@@ -2,56 +2,44 @@
 {% from "_macros.html" import item with context %}
 {% block conteudo %}
 {% set ids = {'disciplinas': 'docencia', 'cursos': 'minicursos', 'outras': 'consultoria-e-bancas', 'materiais': 'materiais', 'dados': 'dados-e-codigo'} if idioma == 'pt' else {'disciplinas': 'teaching', 'cursos': 'short-courses', 'outras': 'consultancy-and-committees', 'materiais': 'materials', 'dados': 'data-and-code'} %}
-<div class="pagehead">
-  <h1 class="page-title">{{ titulo_pagina }}</h1>
-  <p class="subhead">{{ ensino.declaracao | t }}</p>
-</div>
+<h1>{{ titulo_pagina }}</h1>
+<p>{{ ensino.declaracao | t }}</p>
 
-<section class="section-block" aria-labelledby="{{ ids.disciplinas }}">
-  <h2 id="{{ ids.disciplinas }}">{{ r.disciplinas | t }}</h2>
-  <ul class="timeline">
+<h2 id="{{ ids.disciplinas }}">{{ r.disciplinas | t }}</h2>
+<ol class="lista">
 {% for d in ensino.disciplinas %}
 {{ item(d.ano, d.titulo | t, d.detalhe | t) }}
 {% endfor %}
-  </ul>
-</section>
+</ol>
 
-<section class="section-block" aria-labelledby="{{ ids.cursos }}">
-  <h2 id="{{ ids.cursos }}">{{ r.cursos | t }}</h2>
-  <ul class="timeline">
+<h2 id="{{ ids.cursos }}">{{ r.cursos | t }}</h2>
+<ol class="lista">
 {% for c in ensino.cursos %}
-{% set extra %}{% if c.material %}<p class="item-links"><a href="{{ rel(c.material.arquivo) }}">{{ c.material.rotulo | t }}</a></p>{% endif %}{% endset %}
-{{ item(c.ano, c.titulo | t, c.detalhe | t, extra=extra) }}
+{% set detalhe %}{{ c.detalhe | t }}{% if c.material %} <a href="{{ rel(c.material.arquivo) }}">{{ c.material.rotulo | t }}</a>{% endif %}{% endset %}
+{{ item(c.ano, c.titulo | t, detalhe) }}
 {% endfor %}
-  </ul>
-</section>
+</ol>
 
-<section class="section-block" aria-labelledby="{{ ids.outras }}">
-  <h2 id="{{ ids.outras }}">{{ r.outras_atividades | t }}</h2>
-  <ul class="timeline">
+<h2 id="{{ ids.outras }}">{{ r.outras_atividades | t }}</h2>
+<ol class="lista periodos">
 {% for o in ensino.outras %}
 {{ item(o.ano, o.titulo | t, o.detalhe | t) }}
 {% endfor %}
-  </ul>
-</section>
+</ol>
 
-<section class="section-block" aria-labelledby="{{ ids.materiais }}">
-  <h2 id="{{ ids.materiais }}">{{ r.materiais | t }}</h2>
-  <ul class="resource-list">
+<h2 id="{{ ids.materiais }}">{{ r.materiais | t }}</h2>
+<ul class="lista sem-ano">
 {% for m in ensino.materiais %}
-    <li><strong>{{ m.titulo | t }}</strong><div><p>{{ m.detalhe | t }} {{ r.licenca | t }}: <a href="https://creativecommons.org/licenses/by/4.0/">{{ m.licenca }}</a>.</p><p class="item-links"><a href="{{ rel(m.arquivo) }}">{{ r.baixar | t }}</a></p></div></li>
+{% set detalhe %}{{ m.detalhe | t }} {{ r.licenca | t }} <a href="https://creativecommons.org/licenses/by/4.0/">{{ m.licenca }}</a>.{% endset %}
+{{ item(none, m.titulo | t, detalhe, rel(m.arquivo)) }}
 {% endfor %}
-  </ul>
-</section>
+</ul>
 
-<section class="section-block" aria-labelledby="{{ ids.dados }}">
-  <h2 id="{{ ids.dados }}">{{ r.dados_codigo | t }}</h2>
-  <p class="section-note">{{ r.fontes_dados | t }}</p>
-  <ul class="resource-list">
+<h2 id="{{ ids.dados }}">{{ r.dados_codigo | t }}</h2>
+<ul class="lista sem-ano">
 {% for d in ensino.dados %}
-    <li><strong>{{ d.nome }}</strong><div><p>{{ d.detalhe | t | inline }}</p><p class="item-links"><a href="{{ d.url }}">{{ r.ver_fonte | t }}</a></p></div></li>
+{{ item(none, d.nome, d.detalhe | t | inline, d.url) }}
 {% endfor %}
-  </ul>
-  <p class="toolset"><span class="label">{{ r.software | t }}:</span> {{ ensino.software }} · <a href="https://github.com/lucasfloresvasques">GitHub</a></p>
-</section>
+</ul>
+<p class="nota">{{ r.software | t }}: {{ ensino.software }}. <a href="https://github.com/lucasfloresvasques">GitHub</a>.</p>
 {% endblock %}

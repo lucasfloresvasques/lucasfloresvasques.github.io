@@ -1,42 +1,27 @@
 {% extends "base.html" %}
-{% from "_macros.html" import publicacao with context %}
+{% from "_macros.html" import referencia with context %}
 {% block conteudo %}
-<section class="intro">
-  <p class="position">{{ perfil.cargo | t }}</p>
-  <figure class="profile-photo"><img src="{{ rel(perfil.foto) }}" alt="{{ perfil.foto_alt | t }}" width="650" height="751" decoding="async"></figure>
-  <p class="lead">{{ perfil.lead | t }}</p>
+<section class="apresentacao">
+  <img class="retrato" src="{{ rel(perfil.foto) }}" alt="{{ perfil.foto_alt | t }}" width="650" height="751" decoding="async">
 {% for paragrafo in perfil.bio | t %}
   <p>{{ paragrafo | inline }}</p>
 {% endfor %}
-  <p class="intro-links"><a href="mailto:{{ perfil.email }}">E-mail</a><a href="{{ rel(cv_pdf) }}">{{ r.cv_pdf | t }}</a>{% for l in perfil.links %}<a href="{{ l.url }}">{{ l.rotulo | t }}</a>{% endfor %}</p>
+  <p class="contato"><a href="mailto:{{ perfil.email }}">{{ perfil.email }}</a> <a href="{{ rel(cv_pdf) }}">{{ r.cv_pdf | t }}</a>{% for l in perfil.links %} <a href="{{ l.url }}">{{ l.rotulo | t }}</a>{% endfor %}</p>
 </section>
 
-<section class="section-block" aria-labelledby="linhas">
-  <h2 id="linhas">{{ r.linhas | t }}</h2>
-  <dl class="lines">
-{% for linha in perfil.linhas %}
-    <div><dt>{{ linha.nome | t }}</dt><dd>{{ linha.texto | t }}</dd></div>
-{% endfor %}
-  </dl>
-</section>
+{% set foto = perfil.foto_campo %}
+<figure class="faixa">
+  <img src="{{ rel(foto.grande) }}" srcset="{{ rel(foto.pequena) }} 750w, {{ rel(foto.grande) }} 1500w" sizes="(max-width: 46rem) 100vw, 46rem" alt="{{ foto.alt | t }}" width="1500" height="500" loading="lazy" decoding="async">
+  <figcaption>{{ foto.legenda | t }}</figcaption>
+</figure>
 
-<section class="section-block" aria-labelledby="destaques">
-  <div class="section-heading"><h2 id="destaques">{{ r.destaques | t }}</h2><a class="small-link" href="{{ rel(paginas.publicacoes.arquivo[idioma]) }}">{{ r.todas_publicacoes | t }}</a></div>
-  <p class="section-note">{{ r.criterio_destaques | t }}</p>
-  <div class="pub-list">
+<section aria-labelledby="selecionadas">
+  <h2 id="selecionadas">{{ r.selecionadas | t }}</h2>
+  <ol class="lista">
 {% for p in destaques %}
-{{ publicacao(p) }}
+{{ referencia(p) }}
 {% endfor %}
-  </div>
-  <p class="inline-next"><a href="{{ rel(paginas.publicacoes.arquivo[idioma] ~ ('#em-andamento' if idioma == 'pt' else '#work-in-progress')) }}">{{ r.em_andamento_link | t }}</a></p>
-</section>
-
-<section class="section-block" aria-labelledby="novidades">
-  <h2 id="novidades">{{ r.novidades | t }}</h2>
-  <ul class="news">
-{% for n in perfil.novidades %}
-    <li><span class="news-date">{{ n.data | mes_ano }}</span><span>{{ n.texto | t | inline }}</span></li>
-{% endfor %}
-  </ul>
+  </ol>
+  <p class="mais"><a href="{{ rel(paginas.publicacoes.arquivo[idioma]) }}">{{ r.todas_publicacoes | t }}</a></p>
 </section>
 {% endblock %}
