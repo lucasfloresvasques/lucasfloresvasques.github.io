@@ -1,5 +1,5 @@
 # Publicações, da mais recente para a mais antiga.
-# Campos: ano, titulo, titulo_en (título oficial em inglês, se houver), lingua (pt ou en),
+# Campos: ano, titulo, titulo_en (título em inglês: o oficial, se houver; senão, tradução do autor), lingua (pt ou en),
 # autores, veiculo, volume, paginas, doi, url, nota, destaque (true leva o item à página inicial; use no máximo 3).
 # id: nome da página própria do artigo (publications/<id>.html), com resumo e palavras-chave de resumos.yml.
 # pdf: cópia do PDF publicado, só quando a licença da revista permite redistribuir; licenca: essa licença.
@@ -9,6 +9,7 @@ aceitas:
   - ano: 2026
     tipo: verbete
     titulo: "Análise de Correspondências Múltiplas"
+    titulo_en: "Multiple Correspondence Analysis"
     lingua: pt
     autores: [Lucas Flôres Vasques]
     veiculo: {pt: "Enciclopédia de métodos do ENCIPS (verbete)", en: "ENCIPS methods encyclopedia (entry)"}
@@ -30,6 +31,7 @@ artigos:
   - id: governar-pelo-afeto
     ano: 2025
     titulo: "Governar pelo afeto: emoções e poder simbólico no discurso empresarial da revista Exame"
+    titulo_en: "Governing through affect: emotions and symbolic power in the business discourse of Exame magazine"
     lingua: pt
     autores: [Lucas Flôres Vasques]
     veiculo: Estudos de Sociologia
@@ -91,6 +93,7 @@ artigos:
   - id: gosto-plantas-ornamentais
     ano: 2023
     titulo: "Possibilidades teóricas e metodológicas para interpretação do gosto e do consumo no mercado de plantas ornamentais"
+    titulo_en: "Theoretical and methodological possibilities for interpreting taste and consumption in the ornamental plant market"
     lingua: pt
     autores: [Lucas Flôres Vasques, Thaís Caetano de Souza]
     veiculo: Revista Sem Aspas
@@ -101,6 +104,7 @@ artigos:
   - id: telenovela-pantanal
     ano: 2023
     titulo: "A telenovela brasileira em foco: uma análise sobre intimidade, emoção e processos de subjetivação em Pantanal"
+    titulo_en: "The Brazilian telenovela in focus: an analysis of intimacy, emotion and processes of subjectivation in Pantanal"
     lingua: pt
     autores: [Thaís Caetano de Souza, Lucas Flôres Vasques]
     veiculo: EntreRios
@@ -139,6 +143,7 @@ artigos:
   - id: liberalismo-brasil-seculo-xix
     ano: 2021
     titulo: "O “lugar” do liberalismo no Brasil do século XIX"
+    titulo_en: "The “place” of liberalism in nineteenth-century Brazil"
     lingua: pt
     autores: [Lucas Flôres Vasques]
     veiculo: Revista Sem Aspas
@@ -160,6 +165,7 @@ artigos:
     licenca: CC BY 3.0
   - ano: 2019
     titulo: "Grande performatividade e economia comportamental"
+    titulo_en: "Great performativity and behavioural economics"
     lingua: pt
     autores: [Gabriela Lanza Porcionato, Lucas Flôres Vasques]
     veiculo: "REDD – Revista Espaço de Diálogo e Desconexão"
@@ -169,6 +175,7 @@ artigos:
 capitulos:
   - ano: 2020
     titulo: "Do confessionário ao divã: uma análise sobre a grande performatividade"
+    titulo_en: "From the confessional to the couch: an analysis of great performativity"
     lingua: pt
     autores: [Lucas Flôres Vasques, Thaís Caetano de Souza]
     veiculo:

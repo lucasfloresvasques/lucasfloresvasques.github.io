@@ -91,7 +91,7 @@ rotulos:
   pdf_publicado: {en: "The PDF is the version published by the journal.", pt: "O PDF é a versão publicada pela revista."}
   na_revista: {en: Journal page, pt: Página na revista}
   transcricao: {en: "Transcript of the narration (English translation)", pt: "Transcrição da narração"}
-  capitulos: {en: "Chapters (in Portuguese)", pt: Capítulos}
+  capitulos: {en: Chapters, pt: Capítulos}
   pesquisa_anterior: {en: Previous research, pt: Pesquisa anterior}
   dissertacao: {en: "MA dissertation", pt: "Dissertação de mestrado"}
   aviso_fapesp: {en: "Opinions, hypotheses and conclusions or recommendations expressed in this material are the responsibility of the author and do not necessarily reflect the views of FAPESP.", pt: "As opiniões, hipóteses e conclusões ou recomendações expressas neste material são de responsabilidade do autor e não necessariamente refletem a visão da FAPESP."}

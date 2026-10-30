@@ -1,4 +1,6 @@
 # Apresentações em eventos, da mais recente para a mais antiga.
+# As de 2017 a 2021 vêm do Lattes, que registra o tipo de evento (congresso, seminário) mas não o nome.
+# As palestras sobre IRaMuTeQ (2022) e MAXQDA (2021) estão em ensino.yml, entre os minicursos e palestras.
 
 - ano: 2026
   titulo: "Plantas ornamentais e distinção social no Brasil: as fronteiras simbólicas do consumo"
@@ -26,11 +28,41 @@
     en: NESPOM International Research Congress, UNESP (Araraquara)
   nota: {pt: Com publicação nos anais., en: Published in the proceedings.}
 
+- ano: 2021
+  titulo: "Do confessionário ao divã: uma análise sobre a grande performatividade"
+  lingua: pt
+  autores: [Lucas Flôres Vasques, Thaís Caetano de Souza]
+  evento: {pt: Seminário, en: Seminar}
+
+- ano: 2019
+  titulo: "Autoajuda e emoções na doxa empresarial brasileira"
+  lingua: pt
+  autores: [Lucas Flôres Vasques]
+  evento: {pt: Congresso, en: Conference}
+
+- ano: 2019
+  titulo: "As emoções na doxa empresarial brasileira"
+  lingua: pt
+  autores: [Lucas Flôres Vasques]
+  evento: {pt: Congresso, en: Conference}
+
 - ano: 2018
-  titulo: "As mulheres executivas e suas emoções na doxa empresarial brasileira"
+  titulo: "As mulheres executivas e suas emoções na doxa empresarial brasileira: uma análise a partir da sociologia econômica"
   lingua: pt
   autores: [Lucas Flôres Vasques]
   evento:
     pt: 30º Congresso de Iniciação Científica da UNESP
     en: 30th UNESP Undergraduate Research Congress
   nota: {pt: Menção honrosa., en: Honourable mention.}
+
+- ano: 2018
+  titulo: "A mulher executiva no campo empresarial brasileiro"
+  lingua: pt
+  autores: [Lucas Flôres Vasques]
+  evento: {pt: Seminário, en: Seminar}
+
+- ano: 2017
+  titulo: "Mulheres executivas, gênero e emoções"
+  lingua: pt
+  autores: [Lucas Flôres Vasques]
+  evento: {pt: Seminário, en: Seminar}

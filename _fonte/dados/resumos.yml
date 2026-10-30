@@ -1,6 +1,6 @@
 # Resumos e palavras-chave das publicações, como saíram nas revistas (página do artigo, PDF ou Crossref).
 # A chave é o "id" da publicação em publicacoes.yml. Sem resumo em inglês, a página em inglês mostra o
-# resumo em português.
+# resumo em português. Os resumos em inglês que a revista não publicou são traduções do autor.
 
 ilusio-liberdade-afetiva:
   resumo:
@@ -51,6 +51,15 @@ governar-pelo-afeto:
       Para isso, mobilizamos a análise de conteúdo, com uso do software MAXQDA, construindo um dicionário
       de termos e uma codificação do material compilado. A pesquisa evidencia que a gestão emocional se
       converte em gramática moral, estruturando as hierarquias no universo empresarial.
+    en: >-
+      This article analyses the rise of emotions in the Brazilian business world, taking as its empirical
+      object 148 issues of the magazine Exame (1990–2007). Drawing on Pierre Bourdieu's relational
+      sociology and Norbert Elias's figurational sociology, it examines how emotions, beyond subjectivity,
+      are shaped into legitimate forms of distinction and symbolic consecration. Exame is analysed as an
+      instance of social consecration that, by prescribing desirable emotional styles such as empathy,
+      self-control and enthusiasm, establishes a “corporate emotional etiquette”. The study uses content
+      analysis in MAXQDA, with a dictionary of terms and a coding of the compiled material. It shows that
+      emotional management becomes a moral grammar that structures hierarchies in the business world.
 
 direito-ciencias-plantas:
   resumo:
@@ -96,6 +105,19 @@ fotografia-na-sociologia:
       necessidade de articular criticamente densidade teórica e metodologia, promovendo uma sociologia
       visual ou da imagem que seja, ao mesmo tempo, reflexiva, situada e sensível às transformações
       contemporâneas da cultura visual.
+    en: >-
+      This article maps sociological research on photography in Brazil and internationally, drawing on
+      bibliometric and lexical analyses carried out with IRaMuTeQ and VOSviewer. Using a corpus of
+      articles indexed in SciELO and Web of Science, it examines the conceptual repertoires and thematic
+      axes that structure the use of photography as an object and an instrument of research in the social
+      sciences. The results show that Brazilian research is strongly anchored in a Bourdieusian framework,
+      with an emphasis on theoretical and symbolic approaches, whereas international research stands out
+      for its methodological and applied use of images, especially in studies of health, youth, gender and
+      digital consumption. Photography thus appears as an arena of epistemological disputes, reflecting
+      different ways of doing science and forms of consecration in the academic fields analysed. The
+      article concludes that theoretical depth and methodology need to be brought together critically, in
+      a visual sociology, or sociology of the image, that is reflexive, situated and attentive to
+      contemporary changes in visual culture.
 
 intimidade-e-mercado-no-instagram:
   resumo:
@@ -133,6 +155,12 @@ corpo-bourdieu-foucault:
       mobilizou especialmente os conceitos de disciplina e vigilância de Michel Foucault, bem como doxa e
       violência simbólica em Pierre Bourdieu. Essa pesquisa busca colaborar com a elaboração de pesquisas
       sobre o corpo que enfatizem as abordagens desses autores de forma conjunta e complementar.
+    en: >-
+      This essay brings together the approaches of Michel Foucault (1975; 1993; 1988; 1985; 2006) and
+      Pierre Bourdieu (1983; 2007; 2012; 2013) to the body. It is based on a literature review that draws
+      especially on Foucault's concepts of discipline and surveillance and on Bourdieu's concepts of doxa
+      and symbolic violence. The aim is to support research on the body that treats the two authors'
+      approaches as complementary.
   palavras_chave:
     pt: [corpo, Bourdieu, Foucault, disciplina, doxa]
     en: [body, Bourdieu, Foucault, discipline, doxa]
@@ -150,6 +178,15 @@ gosto-plantas-ornamentais:
       relação entre economia, estilos de vida e plantas específicas. A partir da mobilização dessas duas
       categorias, gosto e consumo, demonstrou-se a possibilidade de construir uma agenda de pesquisa que
       considere as plantas ornamentais como um fenômeno social relevante.
+    en: >-
+      Ornamental plants are rarely studied in the social sciences. To address this gap, the article
+      proposes, beyond treating them as a market, the categories of taste and consumption as central to
+      building this research agenda. It draws on a literature review on consumption and taste and on a
+      search for studies of ornamental plants in SciELO and in the CAPES Theses and Dissertations
+      Database. Regarding taste, ornamental plants are taken to represent particular lifestyles and forms
+      of sociability, so measuring their consumption could also show to what extent economy, lifestyles
+      and specific plants are related. Working with these two categories, the article shows that it is
+      possible to build a research agenda that treats ornamental plants as a relevant social phenomenon.
 
 telenovela-pantanal:
   resumo:
@@ -163,6 +200,15 @@ telenovela-pantanal:
       obtidos se relacionam com a intimidade, moralidade e afetividade dos telespectadores, que são
       acionadas pelos personagens e suas histórias, promovendo uma espécie de identificação entre
       telespectador-obra, telespectador-personagem.
+    en: >-
+      The article examines to what extent Brazilian telenovelas carry a moral and affective grammar that
+      fosters processes of subjectivation among the Brazilians who watch them. We conducted an empirical
+      study with a Google Forms questionnaire, circulated on social media while the final episode of
+      Pantanal was being broadcast; the telenovela, written by Bruno Luperi and aired by TV Globo in 2022,
+      is a remake of the 1990 original. We collected 253 questionnaires with 20 questions, focusing on
+      emotional, affective and moral relationships with the telenovela. The data relate to the viewers'
+      intimacy, morality and affectivity, which the characters and their stories activate, producing a
+      kind of identification between viewer and work and between viewer and character.
 
 cancoes-de-amor-e-sofrimento:
   resumo:
@@ -231,6 +277,14 @@ liberalismo-brasil-seculo-xix:
       posições: primeiro como “ideia fora do lugar” (SCHWARZ, 2000; NOGUEIRA, 1976), segundo como “uma
       ideia tende a encontrar seu lugar” (COUTINHO, 2000) e terceiro como uma “ideia que está em seu
       devido lugar” (FRANCO, 1976; BOSI, 2010).
+    en: >-
+      The “place” of liberalism in nineteenth-century Brazil is the subject of long-standing debate in
+      political philosophy (Ricupero, 2007). This article maps that debate and offers a synthesis of its
+      positions. It first returns to the context in which liberalism emerged in England and then to its
+      philosophical principles in John Locke. It then shows how these principles were interpreted in
+      Brazil in three positions: as a “misplaced idea” (Schwarz, 2000; Nogueira, 1976), as “an idea that
+      tends to find its place” (Coutinho, 2000) and as an “idea in its proper place” (Franco, 1976; Bosi,
+      2010).
 
 genero-e-sociologia-economica:
   resumo:

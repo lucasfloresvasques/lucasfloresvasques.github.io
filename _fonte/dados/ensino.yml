@@ -44,7 +44,7 @@ cursos:
 # página Ensino só com "publicar: true". Na bibliografia valem *itálico* e [texto](endereço).
 ementas:
   - id: acm
-    publicar: false
+    publicar: true
     titulo: {pt: "ACM e construção do espaço social", en: "Multiple correspondence analysis and the construction of social space"}
     carga: 12
     objetivo:
@@ -88,7 +88,7 @@ ementas:
       - pt: "Le Roux, Brigitte. [Programas e dados de exemplo](https://brigitte-le-roux.com/en/logiciels)."
         en: "Le Roux, Brigitte. [Software and example data](https://brigitte-le-roux.com/en/logiciels)."
   - id: csa
-    publicar: false
+    publicar: true
     titulo: {pt: "Comparar subnuvens: CSA em R e SPAD", en: "Comparing subclouds: class specific analysis in R and SPAD"}
     carga: 8
     objetivo:
@@ -125,7 +125,7 @@ ementas:
       - pt: "Robette, Nicolas. *GDAtools*, pacote para R: [documentação de csMCA()](https://gdatools-51a3de.frama.io/reference/csMCA.html)."
         en: "Robette, Nicolas. *GDAtools*, R package: [csMCA() documentation](https://gdatools-51a3de.frama.io/reference/csMCA.html)."
   - id: textual
-    publicar: false
+    publicar: true
     titulo: {pt: "Análise textual com IRaMuTeQ e R", en: "Text analysis with IRaMuTeQ and R"}
     carga: 12
     objetivo:
@@ -161,7 +161,7 @@ ementas:
       - "Benoit, Kenneth et al. (2018). quanteda: An R package for the quantitative analysis of textual data. *Journal of Open Source Software*, 3(30), 774."
       - "Camargo, Brigido Vizeu; Justo, Ana Maria (2013). IRAMUTEQ: um software gratuito para análise de dados textuais. *Temas em Psicologia*, 21(2), 513–518."
       - "Lebart, Ludovic; Salem, André (1994). *Statistique textuelle*. Paris: Dunod."
-      - "Ratinaud, Pierre. *IRaMuTeQ: Interface de R pour les Analyses Multidimensionnelles de Textes et de Questionnaires*. [iramuteq.org](http://www.iramuteq.org)."
+      - "Ratinaud, Pierre. *IRaMuTeQ: Interface de R pour les Analyses Multidimensionnelles de Textes et de Questionnaires*."
       - "Reinert, Max (1983). Une méthode de classification descendante hiérarchique: application à l'analyse lexicale par contexte. *Les Cahiers de l'Analyse des Données*, 8(2), 187–198."
       - "Watanabe, Kohei; Müller, Stefan. [Quanteda tutorials](https://tutorials.quanteda.io/)."
 

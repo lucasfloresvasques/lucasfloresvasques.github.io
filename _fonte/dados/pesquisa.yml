@@ -35,15 +35,15 @@ tese:
   palavras_chave:
     pt: classificações sociais; plantas ornamentais; mercados; gosto; autoridade
     en: social classifications; ornamental plants; markets; taste; authority
-  # Títulos dos capítulos como estão na tese. Para traduzir, acrescente "en:".
+  # Títulos dos capítulos como estão na tese, com a tradução em inglês.
   capitulos:
-    - {pt: "Introdução — O substrato"}
-    - {pt: "1. Jardim das rosas e das quássias: nomes, saberes e direitos"}
-    - {pt: "2. Jardim das orquídeas e das rosas: qualidade, tempo e preço na Veiling Holambra"}
-    - {pt: "3. Jardim das begônias e do capim-do-Texas: o trabalho de recomendar plantas"}
-    - {pt: "4. Jardim dos cactos e das violetas: repertórios, apreciação e conservação"}
-    - {pt: "5. Jardim das rosas em festa: exposição, autoria e participação na Expoflora"}
-    - {pt: "Conclusão — A colheita"}
+    - {pt: "Introdução — O substrato", en: "Introduction — The substrate"}
+    - {pt: "1. Jardim das rosas e das quássias: nomes, saberes e direitos", en: "1. The garden of roses and quassias: names, knowledge and rights"}
+    - {pt: "2. Jardim das orquídeas e das rosas: qualidade, tempo e preço na Veiling Holambra", en: "2. The garden of orchids and roses: quality, time and price at Veiling Holambra"}
+    - {pt: "3. Jardim das begônias e do capim-do-Texas: o trabalho de recomendar plantas", en: "3. The garden of begonias and fountain grass: the work of recommending plants"}
+    - {pt: "4. Jardim dos cactos e das violetas: repertórios, apreciação e conservação", en: "4. The garden of cacti and violets: repertoires, appreciation and keeping"}
+    - {pt: "5. Jardim das rosas em festa: exposição, autoria e participação na Expoflora", en: "5. The festive rose garden: exhibition, authorship and participation at Expoflora"}
+    - {pt: "Conclusão — A colheita", en: "Conclusion — The harvest"}
   # Foto do capítulo 5, com os rostos desfocados como na tese.
   foto:
     grande: assets/chuva-de-petalas-expoflora-2023-1258.webp

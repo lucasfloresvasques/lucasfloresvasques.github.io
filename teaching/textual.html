@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Text analysis with IRaMuTeQ and R · Lucas Flôres Vasques</title>
+<meta name="description" content="Building the corpus: sources, scope and textual unit. Metadata and preparation for IRaMuTeQ. Concordances and the lexical table.">
+<meta name="author" content="Lucas Flôres Vasques">
+<link rel="canonical" href="https://lucasfloresvasques.github.io/teaching/textual.html">
+<link rel="alternate" hreflang="en" href="https://lucasfloresvasques.github.io/teaching/textual.html">
+<link rel="alternate" hreflang="pt-BR" href="https://lucasfloresvasques.github.io/pt/teaching/textual.html">
+<link rel="alternate" hreflang="x-default" href="https://lucasfloresvasques.github.io/teaching/textual.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lucas Flôres Vasques">
+<meta property="og:title" content="Text analysis with IRaMuTeQ and R · Lucas Flôres Vasques">
+<meta property="og:description" content="Building the corpus: sources, scope and textual unit. Metadata and preparation for IRaMuTeQ. Concordances and the lexical table.">
+<meta property="og:url" content="https://lucasfloresvasques.github.io/teaching/textual.html">
+<meta property="og:image" content="https://lucasfloresvasques.github.io/assets/cartao-compartilhamento.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Lucas Flôres Vasques">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#fdfdfb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141716" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/source-serif-4-latin-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<a class="pular" href="#conteudo">Skip to content</a>
+<header class="topo">
+  <a class="nome" href="../">Lucas Flôres Vasques</a>
+  <nav class="menu" aria-label="Main navigation">
+    <ul>
+      <li><a href="../">About</a></li>
+      <li><a href="../research.html">Research</a></li>
+      <li><a href="../publications.html">Publications</a></li>
+      <li><a href="../teaching.html" aria-current="page">Teaching</a></li>
+      <li><a href="../elections-2026.html">2026 election</a></li>
+      <li><a href="../cv.html">CV</a></li>
+      <li class="idioma"><a href="../pt/teaching/textual.html" hreflang="pt-BR" lang="pt-BR">Português</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="conteudo">
+<p class="voltar"><a href="../teaching.html">Teaching and materials</a></p>
+<h1>Text analysis with IRaMuTeQ and R</h1>
+<p class="ficha">Course proposal, 12 hours.</p>
+<p>To prepare a documented corpus and relate lexical results to the reading of the texts and to the research problem.</p>
+<p class="nota"><i>Audience:</i> Researchers who work with interviews, documents or social media posts. The quanteda part requires basic R.</p>
+
+<h2 id="ementa">Outline</h2>
+<p>Building the corpus: sources, scope and textual unit. Metadata and preparation for IRaMuTeQ. Concordances and the lexical table. Correspondence analysis (CA) of a lexical table. Descending hierarchical classification (Reinert method) and similarity analysis. Returning to the texts and the limits of interpretation.</p>
+
+<h2 id="programa">Programme</h2>
+<ol class="programa">
+  <li><span class="titulo">Building the corpus</span> Sources, scope, textual unit, metadata, duplicates and the conditions under which the texts circulate.</li>
+  <li><span class="titulo">Preparing for IRaMuTeQ</span> UTF-8 encoding, text headers, checking the import and recording preparation decisions.</li>
+  <li><span class="titulo">Concordances and the lexical table</span> Exploration in quanteda: words in context, selecting the vocabulary and the count matrix.</li>
+  <li><span class="titulo">CA and interpretation</span> Planes, contributions and returning to the texts. How CA differs from the Reinert classification and from similarity analysis.</li>
+</ol>
+
+<h2 id="atividade">Assignment</h2>
+<p>Prepare synthetic texts for import and compare a concordance-based reading with an exploration of the lexical table. To hand in: the corpus, the code map and a note on the limits of the analysis.</p>
+
+<h2 id="bibliografia">Readings</h2>
+<ul class="bibliografia">
+  <li>Benoit, Kenneth et al. (2018). quanteda: An R package for the quantitative analysis of textual data. <em>Journal of Open Source Software</em>, 3(30), 774.</li>
+  <li>Camargo, Brigido Vizeu; Justo, Ana Maria (2013). IRAMUTEQ: um software gratuito para análise de dados textuais. <em>Temas em Psicologia</em>, 21(2), 513–518.</li>
+  <li>Lebart, Ludovic; Salem, André (1994). <em>Statistique textuelle</em>. Paris: Dunod.</li>
+  <li>Ratinaud, Pierre. <em>IRaMuTeQ: Interface de R pour les Analyses Multidimensionnelles de Textes et de Questionnaires</em>.</li>
+  <li>Reinert, Max (1983). Une méthode de classification descendante hiérarchique: application à l&#39;analyse lexicale par contexte. <em>Les Cahiers de l&#39;Analyse des Données</em>, 8(2), 187–198.</li>
+  <li>Watanabe, Kohei; Müller, Stefan. <a href="https://tutorials.quanteda.io/">Quanteda tutorials</a>.</li>
+</ul>
+</main>
+<footer class="rodape">
+  <p><a href="mailto:lucas.vasques@unesp.br">lucas.vasques@unesp.br</a> · <a href="https://lattes.cnpq.br/2751639399347420">Lattes</a> · <a href="https://orcid.org/0000-0003-1124-8506">ORCID</a></p>
+  <p>Research funded by FAPESP, grants 2021/09533-8 and 2024/08337-9. Updated 30 October 2026.</p>
+</footer>
+</body>
+</html>
