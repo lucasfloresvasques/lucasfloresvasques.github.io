@@ -16,14 +16,18 @@ cartao: assets/cartao-compartilhamento.jpg
 cargo:
   pt: Doutorando em Ciências Sociais, UNESP
   en: PhD candidate in Social Sciences, UNESP
+# Linha sob o nome, na página inicial.
+papel:
+  pt: Sociólogo · Doutorando em Ciências Sociais, UNESP
+  en: Sociologist · PhD candidate in Social Sciences, UNESP
 
 bio:
   pt:
-    - Sou doutorando em Ciências Sociais na UNESP, em Araraquara, com bolsa da FAPESP e orientação de Maria Aparecida Chaves Jardim. Minha tese estuda como flores e plantas ornamentais são classificadas e avaliadas no comércio e por quem as cultiva. A defesa está marcada para março de 2027.
+    - Minha tese, orientada por Maria Aparecida Chaves Jardim na UNESP de Araraquara e financiada pela FAPESP, estuda como flores e plantas ornamentais são classificadas e avaliadas no comércio e por quem as cultiva. A defesa está marcada para março de 2027.
     - Sou bolsista da FAPESP desde 2016. Entre 2025 e 2026 passei um ano no IDHE.S, na ENS Paris-Saclay, como pesquisador visitante, com Frédéric Lebaron. Uso a Análise Geométrica de Dados para construir espaços sociais.
     - Meu próximo projeto, uma proposta de pós-doutorado na UFSCar com Silvio Eduardo Alvarez Candido, trata de quem produz a política ambiental federal no Brasil.
   en:
-    - I am a PhD candidate in Social Sciences at São Paulo State University (UNESP), in Araraquara, funded by FAPESP and supervised by Maria Aparecida Chaves Jardim. My thesis looks at how flowers and ornamental plants are classified and judged in the trade and by the people who grow them. I will defend it in March 2027.
+    - My thesis, supervised by Maria Aparecida Chaves Jardim at São Paulo State University (UNESP) in Araraquara and funded by FAPESP, looks at how flowers and ornamental plants are classified and judged in the trade and by the people who grow them. I will defend it in March 2027.
     - FAPESP has funded my research since 2016. From March 2025 to March 2026 I was a visiting researcher at IDHE.S, ENS Paris-Saclay, working with Frédéric Lebaron. I use Geometric Data Analysis to construct social spaces.
     - My next project, a postdoctoral proposal at the Federal University of São Carlos with Silvio Eduardo Alvarez Candido, is about who makes federal environmental policy in Brazil.
 

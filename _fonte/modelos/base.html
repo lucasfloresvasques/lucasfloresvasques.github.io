@@ -45,11 +45,8 @@
 <body>
 <a class="pular" href="#conteudo">{{ r.pular | t }}</a>
 <header class="topo">
-{% if pagina == 'inicio' %}
-  <h1 class="nome">{{ perfil.nome }}</h1>
-{% else %}
+<div class="topo-interno">
   <a class="nome" href="{{ rel(paginas.inicio.arquivo[idioma]) }}">{{ perfil.nome }}</a>
-{% endif %}
   <nav class="menu" aria-label="{{ r.navegacao | t }}">
     <ul>
 {% for item in menu %}
@@ -58,13 +55,28 @@
       <li class="idioma">{% if idioma == 'pt' %}<a href="{{ rel(arquivos.en) }}" hreflang="en" lang="en">English</a>{% else %}<a href="{{ rel(arquivos.pt) }}" hreflang="pt-BR" lang="pt-BR">Português</a>{% endif %}</li>
     </ul>
   </nav>
+</div>
 </header>
-<main id="conteudo">
+<main id="conteudo" class="pagina-{{ pagina }}">
 {% block conteudo %}{% endblock %}
 </main>
 <footer class="rodape">
-  <p><a href="mailto:{{ perfil.email }}">{{ perfil.email }}</a>{% for l in perfil.links[:2] %} · <a href="{{ l.url }}">{{ l.rotulo | t }}</a>{% endfor %}</p>
-  <p>{{ r.financiamento | t }} {{ r.atualizado | t }} {{ data_atualizacao }}.</p>
+<div class="rodape-interno">
+  <div>
+    <p class="rodape-nome">{{ perfil.nome }}</p>
+    <p>{{ perfil.cargo | t }}</p>
+    <p><a href="mailto:{{ perfil.email }}">{{ perfil.email }}</a></p>
+  </div>
+  <ul class="rodape-links">
+{% for l in perfil.links %}
+    <li><a href="{{ l.url }}">{{ l.rotulo | t }}</a></li>
+{% endfor %}
+  </ul>
+  <div>
+    <p>{{ r.financiamento | t }}</p>
+    <p>{{ r.atualizado | t }} {{ data_atualizacao }}.</p>
+  </div>
+</div>
 </footer>
 </body>
 </html>

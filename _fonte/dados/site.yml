@@ -90,6 +90,8 @@ rotulos:
   palavras_chave: {en: Keywords, pt: Palavras-chave}
   pdf_publicado: {en: "The PDF is the version published by the journal.", pt: "O PDF é a versão publicada pela revista."}
   na_revista: {en: Journal page, pt: Página na revista}
+  ficha: {en: Publication details, pt: Dados da publicação}
+  periodico: {en: Journal, pt: Periódico}
   transcricao: {en: "Transcript of the narration (English translation)", pt: "Transcrição da narração"}
   capitulos: {en: Chapters, pt: Capítulos}
   pesquisa_anterior: {en: Previous research, pt: Pesquisa anterior}

@@ -10,6 +10,7 @@
   <p class="cv-links"><a href="mailto:{{ perfil.email }}">{{ perfil.email }}</a> {% for l in perfil.links %}<a href="{{ l.url }}">{{ l.rotulo | t }}</a> {% endfor %}<a class="cv-baixar" href="{{ rel(cv_pdf) }}">{{ r.baixar_cv | t }}</a></p>
   <p class="nota">{{ r.atualizado | t }} {{ data_atualizacao }}.</p>
 </header>
+<p class="sumario cv-sumario"><a href="#{{ 'formacao' if pt else 'education' }}">{{ r.cv_formacao | t }}</a><a href="#{{ 'estagio' if pt else 'research-stay' }}">{{ r.cv_estagio | t }}</a><a href="#{{ 'bolsas' if pt else 'fellowships' }}">{{ r.cv_bolsas | t }}</a><a href="#{{ 'publicacoes' if pt else 'publications' }}">{{ r.cv_publicacoes | t }}</a><a href="#{{ 'em-andamento' if pt else 'work-in-progress' }}">{{ r.em_andamento | t }}</a><a href="#{{ 'apresentacoes' if pt else 'presentations' }}">{{ r.apresentacoes | t }}</a><a href="#{{ 'docencia' if pt else 'teaching' }}">{{ r.cv_docencia | t }}</a><a href="#{{ 'atuacao' if pt else 'service' }}">{{ r.cv_atuacao | t }}</a><a href="#{{ 'premios' if pt else 'awards' }}">{{ r.cv_premios | t }}</a><a href="#{{ 'complementar' if pt else 'additional-training' }}">{{ r.cv_complementar | t }}</a><a href="#{{ 'competencias' if pt else 'skills' }}">{{ r.cv_competencias | t }}</a></p>
 
 <h2 id="{{ 'formacao' if pt else 'education' }}">{{ r.cv_formacao | t }}</h2>
 <ol class="lista">
